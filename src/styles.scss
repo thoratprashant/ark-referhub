@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Avenir-normal';
+    src: url('/assets/fonts/AvenirLTStd-Roman.eot');
+    src: url('/assets/fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('/assets/fonts/AvenirLTStd-Roman.woff') format('woff'),
+        url('/assets/fonts/AvenirLTStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir-light';
+    src: url('/assets/fonts/AvenirLT-Light.eot');
+    src: url('/assets/fonts/AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Light.woff2') format('woff2'),
+        url('/assets/fonts/AvenirLT-Light.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir-medium';
+    src: url('/assets/fonts/AvenirLTStd-Medium.eot');
+    src: url('/assets/fonts/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLTStd-Medium.woff2') format('woff2'),
+        url('/assets/fonts/AvenirLTStd-Medium.woff') format('woff'),
+        url('/assets/fonts/AvenirLTStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir-bold';
+    src: url('/assets/fonts/AvenirLTStd-Heavy.eot');
+    src: url('/assets/fonts/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+        url('/assets/fonts/venirLTStd-Heavy.woff') format('woff'),
+        url('/assets/fonts/AvenirLTStd-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-italic';
+    src: url('/assets/fonts/AvenirLTStd-Oblique.eot');
+    src: url('/assets/fonts/AvenirLTStd-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLTStd-Oblique.woff2') format('woff2'),
+        url('/assets/fonts/AvenirLTStd-Oblique.woff') format('woff'),
+        url('/assets/fonts/AvenirLTStd-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+body{
+    font-family: Avenir-normal;
+    font-size: 1rem;
+}
+p{
+    color: #212b36;
+}
+.btn{
+    border-radius: 5px !important;    
+    font-family: Avenir-normal;
+    font-size: 15px !important;
+    padding: 10px 20px !important;
+    &.btn-lg{
+        padding: 15px 50px !important;
+    }
+    
+}
+.btn-primary{
+    border-color: #169feb !important;
+    background-color: #169feb !important;
+    box-shadow: 0 19px 22px -18px #169feb;
+}
+.btn-outline-primary{
+    border-color: #169feb !important;
+    color: #169feb !important;
+}
+.btn:focus, .btn.focus,
+.form-control:focus{
+    box-shadow: none !important;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .btn.btn-lg {
+        padding: 8px 27px !important;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .btn.btn-lg {
+        padding: 10px 35px !important;
+    }
+}
