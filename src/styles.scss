@@ -75,6 +75,11 @@ p{
 .btn-outline-primary{
     border-color: #169feb !important;
     color: #169feb !important;
+    &:hover{
+        border-color: #169feb !important;
+        color: #169feb !important;
+        background-color: transparent !important;
+    }
 }
 .btn:focus, .btn.focus,
 .form-control:focus{
