@@ -11,10 +11,31 @@
         align-items: center;
         li{
             flex-shrink: 0;
+            margin: 0 15px;
             a{
                 font-size: 15px;
                 font-family: Avenir-normal;
-                color: #000;                
+                color: #000;   
+                position: relative;
+                padding: 5px 0;
+                &::after {
+                    content: "";
+                    background: #169feb;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -1px;
+                    transition: .3s all .025s;
+                    left: 0;
+                    right: 100%;
+                }  
+                &:hover{
+                    color: #169feb;
+                    &::after{
+                        left: 0;
+                        right: 0;
+                    }   
+                }
+                       
             }
             .sign--up--btn{
                 margin-left: 10px;
@@ -47,6 +68,10 @@
                     border-radius: 5px;
                     border: solid 1px rgba(0, 0, 0, 0.1);
                     background-color: rgba(248, 248, 248, 0);
+                    transition: box-shadow 0.3s;
+                    &:focus {
+                        box-shadow: 0px 0px 0px 1px #169feb !important;
+                    }
                 }
                 ::placeholder { 
                     color: rgba(0, 0, 0, 0.2);
@@ -404,14 +429,30 @@
     ul{
         list-style-type: none;
         li{
+            display: flex;
             a{
                 font-size: 14px;
                 color: #646464;
-                margin-bottom: 6px;
-                display: flex;
+                margin-bottom: 6px !important;
+                float: left;
+                position: relative;
+                &::after {
+                    content: "";
+                    background: #169feb;
+                    height: 1px;
+                    position: absolute;
+                    bottom: -3px;
+                    transition: 0.3s all 0.025s;
+                    left: 0;
+                    right: 100%;
+                }  
                 &:hover{
+                    color: #169feb;
                     text-decoration: none;
-                    color:#fff;
+                    &::after{
+                        left: 0;
+                        right: 0;
+                    }   
                 }
             }
             &:last-child{
@@ -461,8 +502,10 @@
             background-repeat: no-repeat;
             width: 16px;
             height: 16px;
+            transition: all 0.5s;
             &:hover{
                 background-image: url(../assets/images/facebook-active.png);
+                transform: rotate(360deg) scale(1.3);
             }
         }
         .icon-twitter{
@@ -470,8 +513,10 @@
             background-repeat: no-repeat;
             width: 16px;
             height: 16px;
+            transition: all 0.5s;
             &:hover{
                 background-image: url(../assets/images/twitter-active.png);
+                transform: rotate(360deg) scale(1.3);
             }
         }
         .icon-insta{
@@ -479,8 +524,10 @@
             background-repeat: no-repeat;
             width: 16px;
             height: 16px;
+            transition: all 0.5s;
             &:hover{
                 background-image: url(../assets/images/instagram-active.png);
+                transform: rotate(360deg) scale(1.3);
             }
         }
         .icon-gPlus{
@@ -488,8 +535,10 @@
             background-repeat: no-repeat;
             width: 22px;
             height: 16px;
+            transition: all 0.5s;
             &:hover{
                 background-image: url(../assets/images/google-plus-active.png);
+                transform: rotate(360deg) scale(1.3);
             }
         }
         
