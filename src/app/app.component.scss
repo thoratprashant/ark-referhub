@@ -512,6 +512,24 @@
 // Media Query start here
 
 
+@media screen and (orientation:landscape) and (max-width: 850px){
+    .section--one{
+        height: 88vh !important;
+        h2{
+            font-size: 1.7rem !important;
+            margin-bottom: 10px;
+        }
+    }
+    .section--five{
+        height: 90vh !important;
+    }
+    .wir--img img{
+        width: 50%;
+    }
+    .btn.btn-lg {
+        padding: 10px 15px !important;
+    }
+}
 
 @media only screen and (max-width: 599px) {
     .rf--header{
