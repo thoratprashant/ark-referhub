@@ -417,6 +417,90 @@
     }
 }
 
+.section--seven{
+    margin: 70px auto;   
+    h1{
+        margin: 0 0 30px 0;
+        font-size: 2rem;
+    }
+    .reviews{
+        box-shadow: 1px 10px 24px 0 #f0f2f4;
+        background-color: #fff;
+        padding: 30px;
+        width: 50%;
+        margin: 1px auto;
+        border-radius: 10px;
+        header{
+            display: flex;
+            align-items: center;
+            .reviewer--pic{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 20px;
+            }
+            .reviewer--details{
+                h3{
+                    font-size: 17px;
+                    color: #333;
+                    font-family: 'Avenir-medium';
+                    margin: 0 0 0 0;
+                }
+                p{
+                    color: rgba(0, 0, 0, 0.25);
+                    font-size: 15px;
+                    line-height: 1.6;
+                    margin: 0;
+                    font-family: 'Avenir-normal';
+                }
+            }
+        }
+        .review--data{
+            display: flex;
+            margin-top: 15px;
+            p{
+                margin: 0;
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.5);
+                font-family: 'Avenir-normal';
+            }
+        }        
+    }
+    .icon-prev{
+        background-image: url(../assets/images/arrowleft.png);
+        width: 70px;
+        height: 70px;
+        display: block;
+    }
+    .icon-next{
+        background-image: url(../assets/images/arrow-right.png);
+        width: 70px;
+        height: 70px;
+        display: block;
+    }
+    .carousel-indicators{
+        bottom: -48px;
+        align-items: center;
+        li{
+            width: 5px;
+            height: 5px;
+            margin-right: 15px;
+            margin-left: 15px;
+            border-radius: 50%;
+            background-color: #ccc;
+            border: 2px solid transparent;
+            &.active{
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+                border: 2px solid #169feb;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
 .footer--section{
     background-color: #2c3341;
     padding: 40px;
@@ -728,6 +812,22 @@
             font-size: 13px;
         }
     }
+    .section--seven{
+        margin: 35px auto 70px auto;
+        h1{
+            font-size: 1.2rem; 
+        }
+        .reviews{
+            width: 100%;            
+        }
+        .review--data{
+            p{
+                font-size: 15px !important;
+                text-align: center;
+            }
+            
+        }
+    }
     .footer--section{
         padding: 20px;
         h2{
@@ -738,8 +838,9 @@
         ul{
             margin-bottom: 15px !important;
             li{
+                justify-content: center;
                 a{
-                    margin-bottom: 4px;
+                    margin-bottom: 4px !important;
                     font-size: 12px;
                     justify-content: center;
                 }
