@@ -1,5 +1,31 @@
 .rf--header{
     background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: position 10s;
+    -ms-transition: position 10s;
+    -o-transition: position 10s;
+    transition: all 0.5s ease;
+    
+    &.scrolled{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        left: 0;
+        right: 0;
+        animation: smoothScroll 1s forwards;
+        @keyframes smoothScroll {
+            0% {
+                transform: translateY(-40px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .navbar {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
     .navbar {
         padding-top: 16px;
         padding-bottom: 16px;
@@ -670,6 +696,30 @@
             font-size: 14px;
             opacity: 0.25;
         }
+    }
+}
+
+.back--to--top{
+    width: 47px;
+    height: 47px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #169feb;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99999;
+    opacity: 0;
+    .fa-arrow-up{
+        font-size: 20px;
+    }
+    &.show{
+        opacity: 9;
     }
 }
 
