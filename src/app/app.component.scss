@@ -441,6 +441,7 @@
                 margin-right: 20px;
             }
             .reviewer--details{
+                width: 100%;
                 h3{
                     font-size: 17px;
                     color: #333;
@@ -465,7 +466,26 @@
                 color: rgba(0, 0, 0, 0.5);
                 font-family: 'Avenir-normal';
             }
-        }        
+        }   
+        .reviewer--star{
+            align-self: flex-start;
+            ul{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                li{
+                    .fa{
+                        &.active{
+                            color: #ff9933;
+                        }
+                        color: #d8d8d8;
+                        margin-left: 3px;
+                    }
+                  
+                }
+            }
+        }     
     }
     .icon-prev{
         background-image: url(../assets/images/arrowleft.png);
