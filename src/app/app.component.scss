@@ -101,7 +101,7 @@
     width: 100%;
 }
 .section--one {
-    height: 100vh;   
+    height: 90vh;   
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -110,31 +110,34 @@
     background-color: #f8f8f8;
 
     h2{
-        font-family: 'Avenir-normal';
-        font-size: 2.4rem;
+        font-family: 'Avenir-light';
+        font-size: 40px;
         line-height: 1.25;
         letter-spacing: -0.5px;
         color: rgba(0, 0, 0, 0.85);
         margin: 0 0 20px 0;
     }
     p{       
-        line-height: 1.75;
-        font-size: 1.1rem;
+        line-height: 1.7;
+        font-size: 20px;
         margin: 0 0 25px 0;
+        font-family: 'Avenir-light';
     }
 }
 
 .section--two {
     margin-top: 80px;
     h2{
-        font-size: 2rem;
+        font-size: 38px;
         margin: 0 0 20px 0;
-        font-family: 'Avenir-normal';
+        font-family: 'Avenir-light';
         color: #000;
     }
     p{
-        font-size: 1rem;
+        font-size: 18px;
+        line-height: 1.67;
         margin: 0 0 30px 0;
+        font-family: 'Avenir-light';
     }
     .about--boxes{
         display: flex;
@@ -224,12 +227,12 @@
             .card-body{
                 h3{
                     font-family: 'Avenir-medium';
-                    font-size: 1.2rem;
-                    margin: 15px 0 10px 0;
+                    font-size: 20px;
+                    margin: 15px 0 15px 0;
                 }
                 p{
-                    font-size: 0.9rem;
-                    line-height: 20px;
+                    font-size: 15px;
+                    line-height: 1.67;
                 }
             }            
         }
@@ -243,11 +246,12 @@
     padding: 45px 0 50px 0;
     .header{
         display: flex;
+        align-items: center;
         h2{
-            font-size: 2rem;
+            font-size: 38px;
             margin: 0 0 0 0;
-            font-family: "Avenir-normal";
             color: #fff;
+            font-family: 'Avenir-light';
         }
     }
     .nav-tabs{
@@ -296,8 +300,10 @@
         margin-top: 25px;
         p{
             color: #fff;
-            font-size: 0.9rem;
+            font-size: 16px;
+            font-family: 'Avenir-light';
             margin: 0;
+            line-height: 1.88;
         }
         .stepper--wrapper{
             display: flex;
@@ -310,7 +316,7 @@
                 &:last-child{
                     width: 66px;
                 }
-                &.active{
+                &:hover{
                     .step--number{
                         background-color: #159eeb;
                     }
@@ -319,12 +325,12 @@
                     }
                 }
                 .step--number{
-                    width: 60px;
-                    height: 60px;
+                    width: 72px;
+                    height: 72px;
                     background-color: transparent;
                     border: 2px solid #159eeb;
                     margin-bottom: 45px;
-                    font-size: 16px;
+                    font-size: 18px;
                     font-family: "Avenir-bold";
                     border-radius: 50%;
                     display: flex;
@@ -337,15 +343,15 @@
                     &:after {
                         content:"";
                         position: absolute;
-                        top: 28px;
-                        left: 60px;
+                        top: 37px;
+                        left: 70px;
                         right: 0;
                         border-top: 2px solid #159eeb;
                         z-index: 1;
                     }
                 }
                 .step--details{
-                    font-size: 14px;
+                    font-size: 15px;
                     padding-right: 20px;
                     line-height: 1.67;
                     color: #fff;
@@ -364,7 +370,7 @@
         padding-bottom: 45px;
     }
     h2{
-        font-size: 2rem;
+        font-size: 38px;
         margin: 0 0 35px 0;
         font-family: 'Avenir-bold';
         color: #000;
@@ -374,12 +380,12 @@
         li{
             display: flex;
             align-items: center;
-            font-size: 1.1rem;
+            font-size: 20px;
             color: #000;
             margin-bottom: 15px;
             img{
-                width:30px;
-                margin-right: 20px;
+                width:40px;
+                margin-right: 25px;
             }
         }
       }
@@ -391,11 +397,14 @@
     h2{
         font-family: 'Avenir-medium';
         margin-bottom: 20px;
-        font-size: 2rem;
+        font-size: 38px;
+        padding-right: 35px;
     }
     p{
-        font-size: 1rem;
+        font-size: 18px;
         margin: 0 0 30px 0;
+        font-family: 'Avenir-light';
+        line-height: 1.67;
     }
 }
 
@@ -405,12 +414,13 @@
     h1{
         font-family: 'Avenir-bold';
         margin: 0;
-        font-size: 2rem;
+        font-size: 38px;
     }
     p{
         color:#fff;
         margin: 20px 0 30px 0;
         font-size: 18px;
+        font-family: 'Avenir-light';
     }
     .btn-primary {
         box-shadow: none;
@@ -535,11 +545,12 @@
         li{
             display: flex;
             a{
-                font-size: 14px;
+                font-size: 15px;
                 color: #646464;
-                margin-bottom: 6px !important;
+                margin-bottom: 8px !important;
                 float: left;
                 position: relative;
+                font-family: 'Avenir-light';
                 &::after {
                     content: "";
                     background: #169feb;
