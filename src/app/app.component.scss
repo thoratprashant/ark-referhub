@@ -733,9 +733,13 @@
 @media screen and (orientation:landscape) and (max-width: 850px){
     .section--one{
         height: 88vh !important;
+        background-image: none !important;
         h2{
             font-size: 1.7rem !important;
             margin-bottom: 10px;
+        }
+        .sm--box--shadow{
+            box-shadow: none !important;
         }
     }
     .section--five{
@@ -786,11 +790,12 @@
         box-shadow: 2px 7px 5px 0 #ddd;
     }
     .section--one{
-        height: 50vh;
+        height: 45vh;
         text-align: center;
+        background-image: none !important;
         .sm--box--shadow{
-            padding: 15px;
-            box-shadow: 0 0 15px #ddd;
+            padding: 0 15px;
+            box-shadow: none
         }
         h2{
             font-size: 1.4rem;            
@@ -922,6 +927,11 @@
             line-height: 1.4;
             text-align: justify;
         }
+        .sm--white{
+            background: #fff;
+            padding: 10px;
+        }
+        
     }
     .section--six{
         h1{
@@ -964,6 +974,16 @@
                 text-align: justify;
             }
             
+        }
+        .carousel-control-prev, .carousel-control-next{
+            top: 38px !important;
+            bottom: unset !important;
+        }
+        .carousel-control-prev {
+            left: -18px;
+        }
+        .carousel-control-next {
+            right: -9px;
         }
     }
     .footer--section{
@@ -1022,9 +1042,9 @@
     }
     .section--one{
         height: 36vh;
+        background-image: none !important;
         .sm--box--shadow{
-            padding: 15px;
-            box-shadow: 0 0 15px #ddd;
+            box-shadow:none !important;
         }
         h2{
             font-size: 2rem;
@@ -1113,6 +1133,10 @@
         height: 32vh;
         h2{
             font-size: 1.7rem;
+        }
+        .sm--white {
+            background: #fff;
+            padding: 10px;
         }
     }
     .section--six{
