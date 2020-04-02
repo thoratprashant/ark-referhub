@@ -137,7 +137,7 @@
 
     h2{
         font-family: 'Avenir-light';
-        font-size: 40px;
+        font-size: 46px;
         line-height: 1.25;
         letter-spacing: -0.5px;
         color: rgba(0, 0, 0, 0.85);
@@ -432,23 +432,26 @@
         font-family: 'Avenir-light';
         line-height: 1.67;
     }
+ 
 }
 
 .section--six{
-    padding: 65px 0 55px 0;
+    padding: 70px 0 63px  0;
     color:#fff;
     h1{
-        font-family: 'Avenir-bold';
+        font-family: 'Avenir-medium';
         margin: 0;
         font-size: 38px;
     }
     p{
-        color:#fff;
+        color:#d8d6d6;
         margin: 20px 0 30px 0;
         font-size: 18px;
         font-family: 'Avenir-light';
     }
-    .btn-primary {
+ 
+    .get--started--btn{
+        padding: 15px 75px !important;
         box-shadow: none;
     }
 }
