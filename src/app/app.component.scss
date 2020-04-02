@@ -755,6 +755,7 @@
             width: 100%;
             .search{
                 width: 100%;
+                margin-bottom: 10px;
             }
         }
         .navbar{
@@ -764,6 +765,13 @@
         ul{
             li{
                 margin: 0;
+                a{
+                    font-size: 17px;
+                    padding: 6px 0;
+                }
+                .sign--up--btn{
+                    margin: 5px 0 0 0 !important;
+                }
             }
         }
     }
@@ -775,9 +783,10 @@
         width: 100%;
         padding: 15px 10px;
         top: 59px;
+        box-shadow: 2px 7px 5px 0 #ddd;
     }
     .section--one{
-        height: 36vh;
+        height: 50vh;
         text-align: center;
         .sm--box--shadow{
             padding: 15px;
@@ -787,8 +796,9 @@
             font-size: 1.4rem;            
         }
         p{
-            line-height: 1.2;
-            font-size: 1rem;
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: justify;
         }        
     }
     .section--two{
@@ -798,12 +808,23 @@
             font-size: 1.4rem;
             margin: 0 0 15px 0;
         }
+         p{
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: justify;
+        }
         .about--boxes{
             flex-wrap: wrap;
             padding-bottom: 30px;
             .card{
                 width: 100%;
                 margin-bottom: 20px;
+                .card-body{
+                    p{
+                        font-size: 16px;
+                        line-height: 1.4;
+                    }
+                }
             }            
         }        
     }
@@ -896,6 +917,11 @@
         h2{
             font-size: 1.4rem;
         }
+        p{
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: justify;
+        }
     }
     .section--six{
         h1{
@@ -904,6 +930,9 @@
         p{
             margin: 13px 0 20px 0;
             font-size: 13px;
+        }
+        .get--started--btn{
+            padding: 8px 60px !important;
         }
     }
     .section--seven{
@@ -932,7 +961,7 @@
         .review--data{
             p{
                 font-size: 15px !important;
-                text-align: center;
+                text-align: justify;
             }
             
         }
@@ -950,7 +979,7 @@
                 justify-content: center;
                 a{
                     margin-bottom: 4px !important;
-                    font-size: 12px;
+                    font-size: 13px;
                     justify-content: center;
                 }
             }
