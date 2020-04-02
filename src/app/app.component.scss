@@ -32,6 +32,7 @@
     }
     .navbar-brand{
         display: flex;
+        flex-shrink: 0;
     }
     ul{
         align-items: center;
@@ -756,6 +757,15 @@
                 width: 100%;
             }
         }
+        .navbar{
+            padding: 10px 15px;
+        }
+      
+        ul{
+            li{
+                margin: 0;
+            }
+        }
     }
     .navbar-collapse{
         position: absolute;
@@ -764,7 +774,7 @@
         left: 0px;
         width: 100%;
         padding: 15px 10px;
-        top: 66px;
+        top: 59px;
     }
     .section--one{
         height: 36vh;
@@ -902,7 +912,22 @@
             font-size: 1.2rem; 
         }
         .reviews{
-            width: 100%;            
+            width: 100%;    
+            header{
+                flex-direction: column;
+                .reviewer--pic{
+                    margin: 0;
+                }
+                .reviewer--details{
+                    text-align: center;
+                    h3{
+                        margin: 10px 0 0 0;
+                    }
+                }
+            }  
+            .reviewer--star{
+                align-self: unset;
+            }      
         }
         .review--data{
             p{
@@ -942,6 +967,10 @@
                 font-size: 13px;
             }
         }
+    }
+    .back--to--top{
+        right: 10px;
+        bottom: 15px;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 979px){
@@ -1089,9 +1118,29 @@
     }
 }
 @media only screen and (min-width: 980px) and (max-width: 1279px){
+    .rf--header{
+        .navbar-brand{
+            flex-shrink: 0;
+        }
+        ul{
+            li{
+                margin: 0;
+            }
+        }
+    }
     .section--one{
         height: 63vh;
+        h1{
+            font-size: 41px;
+        }
+    }
+    .section--six{
+        h1{
+            font-size: 35px;
+        }
     }
 }
-@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+  
+}
 @media only screen and (min-width: 1441px) and (max-width: 1550px){}
