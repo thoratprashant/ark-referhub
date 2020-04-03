@@ -262,7 +262,13 @@
                     line-height: 1.67;
                 }
             }            
-        }
+        }        
+    }
+    .play--btn{
+        position: absolute;
+        left: 46%;
+        top: 41%;
+        cursor: pointer;
     }
     
 }
@@ -270,7 +276,7 @@
 .section--three{
     height: auto;
     margin: 70px auto;   
-    padding: 45px 0 50px 0;
+    padding: 50px 0 55px 0;
     .header{
         display: flex;
         align-items: center;
@@ -742,6 +748,11 @@
             box-shadow: none !important;
         }
     }
+    .play--btn {
+        left: 47% !important;
+        top: 41% !important;
+        width: 46px !important;
+    }
     .section--five{
         height: 90vh !important;
     }
@@ -817,6 +828,13 @@
             font-size: 16px;
             line-height: 1.4;
             text-align: justify;
+        }
+        .play--btn {
+            position: absolute;
+            left: 43%;
+            top: 41%;
+            cursor: pointer;
+            width: 46px;
         }
         .about--boxes{
             flex-wrap: wrap;
@@ -978,6 +996,7 @@
         .carousel-control-prev, .carousel-control-next{
             top: 38px !important;
             bottom: unset !important;
+            width: 19%;
         }
         .carousel-control-prev {
             left: -18px;
