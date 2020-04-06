@@ -1,11 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SigninComponent } from './signin/signin.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 const routes: Routes = [{
-    path: 'signin',
-    component: SigninComponent,
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        component: SigninComponent
+      },
+      {
+        path: 'signin',
+        component: SigninComponent
+      }
+    ]
   },];
 
 @NgModule({
