@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "refer-hub-ark": {
@@ -26,17 +26,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-              
             ],
-            "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
-            ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
           },
           "configurations": {
             "production": {
