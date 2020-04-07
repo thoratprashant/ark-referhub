@@ -102,13 +102,29 @@ p{
             width: 100%;
         }
     }
+    &.btn-md{
+        font-size: 13px !important;
+        padding: 9px 54px !important;
+        border-radius: 4px !important;
+        border-color: transparent !important;
+        background-image: linear-gradient(to left, #31cdf7, #169feb);
+        box-shadow: none;
+        &::after{
+            background-image: linear-gradient(to left, #31cdf7, #169feb) !important;
+        }
+    }
 }
 .btn-outline-primary{
     border-color: #169feb !important;
     color: #169feb !important;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 1;   
+    &.btn-md{
+        font-size: 13px !important;
+        padding: 9px 41px !important;
+        border-radius: 4px !important;
+    }
     &:after {
         content: '';
         position: absolute;
