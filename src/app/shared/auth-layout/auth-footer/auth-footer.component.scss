@@ -1,0 +1,48 @@
+.auth--footer{
+    padding-top:15px;
+    padding-bottom: 15px;
+    .btn-primary {
+        &.btn-md{
+            padding: 9px 20px !important;
+        }
+    }
+    p{
+        font-size: 13px;
+        span{
+            font-family: 'Avenir-bold';
+        }
+    }
+    ul{
+        list-style-type: none;
+        li{
+            a{
+                font-size: 13px;
+                color: rgba(0, 0, 0, 0.85) !important;
+                margin-right: 50px;                
+            }
+            &:last-child{
+                a{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.icon--refer--friend{
+    background-image: url('../../../../assets/images/refer-a-friend.png');
+    width: 22px;
+    height: 14px;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .auth--footer{
+        ul{
+            li{
+                a{
+                    margin-right: 15px;        
+                }
+            }
+        }
+    }
+}

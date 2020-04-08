@@ -60,3 +60,12 @@
         }
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .auth--wrapper{
+        height: calc(100vh - 135px);
+        .login--box {
+            width: 700px;
+        }
+    }
+}
