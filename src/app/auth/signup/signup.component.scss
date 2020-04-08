@@ -1,0 +1,68 @@
+.signup--wrapper{
+    background-color: #eeeeee;
+    padding: 30px 15px;
+    height: auto;
+    align-items: center;
+    .signup--box{
+        width: 1100px;
+        .signup--left{
+            width: 680px;
+            background-color: #fff;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 0;
+            header{
+                border-bottom: 1px solid #ebedf8;
+                margin: 30px;
+                padding-bottom: 16px;
+                h1{
+                    font-size: 18px;
+                    font-family: 'Avenir-bold';
+                    margin: 0 0 5px 0;
+                }
+                p{
+                    font-size: 13px;
+                    margin-bottom: 0;
+                    font-family: 'Avenir-medium';
+                }
+            }
+
+            .stepper--data{
+                padding: 20px 30px;
+                h2{
+                    font-size: 15px;
+                    font-family: 'Avenir-bold';
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+
+        .signup--right{
+            background-color: #18a3ec;
+            width: 420px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 30px 30px 0 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                font-size: 24px;
+                font-family: 'Avenir-bold';
+                margin-bottom: 30px;
+                color: #fff;
+            }
+            p{
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 20px;
+                line-height: 1.71;
+                font-family: 'Avenir-light';
+                span{
+                    font-family: 'Avenir-bold';
+                }
+            }
+        }
+    }
+}
