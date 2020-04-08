@@ -1,4 +1,62 @@
 .auth--wrapper{
     background-color: #eeeeee;
     padding: 15px;
+    height: calc(100vh - 70px);
+    align-items: center;
+    .login--box{
+        width: 780px;
+        .left--sec{
+            width: 360px;
+            background-color: #fff;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 30px;
+            header{
+                border-bottom: 1px solid #ebedf8;
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+                h1{
+                    font-size: 18px;
+                    font-family: 'Avenir-bold';
+                    margin: 0 0 5px 0;
+                }
+                p{
+                    font-size: 13px;
+                    margin-bottom: 0;
+                    font-family: 'Avenir-medium';
+                }
+            }
+            .dont--have--acc{
+                font-size: 15px;
+                color: rgba(0, 0, 0, 0.85);
+                font-family: 'Avenir-bold';
+            }
+        }
+        .right--sec{
+            background-color: #18a3ec;
+            width: 420px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 30px 30px 0 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                font-size: 24px;
+                font-family: 'Avenir-bold';
+                margin-bottom: 30px;
+                color: #fff;
+            }
+            p{
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 20px;
+                line-height: 1.71;
+                font-family: 'Avenir-light';
+                span{
+                    font-family: 'Avenir-bold';
+                }
+            }
+        }
+    }
 }
