@@ -175,6 +175,7 @@ form{
         font-size: 12px;
         color: #2c3341;
         margin-bottom: 10px;
+        font-family: 'Avenir-medium';
     }
     .form-control{
         font-size: 12px;
@@ -190,6 +191,82 @@ form{
             background-color: rgba(255, 59, 48, 0.03);
         }
     }
+    .input-group-prepend {
+        .btn-outline-secondary{
+            &.active,
+            &:hover{
+                background-color: transparent !important;
+                border-color: #e6eaee !important;
+                color: rgba(0, 0, 0, 0.85) !important;
+            }
+        }
+        .dropdown-toggle{
+            border: solid 1px #e6eaee;
+            font-size: 12px !important;
+            color: rgba(0, 0, 0, 0.85);
+            border-top-right-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-top-left-radius: 3px !important;
+            border-bottom-left-radius: 3px !important;
+            padding-left: 15px !important;
+            padding-right: 35px !important;
+            &.active,
+            &:hover{
+                background-color: transparent;
+                border-color: #e6eaee;
+                color: rgba(0, 0, 0, 0.85);
+            }
+            &::after{
+               content: "";
+               background-image: url('assets/images/drop-arrow.png');
+               width: 12px;
+               height: 8px;
+               background-repeat: no-repeat;
+               border:none;
+               position: absolute;
+               right: 10px;
+               top: 19px;
+            }
+        }
+        &.show{
+            .dropdown-toggle{
+                background-color: transparent;
+                border-color: #e6eaee;
+                color: rgba(0, 0, 0, 0.85);
+                &::after{
+                    top: 16px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .dropdown-menu{
+        .dropdown-item{
+            font-size: 12px !important;
+            font-size: 12px;
+        }
+    }
+    
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        font-family: 'Avenir-light' !important;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        font-family: 'Avenir-light' !important;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        font-family: 'Avenir-light' !important;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        font-family: 'Avenir-light' !important;
+      }
     .forgot--pass{
         font-size: 12px;
         color: #2c3341 !important;
@@ -220,6 +297,7 @@ form{
         top: 45px;
         cursor: pointer;
     }
+  
 }
 
 @media only screen and (max-width: 599px) {

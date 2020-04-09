@@ -1,19 +1,95 @@
-
 <section class="signup--wrapper d-flex justify-content-center">
     <div class="signup--box d-flex">
         <div class="signup--left">
-            
+
             <header class="d-flex mb-0">
                 <div>
-                    <h1>Are you a Dentist or Specialist?</h1>
-                    <p>Sign up to ReferHub</p>
+                    <h1>Sign up as Dentist</h1>
+                    <p>Sign up now to take full advantage of ReferHub.</p>
                 </div>
+
+                <div class="stepper--indicator">
+                    <ul class="m-0 p-0">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+
             </header>
 
             <section class="stepper--data">
-                <h2>Contact</h2>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h2>Contact</h2>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <label>First name *</label>
+                                        <input type="email" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Your first name">
+                                        <i class="icon--form icon-true"></i>
+                                        <!-- <i class="icon--form icon-false"></i> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last name *</label>
+                                        <input type="email" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Your last name">
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <label>Phone *</label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Mobile</button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Phone</a>
+                                                    <a class="dropdown-item" href="#">Other</a>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="012-345-6789"
+                                                aria-label="Text input with dropdown button">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-lg-6 profile--img d-flex justify-content-center align-items-center">
+                                    <h2>Profile image</h2>
+                                    <div class="user--pic d-flex justify-content-center align-items-center">
+                                        <img src="../../../assets/images/camera-white-big-icon.png" title="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="tab-pane " role="tabpanel" id="step2">
+                        <h2>Step 2</h2>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h2>Step 3</h2>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step4">
+                        <h2>Step 4</h2>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step5">
+                        <h2>Step 5</h2>
+                    </div>
+                </div>
             </section>
-               
+
+            <section class="stepper--footer d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-primary btn-md prev-step">Back</button>
+                <button type="button" class="btn btn-outline-primary btn-md next-step">Next</button>
+            </section>
+
         </div>
         <div class="signup--right text-center">
             <h2>ReferHub helps you to organize

@@ -15,6 +15,7 @@
                 border-bottom: 1px solid #ebedf8;
                 margin: 30px;
                 padding-bottom: 16px;
+                justify-content: space-between;
                 h1{
                     font-size: 18px;
                     font-family: 'Avenir-bold';
@@ -25,15 +26,73 @@
                     margin-bottom: 0;
                     font-family: 'Avenir-medium';
                 }
+                .stepper--indicator{
+                    ul{
+                        list-style-type: none;
+                        li{
+                            width: 13px;
+                            height: 13px;
+                            border: solid 1px #18a3ec;
+                            background-color: #18a3ec;
+                            border-radius: 1em;
+                            margin: 0 1em;
+                            display: inline-block;
+                            position: relative;
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                top: 5px;
+                                left: -29px;
+                                width: 23px;
+                                height: 2px;
+                                background: dodgerblue;
+                            }
+                            &:first-child::before{
+                                display: none;
+                            }
+                            &.active {
+                                background: #18a3ec;
+                                border-color: #18a3ec;
+                            }
+                            &.active ~ li {
+                                background: lightblue;
+                                border-color: lightblue;
+                            }
+                            &.active ~ li::before {
+                                background: lightblue;
+                            }
+                        }
+                    }
+                }
             }
 
             .stepper--data{
                 padding: 20px 30px;
+                height: calc(100vh - 305px);
                 h2{
                     font-size: 15px;
                     font-family: 'Avenir-bold';
-                    margin-bottom: 20px;
+                    margin-bottom: 12px;
                 }
+
+                .profile--img{
+                    border-radius: 10px;
+                    border: solid 1px #e6eaee;
+                    background-color: #ffffff;
+                    padding: 20px;
+                    flex-direction: column;
+                    margin-top: 32px;
+                    .user--pic{
+                        width: 110px;
+                        height: 110px;
+                        background-color: #d1edfb;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .stepper--footer{
+                padding: 0 30px;
             }
         }
 
@@ -50,7 +109,7 @@
             h2{
                 font-size: 24px;
                 font-family: 'Avenir-bold';
-                margin-bottom: 30px;
+                margin-bottom: 0;
                 color: #fff;
             }
             p{
