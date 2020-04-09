@@ -68,11 +68,11 @@
 
             .stepper--data{
                 padding: 20px 30px;
-                height: calc(100vh - 305px);
+                height: calc(100vh - 80px);
                 h2{
                     font-size: 15px;
                     font-family: 'Avenir-bold';
-                    margin-bottom: 12px;
+                    margin-bottom: 12px;                       
                 }
 
                 .profile--img{
@@ -82,17 +82,53 @@
                     padding: 20px;
                     flex-direction: column;
                     margin-top: 32px;
+                    margin-bottom: 15px;
+                    h2{
+                        margin-top: 5px;
+                    }
                     .user--pic{
                         width: 110px;
                         height: 110px;
+                        margin: 20px 0;
                         background-color: #d1edfb;
                         border-radius: 50%;
                         overflow: hidden;
                     }
                 }
+                .upload--select{
+                    .icon--camera--blue{
+                        background-image: url('../../../assets/images/camera-small-blue.png');
+                        width: 17px;
+                        height: 15px;
+                        background-repeat: no-repeat;
+                        margin-right: 10px;
+                    }
+                    a{
+                        color: #2c3341;
+                        font-size: 12px;
+                        text-decoration: underline;
+                        font-family: 'Avenir-medium';
+                    }
+                    .or{
+                        font-size: 12px;
+                        color: rgba(0, 0, 0, 0.85);
+                        margin: 0 13px;
+                    }
+                }
+
+                .pass--note{
+                    margin-top: 10px;
+                    p{
+                        font-size: 12px;
+                        color: #2c3341;
+                        font-family: 'Avenir-medium';
+                    }
+                    
+                }
+                
             }
             .stepper--footer{
-                padding: 0 30px;
+                padding: 0 30px 30px 30px;
             }
         }
 
@@ -124,4 +160,50 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .signup--wrapper  .signup--box  {
+        width: 710px;
+    }
+    .signup--wrapper .signup--box .signup--left header{
+        flex-direction: column;
+    }
+    .signup--wrapper .signup--box .signup--left header .stepper--indicator ul{
+        margin-top: 15px !important;
+        text-align: center;
+    }
+    .signup--wrapper .signup--box .signup--left header .stepper--indicator ul li:first-child{
+        margin-left: 0;
+    }
+    .signup--wrapper .signup--box .signup--right{
+        justify-content: center;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data {
+        margin-bottom: 30px;
+        height: calc(100vh - 0px);
+    }
+    .signup--wrapper .signup--box .signup--right p{
+        margin-top: 26px;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .signup--wrapper  .signup--box  {
+        width: 98%;
+    }
+    .signup--wrapper  .signup--box  .signup--left  .stepper--data  {
+        height: calc(100vh - 125px);
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data .pass--note p {
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+    .signup--wrapper  .signup--box  .signup--left  .stepper--data  {
+        height: calc(100vh - 282px);
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){
+   
 }

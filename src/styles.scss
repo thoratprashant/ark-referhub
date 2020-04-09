@@ -123,6 +123,16 @@ p{
     position: relative;
     overflow: hidden;
     z-index: 1;   
+    &.black--btn{
+        border-color: #2c3341 !important;
+        color: #2c3341 !important;
+        &:after {            
+            border-color: #2c3341 !important;
+        }
+        &:before {
+            background-color: darken(#2c3341, 10%);
+        }
+    }
     &.btn-md{
         font-size: 13px !important;
         padding: 9px 41px !important;
@@ -154,8 +164,9 @@ p{
     }
     &:hover {
         color: #fff !important;
+        background-color: transparent !important;
         &:before {
-            width: 100%;
+            width: 100%; 
         }
     }
    
