@@ -2,11 +2,28 @@
     <div class="signup--box d-flex">
         <div class="signup--left">
 
-            <header class="d-flex mb-0">
-                <div>
+            <header class="d-flex mb-0" id="headerNames">
+                <div class="steps--names activated">
                     <h1>Sign up as Dentist</h1>
                     <p>Sign up now to take full advantage of ReferHub.</p>
                 </div>
+                <div class="steps--names">
+                    <h1>Tell more about your dental business</h1>
+                    <p>Sign up now to take full advantage of ReferHub.</p>
+                </div>
+                <div class="steps--names">
+                    <h1>Add best photos of your office</h1>
+                    <p>Sign up now to take full advantage of ReferHub.</p>
+                </div>
+                <div class="steps--names">
+                    <h1>Your ReferHub account almost ready</h1>
+                    <p>Only a few details left.</p>
+                </div>
+                <div class="steps--names">
+                    <h1>Thank you for your registration!</h1>
+                    <p>You are ready to use ReferHub.</p>
+                </div>
+            
 
                 <div class="stepper--indicator">
                     <ul class="m-0 p-0">
@@ -24,6 +41,7 @@
             <section class="stepper--data">
 
                 <div class="tab-content">
+                    <!-- Step 1 -->
                     <div class="tab-pane active" role="tabpanel" id="step1">
                         <h2>Contact</h2>
 
@@ -123,6 +141,8 @@
                         </form>
 
                     </div>
+
+                    <!-- Step 2 -->
                     <div class="tab-pane step--two" role="tabpanel" id="step2">
                         <form>
                             <h2>License number</h2>
@@ -561,15 +581,65 @@
                         </form>
                     </div>
 
+                    <!-- Step 3 -->
+                    <div class="tab-pane step--three" role="tabpanel" id="step3">
+                        <div class="sub--header d-flex align-items-center justify-content-between">
+                            <h2 class="mb-0">Linhart Dentistry Photos</h2>
+                            <div class="d-flex add--more align-items-center">
+                                <i class="icon--camera--sm"></i>
+                                <a class="d-flex align-items-center">
+                                    Upload photo
+                                </a>
+                            </div>
+                        </div>
 
-                    <div class="tab-pane" role="tabpanel" id="step3">
-                        <h2>Step 3</h2>
+                        <div class="row">
+                            <div class="col-12 photos--wrap d-flex">
+                                <div class="photo--box">
+                                    <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                                        <i class="icon--white--cam"></i>
+                                    </div>
+                                </div>
+                                <div class="photo--box">
+                                    <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                                        <i class="icon--white--cam"></i>
+                                    </div>
+                                </div>
+                                <div class="photo--box">
+                                    <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                                        <i class="icon--white--cam"></i>
+                                    </div>
+                                </div>
+                                <div class="photo--box">
+                                    <div class="inner--box d-flex align-items-center justify-content-center ">
+                                        <img src="../../../assets/images/image-1.png" alt="" class="img-fluid">
+                                    </div>
+                                    <i class="icon--close"></i>
+                                </div>
+                                <div class="photo--box">
+                                    <div class="inner--box d-flex align-items-center justify-content-center ">
+                                        <img src="../../../assets/images/image-2.png" alt="" class="img-fluid">
+                                    </div>
+                                    <i class="icon--close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
+
+
+                     <!-- Step 4 -->
                     <div class="tab-pane" role="tabpanel" id="step4">
                         <h2>Step 4</h2>
                     </div>
-                    <div class="tab-pane" role="tabpanel" id="step5">
-                        <h2>Step 5</h2>
+
+                     <!-- Step 5 -->
+                    <div class="tab-pane step--five" role="tabpanel" id="step5">
+                        <h2>Please check your email address</h2>
+                       <div class="col-12 col-lg-9 p-0">
+                        <p class="m-0">We have sent a message to your email address <strong> drmeganrigden@gmail.com.</strong>
+                            Please follow the link in the message to confirm the registration.</p>
+                       </div>
                     </div>
                 </div>
             </section>

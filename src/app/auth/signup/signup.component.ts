@@ -31,12 +31,20 @@ export class SignupComponent implements OnInit {
       var $active = $('.stepper--indicator ul li.active');
       $active.next().addClass('active').siblings().removeClass('active');
       nextTab($active);
+
+      var $active1 = $('#headerNames .steps--names.activated');
+      $active1.next().addClass('activated').siblings().removeClass('activated');
+
   });
   
    $(".prev-step").click(function (e) {
       var $active = $('.stepper--indicator ul li.active');
       $active.prev().addClass('active').siblings().removeClass('active')
       prevTab($active);
+
+      
+      var $active1 = $('#headerNames .steps--names.activated');
+      $active1.prev().addClass('activated').siblings().removeClass('activated');
   });
 
   function nextTab(elem) {

@@ -26,6 +26,14 @@
                     margin-bottom: 0;
                     font-family: 'Avenir-medium';
                 }
+
+                .steps--names{
+                    display: none;
+                    &.activated{
+                        display: block;
+                    }
+                }
+
                 .stepper--indicator{
                     ul{
                         list-style-type: none;
@@ -190,6 +198,65 @@
                         width: 14px;
                         height: 14px;
                         display: inline-block;
+                    }
+                }
+
+                .step--three{
+                    .icon--camera--sm{
+                        background-image: url('../../../assets/images/camera-small-blue.png');
+                        width: 17px;
+                        height: 15px;
+                        display: inline-block;
+                        margin-right: 7px;
+                    }
+                    .photos--wrap{
+                        background-color: #f9f9f9;
+                        margin: 15px 0;
+                        padding: 0 0 15px 15px;
+                        flex-wrap: wrap;
+                        .photo--box{
+                            width: 110px;
+                            height: 110px;
+                            position: relative;
+                            margin-right: 17px;
+                            margin-top: 17px;
+                            .inner--box{
+                                width: 108px;
+                                height: 108px;
+                                background-color: #d1edfb;
+                                
+                                overflow: hidden;
+                                margin-right: 15px;
+                                .icon--white--cam{
+                                    background-image: url('../../../assets/images/camera-white-big-icon.png');
+                                    width: 34px;
+                                    height: 30px;
+                                    display: inline-block;
+                                } 
+                                &.no--photo{
+                                    opacity: 0.6;
+                                }                              
+                            }
+                            .icon--close{
+                                background-image: url('../../../assets/images/close-button.png');
+                                width: 15px;
+                                height: 15px;
+                                display: inline-block;
+                                position: absolute;
+                                right: -6px;
+                                top: -6px;
+                                z-index: 999;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .step--five{
+                    p{
+                        font-size: 13px;
+                        line-height: 1.69;
+                        color: rgba(0, 0, 0, 0.85);
                     }
                 }
                 
