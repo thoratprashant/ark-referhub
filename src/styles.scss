@@ -116,6 +116,7 @@ p{
             background-image: linear-gradient(to left, #31cdf7, #169feb) !important;
         }
     }
+   
 }
 .btn-outline-primary{
     border-color: #169feb !important;
@@ -137,6 +138,12 @@ p{
         font-size: 13px !important;
         padding: 9px 41px !important;
         border-radius: 4px !important;
+    }
+    &.btn-sm{
+        font-size: 12px !important;
+        padding: 5px 30px !important;
+        border-radius: 4px !important;
+        height: 30px !important;
     }
     &:after {
         content: '';
@@ -176,6 +183,71 @@ p{
     box-shadow: none !important;
 }
 
+// Checkbox
+
+.checkbox{
+    label{
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.85);
+    }
+}
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e6eaee;
+    border-radius: .25em;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.radio .cr {
+    border-radius: 50%;
+}
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: 11px;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+    color: #169feb;    
+}
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.checkbox label input[type="checkbox"]:checked + .cr {
+    border-color: #169feb;
+}
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+
 // form
 form{
     .form-group{
@@ -185,7 +257,7 @@ form{
     label{
         font-size: 12px;
         color: #2c3341;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         font-family: 'Avenir-medium';
     }
     .form-control{
@@ -221,6 +293,11 @@ form{
             border-bottom-left-radius: 3px !important;
             padding-left: 15px !important;
             padding-right: 35px !important;
+            font-family: 'Avenir-bold';
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background: #fff;
             &.active,
             &:hover{
                 background-color: transparent;
@@ -244,17 +321,70 @@ form{
                 background-color: transparent;
                 border-color: #e6eaee;
                 color: rgba(0, 0, 0, 0.85);
+                border-bottom-left-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
                 &::after{
                     top: 16px;
                     transform: rotate(180deg);
                 }
             }
+            & ~ .form-control{
+                border-bottom-right-radius: 0 !important;
+            }
+        }
+        & ~ .form-control{
+            // border-left: none;
+        }
+        &.w-100{
+            .dropdown-toggle{
+                border-top-right-radius: 3px !important;
+                border-bottom-right-radius: 3px !important;
+            }
+            &.show{
+                .dropdown-toggle{
+                    border-bottom-right-radius: 0 !important;
+                }                
+            }
+        }
+        & ~ .icon--form{
+            right: 12px;
+            top: 12px;
+        }
+
+        &.sm--dropdown{
+            .dropdown-toggle{
+                height: 26px;
+                padding: 3px 0 0 8px !important;
+                &::after{
+                    top: 9px;
+                    right: 4px;
+                    transform: rotate(0deg);
+                }
+            }
+            &.show{
+                .dropdown-toggle{
+                    &::after{
+                        transform: rotate(180deg);
+                        top: 7px;
+                    }
+                   
+                }
+            }
+            
         }
     }
     .dropdown-menu{
+        width: 100%;
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        min-width: unset;
         .dropdown-item{
             font-size: 12px !important;
             font-size: 12px;
+        }
+        &.show{
+            margin: 1px 0;
         }
     }
     
@@ -285,6 +415,12 @@ form{
         text-decoration: underline !important;
         cursor: pointer;
     }
+    .error{
+        font-size: 12px;
+        color: rgba(223, 31, 0, 0.7) !important;
+        margin-top: 7px;
+        font-family: 'Avenir-bold' !important;
+    }
     .btn{
         height: 45px;
     }
@@ -310,6 +446,34 @@ form{
     }
   
 }
+
+// Additional global things (start here)
+.remove{
+    font-size: 12px;
+    color: #2c3341 !important;
+    opacity: 0.5;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.add--more{
+    .icon--add{
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        background-color: #169feb;
+        border-radius: 50%;
+        color: #fff;
+        font-style: normal;
+        font-size: 14px;
+    }
+    a{
+        font-size: 12px;
+        color: #2c3341;
+        cursor: pointer;
+        text-decoration: underline !important;
+    }
+}
+
 
 @media only screen and (max-width: 599px) {
     .btn.btn-lg {

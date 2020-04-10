@@ -11,7 +11,22 @@ export class SignupComponent implements OnInit {
 
   constructor() { }
 
+  headerNames = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+ 
+
   ngOnInit(): void {
+    $('#officeDentist').show();
+    $('#mobileDentist').hide();
+    $('#checkDentist').change(function(){
+      if(this.checked) {
+        $('#officeDentist').hide();
+        $('#mobileDentist').show();
+      }else{
+        $('#officeDentist').show();
+        $('#mobileDentist').hide();
+      }
+  });
+
     $(".next-step").click(function (e) {
       var $active = $('.stepper--indicator ul li.active');
       $active.next().addClass('active').siblings().removeClass('active');
