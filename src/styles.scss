@@ -105,7 +105,7 @@ p{
             width: 100%;
         }
     }
-    &.btn-md{
+    &.primary--two{
         font-size: 13px !important;
         padding: 9px 54px !important;
         border-radius: 4px !important;
@@ -116,6 +116,18 @@ p{
             background-image: linear-gradient(to left, #31cdf7, #169feb) !important;
         }
     }
+    &.btn-sm{
+        font-size: 12px !important;
+        padding: 5px 17px !important;
+        border-radius: 4px !important;
+        height: 34px !important;
+    }
+    &.btn-md{
+        font-size: 13px !important;
+        padding: 9px 41px !important;
+        border-radius: 4px !important;
+    }
+
    
 }
 .btn-outline-primary{
@@ -445,6 +457,17 @@ form{
         cursor: pointer;
     }
   
+}
+// alerts
+.alert{
+    padding: 13px 15px !important;
+    font-size: 12px;
+    font-family: "Avenir-medium";
+    border-radius: 3px !important;
+    &.alert-danger{        
+        border: solid 1px rgba(223, 31, 0, 0.5);
+        background-color: rgba(255, 59, 48, 0.03);
+    }
 }
 
 // Additional global things (start here)

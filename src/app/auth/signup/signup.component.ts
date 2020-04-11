@@ -18,6 +18,7 @@ export class SignupComponent implements OnInit {
     $('#officeDentist').show();
     $('#mobileDentist').hide();
     $('#alreadyListed').hide();
+    $('#sameOfficeExist').hide();
     $('#checkDentist').change(function(){
       if(this.checked) {
         $('#officeDentist').hide();
@@ -27,6 +28,17 @@ export class SignupComponent implements OnInit {
         $('#mobileDentist').hide();
       }
   });
+  $('.add-me-btn').on('click', function(){
+    $('#alreadyListed').show();
+    $('#officeDentist').hide();
+    $('#mobileDentist').hide();
+  })
+  $('.off-cancel-btn').on('click', function(){
+    $('#sameOfficeExist').hide();
+  })
+  $("#officeName"). keyup(function(){
+    $('#sameOfficeExist').show();
+  })
 
     $(".next-step").click(function (e) {
       var $active = $('.stepper--indicator ul li.active');
