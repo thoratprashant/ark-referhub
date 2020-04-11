@@ -17,6 +17,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
     $('#officeDentist').show();
     $('#mobileDentist').hide();
+    $('#alreadyListed').hide();
     $('#checkDentist').change(function(){
       if(this.checked) {
         $('#officeDentist').hide();

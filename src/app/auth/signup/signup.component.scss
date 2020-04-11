@@ -188,7 +188,44 @@
                     }
                     .office--wrapper{
                         background-color: #f9f9f9;
-                        padding: 20px 15px;
+                        padding: 20px 15px;                       
+                    }
+                    .already--listed{
+                        background-color: #f9f9f9;
+                        padding: 18px 15px;
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                        align-items: center;
+                        .td-1{                           
+                            font-family: 'Avenir-bold';
+                            color: rgba(0, 0, 0, 0.85);
+                            width: 35%;
+                            .icon--offi{
+                                background-image: url('../../../assets/images/office.png');
+                                width: 14px;
+                                height: 14px;
+                                display: inline-block;
+                                margin-right: 15px;
+                            }
+                        }
+                        .td-2{
+                            font-family: 'Avenir-bold';
+                            color: rgba(0, 0, 0, 0.85);
+                            width: 37%;
+                        }
+                        .td-3{
+                            width: 28%;
+                            justify-content: flex-end;
+                            a{
+                                color: #2c3341;
+                                font-family: 'Avenir-normal';
+                                text-decoration: underline;                                
+                                cursor: pointer;
+                                &:first-child{
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
                     }
                     .mt--5{
                         margin-top: -5px;
