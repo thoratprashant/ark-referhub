@@ -467,9 +467,18 @@
         font-size: 11px;
     }
 }
-@media only screen and (min-width: 1280px) and (max-width: 1440px){
+@media only screen and (min-width: 1280px) and (max-width: 1366px){
     .signup--wrapper  .signup--box  .signup--left  .stepper--data  {
-        height: calc(100vh - 282px);
+        height: calc(100vh - 244px);
+        overflow: auto;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px){
+    .signup--wrapper  .signup--box  .signup--left  .stepper--data  {
+        height: calc(100vh - 310px);
+        overflow: auto;
+        margin-bottom: 15px;
     }
 }
 @media only screen and (min-width: 1441px) and (max-width: 1550px){
