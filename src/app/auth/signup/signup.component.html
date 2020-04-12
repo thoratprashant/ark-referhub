@@ -1,4 +1,4 @@
-<section class="signup--wrapper d-flex justify-content-center">
+<section class="signup--wrapper d-flex justify-content-center" [ngClass]="'stepper--data'+signUpStep">
     <div class="signup--box d-flex">
         <div class="signup--left">
 
@@ -38,7 +38,7 @@
 
             </header>
 
-            <section class="stepper--data">
+            <section class="stepper--data" [ngClass]="'stepper--data'+signUpStep">
 
                 <div class="tab-content">
                     <!-- Step 1 -->
@@ -68,8 +68,8 @@
                                                     data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false">Mobile</button>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Phone</a>
-                                                    <a class="dropdown-item" href="#">Other</a>
+                                                    <a class="dropdown-item" >Phone</a>
+                                                    <a class="dropdown-item" >Other</a>
                                                 </div>
                                             </div>
                                             <input type="text" class="form-control" placeholder="012-345-6789"
@@ -86,9 +86,9 @@
                                         </div>
                                         <div class="d-flex upload--select align-items-center">
                                             <i class="icon--camera--blue"></i>
-                                            <a href="">Upload photo</a>
+                                            <a>Upload photo</a>
                                             <div class="or">or</div>
-                                            <a href="">Select avatar</a>
+                                            <a>Select avatar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -241,8 +241,8 @@
                                                     data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false">Mobile</button>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Phone</a>
-                                                    <a class="dropdown-item" href="#">Other</a>
+                                                    <a class="dropdown-item" >Phone</a>
+                                                    <a class="dropdown-item" >Other</a>
                                                 </div>
                                             </div>
                                             <input type="text" class="form-control" placeholder="012-345-6789"
@@ -544,8 +544,8 @@
                                                             data-toggle="dropdown" aria-haspopup="true"
                                                             aria-expanded="false">Mobile</button>
                                                         <div class="dropdown-menu">
-                                                            <a class="dropdown-item" href="#">Phone</a>
-                                                            <a class="dropdown-item" href="#">Other</a>
+                                                            <a class="dropdown-item" >Phone</a>
+                                                            <a class="dropdown-item" >Other</a>
                                                         </div>
                                                     </div>
                                                     <input type="text" class="form-control" placeholder="012-345-6789"
@@ -807,12 +807,13 @@
             </section>
 
             <footer class="stepper--footer d-flex justify-content-between">
-                <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step">Back</button>
-                <button type="button" class="btn btn-primary btn-md primary--two next-step">Next</button>
+                <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()" [ngStyle]="{'display': signUpStep==1?'none':'' }">Back</button> -->
+                <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()">Back</button>
+                <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()"  [ngStyle]="{'display': signUpStep==5?'none':'' }">Next</button>
             </footer>
 
         </div>
-        <div class="signup--right text-center">
+        <div class="signup--right text-center" [ngClass]="'signup--right'+signUpStep">
             <h2>ReferHub helps you to organize
                 your dental business
             </h2>
@@ -820,7 +821,9 @@
                 the Dentist to collaborate on the patient’s treatment plan,
                 by creatinga <span>HIPAA compliant</span> communication channel.
             </p>
-            <img src="../../../assets/images/lady-doctor-with-teeth.png" title="" class="img-fluid">
+            <img src="../../../assets/images/lady-doctor-with-teeth.png" title="" class="img-fluid lady--doctor">
+            <img src="../../../assets/images/male-doctor.png" title="" class="img-fluid male--doctor">
+            <img src="../../../assets/images/lady-doctor-carona.png" title="" class="img-fluid lady--doctor--carona">
         </div>
     </div>
-</section>
+</section> 

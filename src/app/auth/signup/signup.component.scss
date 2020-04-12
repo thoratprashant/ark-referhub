@@ -3,6 +3,9 @@
     padding: 30px 15px;
     height: auto;
     align-items: center;
+    &.stepper--data5{
+        height: 100vh;
+    }
     .signup--box{
         width: 1100px;
         .signup--left{
@@ -76,7 +79,13 @@
 
             .stepper--data{
                 padding: 20px 30px;
-                height: calc(100vh - 80px);
+                height: 93vh;
+                overflow: auto;
+
+                &.stepper--data5{
+                    height: 25vh;
+                }
+
                 h2{
                     font-size: 15px;
                     font-family: 'Avenir-bold';
@@ -464,15 +473,45 @@
             width: 420px;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
-            padding: 30px 30px 0 30px;
+            padding: 30px 25px 0 25px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            .lady--doctor--carona,
+            .lady--doctor,
+            .male--doctor{
+                display: none;
+                margin-top: auto;
+            }
+            &.signup--right1{
+                .lady--doctor{
+                    display: block;
+                }
+            }
+            &.signup--right3,
+            &.signup--right2{
+                .male--doctor{
+                    display: block;
+                }
+            }
+            &.signup--right4{
+                .lady--doctor--carona{
+                    display: block;
+                    width: 86%;
+                }
+            }
+            &.signup--right5{
+                justify-content: center;     
+                h2{
+                    margin-top: unset;    
+                    
+                }
+            }
             h2{
                 font-size: 24px;
                 font-family: 'Avenir-bold';
-                margin-bottom: 0;
+                margin-bottom: 30px;
                 color: #fff;
+                margin-top: auto;
             }
             p{
                 font-size: 14px;
@@ -489,6 +528,9 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 979px){
+    .signup--wrapper.stepper--data5{
+        height: 86vh;
+    }
     .signup--wrapper  .signup--box  {
         width: 710px;
     }
@@ -507,10 +549,13 @@
     }
     .signup--wrapper .signup--box .signup--left .stepper--data {
         margin-bottom: 30px;
-        height: calc(100vh - 0px);
+        height: 58vh;
     }
     .signup--wrapper .signup--box .signup--right p{
         margin-top: 26px;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data.stepper--data5 {
+        height: 15vh;
     }
 }
 
@@ -530,14 +575,14 @@
 }
 @media only screen and (min-width: 1280px) and (max-width: 1366px){
     .signup--wrapper  .signup--box  .signup--left  .stepper--data  {
-        height: calc(100vh - 264px);
+        height: 85vh;
         overflow: auto;
         margin-bottom: 15px;
     }
 }
 @media only screen and (min-width: 1367px) and (max-width: 1440px){
     .signup--wrapper  .signup--box  .signup--left  .stepper--data  {
-        height: calc(100vh - 310px);
+        height: 73vh;
         overflow: auto;
         margin-bottom: 15px;
     }
