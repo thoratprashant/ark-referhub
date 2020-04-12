@@ -40,6 +40,10 @@ export class SignupComponent implements OnInit {
     $("#officeName").keyup(function () {
       $('#sameOfficeExist').show();
     })
+   
+  
+  
+ 
 
     $('body').on('click',".next-step",function (e) {
       console.log('next step function executed');

@@ -143,6 +143,26 @@
                     
                 }
 
+                .pass--indi{
+                    position: absolute;
+                    right: 10px;
+                    bottom: 19px;
+                    span{
+                        width: 20px;
+                        height: 5px;
+                        background-color: #d1edfb;
+                        margin-right: 1px;
+                        &:first-child{
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                        &:last-child{
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                    }
+                }
+
                 .step--two{
                     .wh--dd{
                         padding: 15px 15px 20px 15px;
@@ -215,6 +235,7 @@
                                 height: 14px;
                                 display: inline-block;
                                 margin-right: 15px;
+                                flex-shrink: 0;
                             }
                         }
                         .td-2{
@@ -557,6 +578,29 @@
     .signup--wrapper .signup--box .signup--left .stepper--data.stepper--data5 {
         height: 15vh;
     }
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed {
+        align-items: center;
+        flex-direction: column;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed .td-1,
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed .td-2,
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed .td-3{
+        width: 100%;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed .td-2,
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed .td-3{
+        padding-left: 30px;
+        margin-top: 5px;
+        justify-content: flex-start;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .same--name--office .footer .p--note{
+        order: -1;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .same--name--office .footer .p--note p{
+        text-align: left !important;
+        margin-bottom: 12px !important;
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 980px) and (max-width: 1279px){
@@ -571,6 +615,9 @@
     }
     .signup--wrapper .signup--box .signup--left .stepper--data .step--two .same--name--office .dentals--imgs .img--box {
         margin: 0 0 6px 6px;
+    }
+    .signup--wrapper .signup--box .signup--left .stepper--data .step--two .already--listed .td-3 a:first-child {
+        margin-right: 7px;
     }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1366px){
