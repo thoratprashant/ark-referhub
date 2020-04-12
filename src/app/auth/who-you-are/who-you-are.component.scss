@@ -6,6 +6,9 @@
             width: 1100px;
             .left--sec{
                 width: 680px;
+                header{
+                    justify-content: space-between;
+                }
                 .btn-group{
                     margin: 70px 0 94px 0;
                     .btn{
@@ -37,6 +40,34 @@
        
     }
 }
+.stepper--indicator{
+    ul{
+        list-style-type: none;
+        li{
+            width: 13px;
+            height: 13px;
+            background: lightblue;
+            border-color: lightblue;
+            border-radius: 1em;
+            margin: 0 1em;
+            display: inline-block;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: -28px;
+                width: 23px;
+                height: 2px;
+                background: lightblue;
+            }
+            &:first-child::before{
+                display: none;
+            }
+           
+        }
+    }
+}
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .auth--wrapper{
         &.who--you--wrapper{
@@ -44,5 +75,21 @@
                 width: 95%;
             }
         }
+    }
+    .auth--wrapper.who--you--wrapper .login--box .left--sec header {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .stepper--indicator ul {
+        margin-top: 15px !important;
+        text-align: center;
+    }
+    .auth--wrapper.who--you--wrapper .login--box .left--sec .btn-group .btn {
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .auth--wrapper.who--you--wrapper .login--box {
+        width: 97%;
     }
 }
