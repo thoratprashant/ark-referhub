@@ -4,14 +4,14 @@
         <div class="row">
             <header class="col-12 auth--header d-flex align-items-center justify-content-between">
                 <div class="logo" [routerLink]="['']">
-                    <a href="#" >
+                    <a>
                         <img src="../assets/images/full-logo.png" alt="logo" class="img-fluid">
                       </a>
                 </div>
                 <div class="actions d-flex">
-                    <button type="button" class="btn btn-primary primary--two">Sign up</button>
+                    <button type="button" class="btn btn-primary primary--two" routerLink="/auth/you-are">Sign up</button>
                     <div class="v--divider"></div>
-                    <button type="button" class="btn btn-outline-primary btn-md">Log in</button>
+                    <button type="button" class="btn btn-outline-primary btn-md" routerLink="/auth/signin">Log in</button>
                 </div>
                 
             </header>

@@ -386,6 +386,64 @@
                     }
                 }
 
+                .step--four{
+                    p{
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                    .suggestive--searches{
+                        .search{
+                              .form-control{
+                                padding-right: 58px;
+                              } 
+                              .btn-primary{
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 10px;
+                                    padding: 0 9px !important;
+                                    font-size: 11px !important;
+                                    height: 25px;
+                                    border-radius: 3px !important;
+                              }
+                        }
+                        .suggested--tag{
+                            ul{
+                                list-style-type: none;
+                                li{
+                                    margin-right: 10px;
+                                    font-size: 12px;
+                                    font-family: 'Avenir-medium';
+                                    a{
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                    }
+                                    &:last-child{
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .choosed--tag{
+                            margin: 15px 0 30px 0;
+                            .tag{
+                                border-radius: 3px;
+                                border: solid 1px #e6eaee;
+                                background-color: #fff;
+                                font-size: 12px;
+                                font-family: 'Avenir-bold';
+                                margin: 0 10px 10px 0;
+                                padding: 8px 10px;
+                                .icon--close{
+                                    font-size: 9px;
+                                    margin-left: 10px;
+                                    font-style: normal;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .step--five{
                     p{
                         font-size: 13px;
