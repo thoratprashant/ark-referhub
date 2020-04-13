@@ -1,0 +1,131 @@
+.already--acc--wrapper{
+    background-color: #eeeeee;
+    padding: 30px 15px;
+    height: 90vh;
+    align-items: center;
+    .account--box{
+        width: 1100px;
+        .account--left{
+            width: 680px;
+            background-color: #fff;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            header{
+                border-bottom: 1px solid #ebedf8;
+                margin: 30px;
+                padding-bottom: 16px;
+                h1{
+                    font-size: 18px;
+                    font-family: "Avenir-bold";
+                    margin: 0 0 5px 0;
+                }
+                p{
+                    font-size: 13px;
+                    margin-bottom: 0;
+                    font-family: "Avenir-medium";
+                }
+            }
+            .account--data{
+                padding: 20px 30px;
+                overflow: auto;
+                h2{
+                    font-size: 15px;
+                    font-family: "Avenir-bold";
+                    margin-bottom: 6px;
+                    color: #2c3341;
+                }
+                p{
+                    font-size: 13px;
+                    margin-bottom: 18px;
+                    font-family: "Avenir-medium";
+                }
+                .card{
+                    border-radius: 5px;
+                    border: solid 1px #ebedf8;
+                    background-color: #fff;
+                    .card-header{
+                        background-color: #fff;
+                        padding: 14px 20px;
+                        border: none;
+                        .user--pro{
+                            margin-right: 10px;
+                            .pro--pic{
+                                width: 45px;
+                                height: 45px;
+                                object-fit: contain;
+                                overflow: hidden;
+                                margin-right: 15px;
+                                flex-shrink: 0;
+                            }
+                            h3{
+                                font-size: 14px;
+                                color: rgba(0, 0, 0, 0.85);
+                                font-family: 'Avenir-bold';
+                            }
+                        }
+                        .user--details{
+                            margin-left: auto;
+                            .icon--up--down{
+                                background-image: url('../../../assets/images/up-arrow-with-circle.png');
+                                width: 35px;
+                                height: 35px;
+                                background-repeat: no-repeat;
+                                margin-left: 20px;
+                                cursor: pointer;
+                                flex-shrink: 0;
+                                transform: rotate(0);
+                                &.collapsed{
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                    .card-body{
+                        &.collapse{
+                            border-top: 1px solid #ebedf8;
+                        }
+                    }
+                   
+                }
+                
+            }
+            .account--footer{
+                padding: 0 30px 30px 30px;
+                p{
+                    font-size: 13px;
+                    a{
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+                .btn-md{
+                    padding: 9px 19px !important;
+                }
+            }
+        }
+        .account--right{
+            background-color: #18a3ec;
+            width: 420px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 30px 25px 0 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: 24px;
+                font-family: "Avenir-bold";
+                margin-bottom: 30px;
+                color: #fff;
+            }
+            p{
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 20px;
+                line-height: 1.71;
+                font-family: "Avenir-light";
+            }
+        }
+    }
+}

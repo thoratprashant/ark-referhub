@@ -4,6 +4,7 @@ import { SigninComponent } from './signin/signin.component';
 import { LayoutComponent } from './layout/layout.component';
 import { WhoYouAreComponent } from './who-you-are/who-you-are.component';
 import { SignupComponent } from './signup/signup.component';
+import { AlreadyAccountComponent } from './already-account/already-account.component';
 
 
 const routes: Routes = [{
@@ -25,6 +26,10 @@ const routes: Routes = [{
       {
         path: 'signup',
         component: SignupComponent
+      },
+      {
+        path: 'already-have-account',
+        component: AlreadyAccountComponent
       }
     ]
   },];

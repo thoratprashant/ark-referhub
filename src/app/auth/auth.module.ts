@@ -7,11 +7,12 @@ import { AuthFooterComponent } from '../shared/auth-layout/auth-footer/auth-foot
 import { LayoutComponent } from './layout/layout.component';
 import { WhoYouAreComponent } from './who-you-are/who-you-are.component';
 import { SignupComponent } from './signup/signup.component';
+import { AlreadyAccountComponent } from './already-account/already-account.component';
 
 
 
 @NgModule({
-  declarations: [SigninComponent, AuthHeaderComponent, LayoutComponent, AuthFooterComponent, WhoYouAreComponent, SignupComponent],
+  declarations: [SigninComponent, AuthHeaderComponent, LayoutComponent, AuthFooterComponent, WhoYouAreComponent, SignupComponent, AlreadyAccountComponent],
   imports: [
     CommonModule,
     AuthRoutingModule
