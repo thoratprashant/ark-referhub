@@ -814,8 +814,26 @@
 
             <footer class="stepper--footer d-flex justify-content-between">
                 <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()" [ngStyle]="{'display': signUpStep==1?'none':'' }">Back</button> -->
-                <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()">Back</button>
-                <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()"  [ngStyle]="{'display': signUpStep==5?'none':'' }">Next</button>
+                <!-- <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()"  [ngStyle]="{'display': signUpStep==5?'none':'' }">Next</button> -->
+                
+                <!-- First step active footer -->
+                <div class="first">
+                    <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step"  [routerLink]="['/auth/you-are']">Back</button>
+                    <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()">Next</button>
+                </div>
+
+                 <!-- Seond to fourth step active footer -->
+                <div class="second">
+                    <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()">Back</button>
+                    <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()">Next</button>
+                </div>
+
+                <!-- Last step active footer -->
+                <div class="third">
+                    <button type="button" class="btn btn-outline-primary btn-md prev-step contact--us--btn">Contact Us</button>
+                    <button type="button" class="btn btn-primary btn-md primary--two next-step">Sign In</button>
+                </div>
+
             </footer>
 
         </div>
