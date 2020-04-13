@@ -388,10 +388,47 @@
                             .inner--box{
                                 width: 108px;
                                 height: 108px;
-                                background-color: #d1edfb;
-                                
+                                background-color: #d1edfb;                                
                                 overflow: hidden;
                                 margin-right: 15px;
+                                border-radius: 5px;
+                                position: relative;
+                                .img__description_layer{
+                                    position: absolute;
+                                    height: 30px;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    color: #fff;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    transition: opacity .2s, visibility .2s;
+                                    background-color: #f2fafeeb;
+                                    .img__description {
+                                        transition: .2s;
+                                        color: #2c3341;
+                                        font-size: 11px;
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                        padding: 0 5px;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                      }
+                                }
+
+                                &:hover{
+                                    .img__description_layer{
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
+                                    .img__description {
+                                        transform: translateY(0);
+                                      }
+                                }
                                 .icon--white--cam{
                                     background-image: url('../../../assets/images/camera-white-big-icon.png');
                                     width: 34px;
