@@ -13,7 +13,7 @@ export class SignupComponent implements OnInit {
 
   headerNames = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
 
-  signUpStep = 0;
+  signUpStep = 1;
 
   ngOnInit(): void {
     $('#officeDentist').show();
@@ -94,7 +94,6 @@ export class SignupComponent implements OnInit {
 
   increaseStep(){ 
 
-    if(this.signUpStep<=4 && this.signUpStep>=1){
       console.log('next step function executed');
       var $active = $('.stepper--indicator ul li.active');
       $active.next().addClass('active').siblings().removeClass('active');
@@ -102,13 +101,13 @@ export class SignupComponent implements OnInit {
 
       var $active1 = $('#headerNames .steps--names.activated');
       $active1.next().addClass('activated').siblings().removeClass('activated');
-    }
+    
    
     this.signUpStep++;        
   }
 
   decreseStep(){
-    if(this.signUpStep<=4 && this.signUpStep>=1){
+
       console.log('prev step function executed');
       var $active = $('.stepper--indicator ul li.active');      
       $active.prev().addClass('active').siblings().removeClass('active')
@@ -117,7 +116,7 @@ export class SignupComponent implements OnInit {
 
       var $active1 = $('#headerNames .steps--names.activated');
       $active1.prev().addClass('activated').siblings().removeClass('activated');
-    }
+
     this.signUpStep--;
     
   }
