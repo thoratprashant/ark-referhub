@@ -128,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "refer-hub-ark"
+    }
+  },
+  "defaultProject": "refer-hub-ark",
+  "cli": {
+    "analytics": false
+  }
 }
