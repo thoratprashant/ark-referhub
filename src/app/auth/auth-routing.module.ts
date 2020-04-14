@@ -5,6 +5,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { WhoYouAreComponent } from './who-you-are/who-you-are.component';
 import { SignupComponent } from './signup/signup.component';
 import { AlreadyAccountComponent } from './already-account/already-account.component';
+import { ClaimYourProfileComponent } from './claim-your-profile/claim-your-profile.component';
 
 
 const routes: Routes = [{
@@ -30,6 +31,10 @@ const routes: Routes = [{
       {
         path: 'already-have-account',
         component: AlreadyAccountComponent
+      },
+      {
+        path: 'claim-your-profile',
+        component: ClaimYourProfileComponent
       }
     ]
   },];

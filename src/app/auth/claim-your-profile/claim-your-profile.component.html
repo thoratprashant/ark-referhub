@@ -2,12 +2,12 @@
     <div class="account--box d-flex">
         <div class="account--left">
             <header class="mb-0">
-                <h1>Looks like you are already have a ReferHub account</h1>
-                <p>Please check the information below.</p>
+                <h1>Claim your profile on ReferHub</h1>
+                <p>Please claim your profile to use ReferHub</p>
             </header>
             <section class="account--data">
                 <h2>Is this your account?</h2>
-                <p>We found this account because the information you entered is looks similar.</p>
+                <p>Please check the information below</p>
                 <div class="row">
                     <div class="col-12 mb-4">
                         <div class="card">
@@ -20,11 +20,11 @@
                                </div>
                                <div class="user--details d-flex align-items-center">
                                    <p class="m-0">General Dentist at <strong> Linhart Dentistry </strong></p>
-                                   <i class="icon--up--down"  data-toggle="collapse" data-target="#collapseOne" ></i>
+                                   <i class="icon--up--down collapsed"  data-toggle="collapse" data-target="#collapseOne" ></i>
                                </div>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" >
+                            <div id="collapseOne" class="collapse" >
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-12 col-sm-4 col-lg-4 office--details">
@@ -72,8 +72,10 @@
             </section>
             <section class="account--footer d-flex align-items-center justify-content-between">
                 <button type="button" class="btn btn-outline-primary black--btn btn-md">Report profile</button>
-                <p class="m-0">Not you? <a>Contact us.</a></p>
+               <div class="cnp--sec">
+                <button type="button" routerlink="/auth/signin" class="btn btn-outline-primary btn-md" >Not you? Create new profile</button>
                 <button type="button" class="btn btn-primary primary--two btn-md">It's me, Login</button>
+               </div>
             </section>
         </div>
         <div class="account--right text-center">
