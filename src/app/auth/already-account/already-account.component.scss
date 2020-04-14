@@ -80,9 +80,12 @@
                             }
                         }
                     }
-                    .card-body{
-                        &.collapse{
-                            border-top: 1px solid #ebedf8;
+                    .collapse{
+                        &.show{
+                            .card-body{
+                                border-top: 1px solid #ebedf8;
+                            }
+                            
                         }
                     }
                    
@@ -127,5 +130,18 @@
                 font-family: "Avenir-light";
             }
         }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .already--acc--wrapper .account--box{
+        width: 710px;
+    }
+    .already--acc--wrapper .account--box .account--left .account--footer p {
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .already--acc--wrapper .account--box{
+        width: 98%;
     }
 }

@@ -505,6 +505,51 @@ form{
     }
 }
 
+.office--details{
+    h1{
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        font-family: 'Avenir-bold';
+        margin: 0;
+    }
+    .reviewer--star{
+        align-self: flex-start;
+        margin-bottom: 10px;
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                .fa{
+                    &.active{
+                        color: #f6ca51;
+                    }
+                    color: #d8d8d8;
+                    margin-left: 3px;
+                    font-size: 11px;
+                }
+
+            }
+        }
+    }
+    address{
+        margin-bottom: 20px;
+        h4{
+            font-size: 13px;
+        }
+        p{
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+    }                            
+}
+.dentals--imgs{
+    .img--box{
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        margin: 0 0 10px 10px;
+    }
+}
 
 @media only screen and (max-width: 599px) {
     .btn.btn-lg {
