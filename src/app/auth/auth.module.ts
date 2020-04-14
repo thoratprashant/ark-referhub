@@ -9,11 +9,12 @@ import { WhoYouAreComponent } from './who-you-are/who-you-are.component';
 import { SignupComponent } from './signup/signup.component';
 import { AlreadyAccountComponent } from './already-account/already-account.component';
 import { ClaimYourProfileComponent } from './claim-your-profile/claim-your-profile.component';
+import { ReclaimProfileComponent } from './reclaim-profile/reclaim-profile.component';
 
 
 
 @NgModule({
-  declarations: [SigninComponent, AuthHeaderComponent, LayoutComponent, AuthFooterComponent, WhoYouAreComponent, SignupComponent, AlreadyAccountComponent, ClaimYourProfileComponent],
+  declarations: [SigninComponent, AuthHeaderComponent, LayoutComponent, AuthFooterComponent, WhoYouAreComponent, SignupComponent, AlreadyAccountComponent, ClaimYourProfileComponent, ReclaimProfileComponent],
   imports: [
     CommonModule,
     AuthRoutingModule
