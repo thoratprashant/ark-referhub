@@ -8,8 +8,11 @@
     }
     p{
         font-size: 13px;
-        span{
-            font-family: 'Avenir-bold';
+        a{
+            color: #169feb ;
+            margin-left: 10px;
+            text-decoration: underline;
+            cursor: pointer;
         }
     }
     ul{

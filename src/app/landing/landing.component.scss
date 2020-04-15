@@ -500,6 +500,19 @@
     .btn.btn-lg {
         padding: 10px 15px !important;
     }
+    
+    .section--three .header h2 {
+        font-size: 24px;
+    }
+    .section--three .tab-content .stepper--wrapper .steps .step--number img {
+        width: 15px;
+    }
+    .section--five h2 {
+        font-size: 20px !important;
+    }
+    .section--five p {
+        font-size: 15px !important;
+    }
 }
 
 @media only screen and (max-width: 599px) {

@@ -140,3 +140,21 @@
         }
     }
 }
+
+@media only screen and (max-width: 599px) {
+    .footer--section h2 {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+    }
+    .footer--section ul li a {
+        font-size: 13px;
+        margin-bottom: 6px !important;
+    }
+    .footer--section ul li:last-child a {
+        margin: 0 0 20px 0 !important;
+    }
+    .footer--section {
+        background-color: #2c3341;
+        padding: 30px 25px;
+    }
+}
