@@ -6,6 +6,7 @@ import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { AuthModule } from './auth/auth.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
@@ -13,12 +14,13 @@ import { AuthModule } from './auth/auth.module';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LandingComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
