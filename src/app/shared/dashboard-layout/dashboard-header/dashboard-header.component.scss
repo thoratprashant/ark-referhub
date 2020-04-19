@@ -1,7 +1,7 @@
 .dashboard--header{
     background-color: #fff;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     box-shadow: 0 1px 0 0 #e6eaee;
     .divider{
@@ -31,6 +31,31 @@
 
     .logo--right{
         margin-left: 0;
+        form{
+            .no--border--dd{
+                .btn {
+                    height: 39px;
+                    border: none;  
+                    padding-left: 0 !important;              
+                }
+            }
+            
+        }
+        .notification--btn{
+            line-height: 11px;
+            margin-left: 25px;
+            .icon--notification{
+                background-image: url('../../../../assets/images/notification.png');
+                width: 34px;
+                height: 34px;
+                display: inline-block;
+            }
+        }
+        
+       
+        
     }
+
+    
     
 }
