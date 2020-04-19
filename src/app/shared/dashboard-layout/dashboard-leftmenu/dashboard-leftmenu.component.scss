@@ -1,0 +1,50 @@
+.left--menu--items{
+    flex-direction: column;
+    list-style-type: none;
+    padding-top: 10px !important;
+    li{
+        a{
+            padding: 11px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .icon{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+            }
+            .task-compact-deactive{
+                background-image: url('../../../../assets/images/task-compact-deactive.png');               
+            }
+            .building-deactive{
+                background-image: url('../../../../assets/images/building-deactive.png');
+            }
+            .business-sutcase-deactive{
+                background-image: url('../../../../assets/images/business-sutcase-deactive.png');
+            }
+            .note-pad-deactive{
+                background-image: url('../../../../assets/images/note-pad-deactive.png');
+            }
+            .profile-pic-icon-deactive{
+                background-image: url('../../../../assets/images/profile-pic-icon-deactive.png');
+            }
+            .network-deactive{
+                background-image: url('../../../../assets/images/network-deactive.png');
+            }
+            .bell-deactive{
+                background-image: url('../../../../assets/images/bell-deactive.png');
+            }
+            .profile-deactive{
+                background-image: url('../../../../assets/images/profile-deactive.png');
+            }
+            .calender-deactive{
+                background-image: url('../../../../assets/images/calender-deactive.png');
+            }
+            .settings-deactive{
+                background-image: url('../../../../assets/images/settings-deactive.png');
+            }
+        }
+    }    
+}

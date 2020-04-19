@@ -1,12 +1,36 @@
-.auth--header{
+.dashboard--header{
     background-color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 19px;
+    padding-bottom: 19px;
     display: flex;
-    .v--divider{
-        width: 1px;
-        height: 39px;
-        background-color: #e6eaee;
-        margin: 0 20px;
+    box-shadow: 0 1px 0 0 #e6eaee;
+    .divider{
+        margin: 0 30px;
+        height: 30px;
+        border-left: 1px solid #e6eaee;
     }
+    .search--box{
+        position: relative;
+        width: 200px;
+        .form-control{
+            border: none;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 13px;
+            padding-left: 25px;
+        }
+        .icon--search{
+            background-image: url(/assets/images/icon-search.png);
+            width: 14px;
+            height: 14px;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+    }
+
+    .logo--right{
+        margin-left: 0;
+    }
+    
 }
