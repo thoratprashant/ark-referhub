@@ -2,17 +2,20 @@
     width: 70px;
     position: absolute;
     left: 0;
-    top: 79px;
-    height: 89vh;
+    top: 70px;
+    height: 80.1vh;
     overflow: auto;
     box-shadow: 1px 0 0 0 #e6eaee;
     background-color: #fff;
+    z-index: 999999;
 }
 .middle--side--section{
     position: relative;
     padding: 24px 20px 20px 95px;
     width: 100%;
-    height: 89vh;
+    height: 80vh;
     overflow: auto;
     border-bottom: 1px solid #e6eaee;
+    background: #F8FAFB;
+    margin-top: 2px;
 }
