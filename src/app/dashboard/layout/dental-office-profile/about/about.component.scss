@@ -68,7 +68,7 @@
         }
         .tab--header{
             border-bottom: 1px solid #ebedf8;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             padding-bottom: 17px;
             h2{
                 margin: 0;
@@ -182,9 +182,58 @@
             }
         }
 
-        .certifications--data{
-            padding: 0 20px;
+        .staff--data{
+            .tab--header{
+                margin: 0 20px 20px 20px;
+            }
+            .pad--right--20{
+                padding-right: 20px;
+            }
+            .staff--box{
+                padding: 10px 15px;
+                border-radius: 7px;
+                border: solid 1px #ebedf8;
+                background-color: #fff;
+                flex-shrink: 0;
+                margin-bottom: 12px;
+                .staff--pic{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+                .staff--name{
+                    font-size: 13px;    
+                    color: rgba(0, 0, 0, 0.85);
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding-right: 10px;
+                }
+                .icon--more{
+                    background-image: url('../../../../../assets/images/more-icon.png');
+                    width: 4px;
+                    height: 18px;
+                    object-fit: contain;
+                    display: inline-block; 
+                    cursor: pointer;
+                    flex-shrink: 0;
+                }
+            }
+
+
+            &.certifications--data{
+                .staff--box{
+                    height: 156px;
+                    margin-bottom: 15px;
+                }
+            }
         }
+
+      
     }  
   
 }
