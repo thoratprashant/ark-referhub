@@ -82,7 +82,9 @@
                                 aria-controls="reviews" aria-selected="false">Reviews</a>
                         </li>
                     </ul>
-                    <div class="tab-content">
+                    <div class="tab-content pl-0 pr-0">
+
+                        <!-- About tab -->
                         <div class="tab-pane fade show active about--data" id="about" role="tabpanel"
                             aria-labelledby="about-tab">
                             <h2><strong>About Dentist</strong></h2>
@@ -96,16 +98,166 @@
                                 bibendum leo, sed malesuada dui enim vitae dolor. Ut urna nisl, porta nec ligula vel,
                                 venenatis cursus lorem. Vestibulum congue massa quis mattis dictum.</p>
                         </div>
-                        <div class="tab-pane fade" id="insuranceAccepted" role="tabpanel"
-                            aria-labelledby="insuranceAccepted-tab">2...</div>
-                        <div class="tab-pane fade" id="dentistsSpecialists" role="tabpanel"
-                            aria-labelledby="dentistsSpecialists-tab">3...</div>
-                        <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">4...</div>
-                        <div class="tab-pane fade" id="certifications" role="tabpanel"
-                            aria-labelledby="certifications-tab">5...</div>
+
+                        <!-- Insurance Accepted -->
+                        <div class="tab-pane fade insurance--data" id="insuranceAccepted" role="tabpanel"
+                            aria-labelledby="insuranceAccepted-tab">
+                            <header class="tab--header">
+                                <h2><strong>Insurance Accepted</strong></h2>
+                                <p>Life of insurance we accept</p>
+                            </header>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <ul class="m-0 border-0 p-0">
+                                        <li>Access Dental</li>
+                                        <li>AmeriPlan Discount</li>
+                                        <li>Assurant/Dental Health Alliance Discount</li>
+                                        <li>CompBenefits</li>
+                                        <li>CompDent</li>
+                                        <li>CompDent Advantage</li>
+                                        <li>Connection Dental</li>
+                                        <li>Coventry First Health</li>
+                                        <li>DeCare</li>
+                                        <li>Delta Dental Preferred</li>
+                                        <li>Delta Dental Premier</li>
+                                        <li>DeltaCare</li>
+                                        <li>Dental Benefit Providers</li>
+                                        <li>Dental Benefit Providers/United Healthcare</li>
+                                        <li>Dental Health Alliance</li>
+                                        <li>Dental Network of America</li>
+                                        <li>Dental Wellness</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <ul class="m-0 border-0 p-0">
+                                        <li>Dentegra</li>
+                                        <li>Dentemax</li>
+                                        <li>Employers Dental Service</li>
+                                        <li>Principal</li>
+                                        <li>UniCare</li>
+                                        <li>United Concordia National Fee For Service</li>
+                                        <li>WellPoint</li>
+                                        <li>DeCare Dental</li>
+                                        <li>Dental Health Alliance (DHA)</li>
+                                        <li>TDA (Total Dental Administrators)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dentists Specialists -->
+                        <div class="tab-pane fade specialists--data" id="dentistsSpecialists" role="tabpanel"
+                            aria-labelledby="dentistsSpecialists-tab">
+                            <header class="tab--header">
+                                <h2><strong>Dentists & Specialists</strong></h2>
+                                <p>Dentists and Specialists at Good Dental</p>
+                            </header>
+                            <div class="dentist--specialists">
+                                <div class="ds--list d-flex w-100">
+                                    <div class="td-1 d-flex align-items-center">
+                                       <div class="dentist--pic">
+                                           <img src="../../../../../assets/images/profile-1-image-circle.png" class="img-fluid">
+                                       </div>
+                                       <div class="dentist--details">
+                                            <h2 class="d-flex"><strong>Sebastian Bennett</strong>
+                                                <div class="reviewer--star m-0">
+                                                    <ul class="p-0 m-0 border-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </h2>
+                                            <p class="m-0">Dentist</p>
+                                       </div>
+                                    </div>
+                                    <div class="td-2 d-flex align-items-center">
+                                        <i class="icon--chat--circle"></i>
+                                        <button  type="button" class="btn btn-md btn-outline-primary">Create a job</button>
+                                        <i class="icon--more"></i>
+                                    </div>
+                                </div>
+                                <div class="ds--list d-flex w-100">
+                                    <div class="td-1 d-flex align-items-center">
+                                       <div class="dentist--pic">
+                                           <img src="../../../../../assets/images/profile-2-image-circle.png" class="img-fluid">
+                                       </div>
+                                       <div class="dentist--details">
+                                            <h2 class="d-flex"><strong>Regina Polastro</strong>
+                                                <div class="reviewer--star m-0">
+                                                    <ul class="p-0 m-0 border-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </h2>
+                                            <p class="m-0">Dental Assistant</p>
+                                       </div>
+                                    </div>
+                                    <div class="td-2 d-flex align-items-center">
+                                        <i class="icon--chat--circle"></i>
+                                        <button  type="button" class="btn btn-md btn-outline-primary">Create a job</button>
+                                        <i class="icon--more"></i>
+                                    </div>
+                                </div>
+                                <div class="ds--list d-flex w-100">
+                                    <div class="td-1 d-flex align-items-center">
+                                       <div class="dentist--pic">
+                                           <img src="../../../../../assets/images/profile-3-image-circle.png" class="img-fluid">
+                                       </div>
+                                       <div class="dentist--details">
+                                            <h2 class="d-flex"><strong>Christopher Walker</strong>
+                                                <div class="reviewer--star m-0">
+                                                    <ul class="p-0 m-0 border-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </h2>
+                                            <p class="m-0">Dental</p>
+                                       </div>
+                                    </div>
+                                    <div class="td-2 d-flex align-items-center">
+                                        <i class="icon--chat--circle"></i>
+                                        <button  type="button" class="btn btn-md btn-outline-primary">Create a job</button>
+                                        <i class="icon--more"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Staff -->
+                        <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">4...
+
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="tab-pane fade certifications--data" id="certifications" role="tabpanel"
+                            aria-labelledby="certifications-tab">
+                            <header class="tab--header">
+                                <h2><strong>Certifications</strong></h2>
+                                <p>Good Dental Certifications</p>
+                                <div class="row">
+                                    <div class="col-12">
+
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+
+                        <!-- Completed Cases -->
                         <div class="tab-pane fade" id="completedCases" role="tabpanel"
                             aria-labelledby="completedCases-tab">6...</div>
                         <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">7...</div>
+
                     </div>
                 </div>
             </div>
@@ -190,75 +342,79 @@
         <div class="card rf--card">
             <div class="card-header d-flex align-items-center justify-content-between">
                 <h2> <strong>Good Dental’s Job Success</strong> </h2>
-                <a class="show--all d-flex align-items-center">                  
+                <a class="show--all d-flex align-items-center">
                     Show all reviews
                     <i class="icon--next"></i>
                 </a>
-                    
+
             </div>
             <div class="card-body">
                 <div class="progress--count d-flex align-items-center">
                     <div class="progress">
                         <div class="progress-bar" style="width:80%"></div>
-                      </div>
-                      <div class="count text-center">
-                          <h3><strong>80%</strong></h3>
-                          <p class="m-0">Based on Reviews</p>
-                      </div>
-                </div>               
+                    </div>
+                    <div class="count text-center">
+                        <h3><strong>80%</strong></h3>
+                        <p class="m-0">Based on Reviews</p>
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <div class="card rf--card Offices">
             <div class="card-header d-flex align-items-center justify-content-between">
-                <h2 class="d-flex align-items-center"> <i class="icon--building--active mr-2"></i> <strong>Offices</strong> </h2>
+                <h2 class="d-flex align-items-center"> <i class="icon--building--active mr-2"></i>
+                    <strong>Offices</strong> </h2>
                 <button type="button" class="btn btn-md btn-outline-primary location--btn">3 Locations</button>
-                
-                    
+
+
             </div>
             <div class="card-body p-0">
                 <div class="map--box ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.6360252793197!2d73.76881631466044!3d18.59044107188621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbb9d175c7fd%3A0x8c91baa3af41fe7a!2sArkenea!5e0!3m2!1sen!2sin!4v1587382052840!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                  </div>  
-                  <div class="address--box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.6360252793197!2d73.76881631466044!3d18.59044107188621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbb9d175c7fd%3A0x8c91baa3af41fe7a!2sArkenea!5e0!3m2!1sen!2sin!4v1587382052840!5m2!1sen!2sin"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="address--box">
                     <div class="address--header d-flex align-items-center justify-content-center">
                         Addresses
-                    </div> 
-                     <div class="address--npic d-flex align-items-center justify-content-between ">
-                       <div>
-                        <h4 class="m-0"><strong>Linhart Dentistry</strong></h4>
-                        <p class="m-0">230 Park Ave #1164, New York, NY 10169</p>
-                        <div class="reviewer--star">
-                            <ul class="p-0 m-0">
-                                <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                            </ul>
+                    </div>
+                    <div class="address--npic d-flex align-items-center justify-content-between ">
+                        <div>
+                            <h4 class="m-0"><strong>Linhart Dentistry</strong></h4>
+                            <p class="m-0">230 Park Ave #1164, New York, NY 10169</p>
+                            <div class="reviewer--star">
+                                <ul class="p-0 m-0">
+                                    <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star active" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
                         </div>
-                       </div>
-                       <div class="add--building">
+                        <div class="add--building">
                             <img src="../../../../../assets/images/small-imge-pro-rounded.png" alt="" class="img-fluid">
-                       </div>                      
-                     </div>
+                        </div>
+                    </div>
 
-                     <div class="time--date">
+                    <div class="time--date">
                         Monday – Friday <br>
                         07:00 AM – 6:00 PM
-                       </div>
-                       
-                       <div class="contact">
+                    </div>
+
+                    <div class="contact">
                         <strong>310-123-4567</strong>
-                       </div>
+                    </div>
 
-                       <div class="popular--visit text-center">
-                            <h5>Popular visit hours</h5>
-                            <img src="../../../../../assets/images/graph.png" title="" class="img-fluid">
-                       </div>
+                    <div class="popular--visit text-center">
+                        <h5>Popular visit hours</h5>
+                        <img src="../../../../../assets/images/graph.png" title="" class="img-fluid">
+                    </div>
 
-                  </div>             
+                </div>
             </div>
         </div>
     </div>

@@ -66,7 +66,21 @@
         h2{
             font-size: 18px;  
         }
+        .tab--header{
+            border-bottom: 1px solid #ebedf8;
+            margin-bottom: 30px;
+            padding-bottom: 17px;
+            h2{
+                margin: 0;
+            }
+            p{
+                margin: 3px 0 0 0;
+                font-size: 13px;
+                color: rgba(0, 0, 0, 0.85);
+            }
+        }
         .about--data{
+            padding: 0 20px;
             h2{
                 margin-bottom: 15px;
             }
@@ -76,6 +90,100 @@
                 letter-spacing: normal;
                 color: rgba(0, 0, 0, 0.85);
             }
+        }
+
+        .insurance--data{
+            padding: 0 20px;
+            ul{
+                list-style: none;
+                color: rgba(0, 0, 0, 0.85);
+                li{
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                    &::before{
+                        content: "\2022"; 
+                        color: #169feb; 
+                        font-weight: bold; 
+                        display: inline-block; 
+                        width: 18px;
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+        .specialists--data{
+            .tab--header{
+                margin: 0 20px 20px 20px;
+                padding: 0;
+                border: 0;
+            }
+            
+            .dentist--specialists{
+                border-top: 1px solid #ebedf8;
+                .ds--list{
+                    background-color: #fbfbfb;
+                    padding: 15px 20px;
+                    font-size: 12px;
+                    border-bottom: 1px solid #ebedf8;
+                    &:nth-child(even){
+                        background-color: rgba(255, 255, 255, 0);;
+                    }
+                    .td-1{
+                        padding-right: 10px;
+                        .dentist--pic{
+                            width: 40px;
+                            height: 40px;
+                            object-fit: contain;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin-right: 15px;
+                            flex-shrink: 0;
+                        }
+                        .dentist--details{
+                            h2{
+                                font-size: 13px;
+                                color: rgba(0, 0, 0, 0.85);
+                                margin: 0 0 0 0;
+                            }
+                            p{
+                                color: #169feb;
+                                font-size: 11px;
+                            }
+                            .reviewer--star {
+                                margin-left: 10px !important;
+                            }
+                        }
+                    }
+                    .td-2{
+                        margin-left: auto;
+                        flex-shrink: 0;
+                        .icon--chat--circle{
+                            background-image: url('../../../../../assets/images/chat-with-circle.png');
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                            display: inline-block;
+                            cursor: pointer;
+                        }
+                        .icon--more{
+                            background-image: url('../../../../../assets/images/more-icon.png');
+                            width: 4px;
+                            height: 18px;
+                            object-fit: contain;
+                            display: inline-block; 
+                            cursor: pointer;
+                        }
+                        .btn-outline-primary{
+                            padding: 6px 13px !important;
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .certifications--data{
+            padding: 0 20px;
         }
     }  
   
@@ -298,5 +406,27 @@
             }
 
         }
+    }
+}
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1366px){
+    .rf--tabs ul .nav-item .nav-link{
+        font-size: 12px;
+        padding: 8px 18px;
+        margin: 0 2px;    
+    }
+    .mutual--colleagues--sec .box{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px){
+    .rf--tabs ul .nav-item .nav-link{
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    .mutual--colleagues--sec .box{
+        padding-right: 25px;
     }
 }

@@ -19,3 +19,20 @@
     background: #F8FAFB;
     margin-top: 2px;
 }
+
+@media only screen and (min-width: 1280px) and (max-width: 1366px){
+    .middle--side--section{
+        height: 81vh;
+    }
+    .left--side--section{
+        height: 81.2vh;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px){
+    .middle--side--section{
+        height: 84vh;
+    }
+    .left--side--section{
+        height: 84.2vh;
+    }
+}
