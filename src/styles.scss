@@ -617,7 +617,17 @@ form{
                     background-repeat: no-repeat;
                     transform: rotate(90deg);
                     margin: 3px 10px 0 0;
-                }
+                }                
+            }
+            h1{
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.85);
+                margin: 0;
+                padding-left: 20px;
+                margin-left: 100px;
+                border-left: 1px solid #e6eaee;
+                padding-top: 3px;
+                padding-bottom: 3px;
             }
         }
         .card-body{
