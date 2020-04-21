@@ -287,6 +287,7 @@
                             border-radius: 50%;
                             overflow: hidden;
                             margin-right: 15px;
+                            flex-shrink: 0;
                         }
                         h2{
                             font-size: 13px;
@@ -477,7 +478,44 @@
         font-size: 12px !important;
     }
 }
-@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .rf--tabs ul .nav-item .nav-link{
+        padding: 7px 5px;
+        font-size: 11px;
+        margin: 0 2px;
+    }
+    .card-body .rf--tabs .staff--data.certifications--data .staff--box {
+        height: 125px;
+    }
+    .card-body .rf--tabs .cases--data .cases--box ul li {
+        font-size: 11px;
+    }
+    .mutual--colleagues--sec .box {
+        padding-right: 15px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .mutual--colleagues--sec .box h3 {
+        font-size: 18px;
+    }
+    .mutual--colleagues--sec .box p {
+        font-size: 11px;
+        line-height: 12px;
+        margin-top: 5px !important;
+    }
+    .photos--wrapper .img--boxes .img--box {
+        width: 100%;
+        height: 85px;
+        margin-right: 10px;
+    }
+    .photos--wrapper .img--boxes .img--box.last--box .show--more{
+        padding: 4px 6px !important;
+        font-size: 11px !important;
+    }
+    .overflow--wrapper {
+        min-height: 369px;
+    }
+}
 
 @media only screen and (min-width: 1280px) and (max-width: 1366px){
     .rf--tabs ul .nav-item .nav-link{
