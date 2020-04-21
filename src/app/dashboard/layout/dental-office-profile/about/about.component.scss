@@ -435,6 +435,50 @@
 }
 
 
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .card-body .rf--tabs h2{
+        font-size: 16px;
+    }
+    .card-body .rf--tabs .about--data h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .card-body .rf--tabs .tab--header {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    .card-body .rf--tabs .tab--header p{
+        font-size: 11px;
+    }
+    .card-body .rf--tabs .reviews--data .review--box .review--body .review--data{
+        height: auto;
+    }
+    .mutual--colleagues--sec .box {
+        padding-right: 10px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .mutual--colleagues--sec .box h3 {
+        font-size: 18px;
+    }
+    .mutual--colleagues--sec .box p {
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 5px !important;
+    }
+    .photos--wrapper .img--boxes .img--box{
+        width: 93px;
+        height: 93px;
+        margin-right: 10px;
+    }
+    .photos--wrapper .img--boxes .img--box.last--box .show--more{
+        padding: 4px 6px !important;
+        font-size: 12px !important;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+
 @media only screen and (min-width: 1280px) and (max-width: 1366px){
     .rf--tabs ul .nav-item .nav-link{
         font-size: 12px;

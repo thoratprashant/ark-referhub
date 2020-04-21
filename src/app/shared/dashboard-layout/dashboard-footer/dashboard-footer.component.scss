@@ -1,6 +1,6 @@
-.auth--footer{
+.dashboard--footer{
     padding-top:15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     .btn-primary {
         &.primary--two{
             padding: 9px 20px !important;
@@ -39,7 +39,7 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 979px){
-    .auth--footer{
+    .dashboard--footer{
         ul{
             li{
                 a{
@@ -48,4 +48,12 @@
             }
         }
     }
+    .dashboard--footer .btn-primary.primary--two {
+        padding: 7px 9px !important;
+    }
 }
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}

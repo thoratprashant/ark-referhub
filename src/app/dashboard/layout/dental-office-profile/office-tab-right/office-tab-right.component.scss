@@ -82,6 +82,7 @@
             p{
                 font-size: 13px;
                 color: rgba(0, 0, 0, 0.85);
+                padding-right: 10px;
             }
         }
         .add--building{
@@ -89,6 +90,7 @@
             height: 40px;
             object-fit: contain;
             border-radius: 3px;
+            flex-shrink: 0;
         }
         .time--date{
             font-size: 13px;
@@ -129,4 +131,24 @@
 
         }
     }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .right--box h2 {
+        font-size: 15px;
+    }
+    .right--box .show--all {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+    .right--box .location--btn {
+        padding: 3px 17px !important;
+    }
+    .right--box .map--box {
+        height: 250px;
+    }
+    .right--box .address--box .address--header{
+        left: 28%;
+    }
+    
 }
