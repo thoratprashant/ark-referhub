@@ -233,6 +233,85 @@
             }
         }
 
+        .cases--data{
+            .tab--header{
+                margin: 0 20px 20px 20px;
+            }
+            .pad--right--20{
+                padding-right: 20px;
+            }
+            .cases--box{
+                padding: 20px 15px 15px 20px;
+                border-radius: 7px;
+                border: solid 1px #ebedf8;
+                background-color: #fff;
+                margin-bottom: 15px;
+                h5{
+                    font-size: 13px;
+                }
+                ul{
+                    li{
+                        font-size: 13px;
+                    }
+                }
+
+                .case--details{
+                    border-right: solid 1px #ebedf8;
+                }
+            }
+        }
+
+        .reviews--data{
+            .tab--header{
+                margin: 0 20px 20px 20px;
+            }
+            .pad--right--20{
+                padding-right: 20px;
+            } 
+            .review--box{
+                border-radius: 7px;
+                border: solid 1px #ebedf8;
+                background-color: #fff;
+                margin-bottom: 15px;
+                .review--header{
+                    padding: 15px;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ebedf8;
+                    .reviewer{
+                        .reviewer--pic{
+                            width: 34px;
+                            height: 34px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin-right: 15px;
+                        }
+                        h2{
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .review--body{
+                    padding: 15px;
+                    .review--data{
+                        height: 65px;
+                        overflow: auto;
+                        margin-bottom: 15px;
+                        p{
+                            font-size: 13px;
+                            line-height: 1.69;
+                            color: rgba(0, 0, 0, 0.85);                            
+                        }
+                    }
+                    .review--time{
+                        color: rgba(0, 0, 0, 0.5);
+                        font-size: 11px;
+                    }
+                   
+                }
+            }
+        }
+
       
     }  
   
