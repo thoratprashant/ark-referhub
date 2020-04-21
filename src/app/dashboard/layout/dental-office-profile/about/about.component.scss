@@ -1,3 +1,7 @@
+.overflow--wrapper{
+    height: 520px;
+    overflow: auto;
+}
 .card-body{
     .sub--header{
         padding: 20px;
@@ -534,6 +538,12 @@
             }
 
         }
+    }
+}
+
+.first--tab--extra--content{
+    &.hide{
+        display: none;
     }
 }
 
