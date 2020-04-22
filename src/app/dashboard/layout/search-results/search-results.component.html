@@ -1,27 +1,31 @@
-<div class="container-fluid  search--wrapper">
+<div class="container-fluid  search--wrapper relative">
     <div class="row">
         <header class="search--header col-12 d-flex align-items-center justify-content-between">
             <div class="actions d-flex align-items-center flex-wrap">
                 <button type="button" class="btn btn-sm btn-primary">Filters</button>
                 <div class="selected--tags d-flex align-items-center">
-                    <p class="m-0">Speciality Type: <strong> Dentist</strong></p> 
+                    <p class="m-0">Speciality Type: <strong> Dentist</strong></p>
                     <i class="icon--close--tag"></i>
                 </div>
             </div>
-            <div class="">
+            <div class="d-flex align-items-center flex-shrink-0">
+                <label class="show--label"><strong>Show:</strong></label>
                 <ul class="nav nav-tabs rounded--tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="true">List</a>
+                        <a class="nav-link" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list"
+                            aria-selected="true">List</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" id="mapList-tab" data-toggle="tab" href="#mapList" role="tab" aria-controls="mapList" aria-selected="false">Map & List</a>
+                        <a class="nav-link active" id="mapList-tab" data-toggle="tab" href="#mapList" role="tab"
+                            aria-controls="mapList" aria-selected="false">Map & List</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="map-tab" data-toggle="tab" href="#map" role="tab" aria-controls="map" aria-selected="false">Map</a>
+                        <a class="nav-link" id="map-tab" data-toggle="tab" href="#map" role="tab" aria-controls="map"
+                            aria-selected="false">Map</a>
                     </li>
-                  </ul>
+                </ul>
             </div>
-            
+
         </header>
     </div>
 
@@ -29,10 +33,195 @@
         <div class="col-12">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade " id="list" role="tabpanel" aria-labelledby="list-tab">1...</div>
-                <div class="tab-pane fade show active" id="mapList" role="tabpanel" aria-labelledby="mapList-tab">2...</div>
+                <div class="tab-pane fade show active" id="mapList" role="tabpanel" aria-labelledby="mapList-tab">2...
+                </div>
                 <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">3...</div>
-              </div>
+            </div>
         </div>
+    </div>
+
+    <div class="dropdown--open">
+        <form class="row">
+            <div class="col-12 col-lg-2">
+                <h1><strong>Sort by:</strong></h1>
+                <div class="radio">
+                    <label class="d-flex">
+                        <input type="radio" name="sortby" value="" id="checkDentist" checked="true">
+                        <span class="cr"><i class="cr-icon fa fa-circle "></i></span>
+                        Name
+                    </label>
+                    <label class="d-flex">
+                        <input type="radio" name="sortby" value="" id="checkDentist">
+                        <span class="cr"><i class="cr-icon fa fa-circle "></i></span>
+                        Location
+                    </label>
+                    <label class="d-flex">
+                        <input type="radio" name="sortby" value="" id="checkDentist">
+                        <span class="cr"><i class="cr-icon fa fa-circle "></i></span>
+                        Approximately
+                    </label>
+                    <label class="d-flex">
+                        <input type="radio" name="sortby" value="" id="checkDentist">
+                        <span class="cr"><i class="cr-icon fa fa-circle "></i></span>
+                        Availability
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <h1><strong>Insurance</strong></h1>
+                <div class="checkbox">
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Life insurance
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        General insurance
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Health insurance
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Disability insurance
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        None
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        <div class="form-group mb-0 w-60">
+                            <div class="input-group">
+                                <div class="input-group-prepend w-100 sm--dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                        type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Other</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">Other 1</a>
+                                        <a class="dropdown-item">Other 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <h1><strong>Response time</strong></h1>
+                <div class="checkbox">
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        More than 30 hrs/week
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Less than 30 hrs/week
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        As needed
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Not available
+                    </label>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <h1><strong>Connection</strong></h1>
+                <div class="checkbox">
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Worked before
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Active work
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Never worked together
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        In my network
+                    </label>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <h1><strong>Speciality type</strong></h1>
+                <div class="checkbox">
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Pedodontics
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Endodontist
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Maxillofacial Surgeon
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        Orthodontist
+                    </label>
+                    <label class="d-flex">
+                        <input type="checkbox" value="" id="">
+                        <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                        <div class="form-group mb-0 w-60">
+                            <div class="input-group">
+                                <div class="input-group-prepend w-100 sm--dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                        type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Other</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">Other 1</a>
+                                        <a class="dropdown-item">Other 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                    
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <h1 class="d-flex align-items-center justify-content-between">
+                    <strong>Proximity</strong>
+                    <span>> 1 miles & < 5 miles</span>
+                </h1>
+                <div class="row">
+                    <div class="col-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
 </div>
