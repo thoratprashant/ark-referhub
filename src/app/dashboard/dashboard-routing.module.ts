@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardLayoutComponent } from './layout/dashboard-layout.component';
 import { AboutComponent } from './layout/dental-office-profile/about/about.component';
 import { DentalsPhotosComponent } from './layout/dental-office-profile/dentals-photos/dentals-photos.component';
+import { SearchResultsComponent } from './layout/search-results/search-results.component';
 
 
 const routes: Routes = [{
@@ -16,6 +17,10 @@ const routes: Routes = [{
     {
       path: 'dentals-photos',
       component: DentalsPhotosComponent
+    },
+    {
+      path: 'search-results',
+      component: SearchResultsComponent
     },
   ]
 },];

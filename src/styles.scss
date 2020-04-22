@@ -677,6 +677,45 @@ form{
     }
 }
 
+.rounded--tabs{
+    border: 1px solid #169feb !important;
+    border-radius: 25px;
+    .nav-item{
+        .nav-link {
+            border-right: 1px solid #169feb;
+            border-radius: 0;
+            color: #169feb;
+            font-size: 11px;
+            padding: 0;
+            width: 80px;
+            height: 29px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover,
+            &.active{
+                border-color: transparent;
+                background-color: #169feb;
+                color: #fff;
+            }
+        }
+        &:first-child{
+            .nav-link{
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-left: 0;
+            }
+        }
+        &:last-child{
+            .nav-link{
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                border-right: 0;
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 599px) {
     .btn.btn-lg {

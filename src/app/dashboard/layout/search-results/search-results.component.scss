@@ -1,0 +1,32 @@
+.search--wrapper{
+    .search--header{
+        padding:17px 20px;
+        box-shadow: 0 1px 0 0 #eef0f9;
+        .actions{         
+            .btn-sm{
+                box-shadow: none;
+                width: 100px;
+                margin-right: 30px;
+            }
+            .selected--tags{
+                border-radius: 3px;
+                background-color: #fbfbfb;
+                padding: 4px 10px;
+                margin: 0 5px 0 0;
+                p{
+                    font-size: 12px;
+                }
+                .icon--close--tag{
+                    background-image: url('../../../../assets/images/close-button-sm.png');
+                    width: 9px;
+                    height: 8px;
+                    margin-left: 12px;
+                    display: inline-block;
+                    z-index: 999;
+                    cursor: pointer;
+                }
+            }
+        }
+       
+    }
+}
