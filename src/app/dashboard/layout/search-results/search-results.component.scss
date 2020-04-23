@@ -47,7 +47,14 @@
         left: 0px;
         z-index: 999999;
         width: 100%;
-        height: 300px;
+        height: auto;
+
+        &.close{
+            display: none;
+        }
+        &.open{
+            display: block;
+        }
 
         h1{
             font-size: 14px;
@@ -67,6 +74,7 @@
         .radio label,
         .checkbox label{
             font-size: 12px;
+            margin-bottom: 6px;
         }
         form .input-group-prepend.sm--dropdown .dropdown-toggle{
             height: 20px;
@@ -80,6 +88,78 @@
 
 
 
-        // 
+        ::ng-deep{
+            .ng5-slider{
+                margin: 8px 0 60px;
+            }
+            .ng5-slider .ng5-slider-bar{
+                border-radius: 7px;
+                background-color: rgba(22, 159, 235, 0.1);
+            }
+            .ng5-slider.animate .ng5-slider-selection{
+                background-color: #007bff !important;
+            }
+            .ng5-slider .ng5-slider-pointer {
+                cursor: pointer;
+                width: 13px;
+                height: 13px;
+                top: -5px;
+                color: #007bff !important;
+                &::after{
+                    content: none;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            .ng5-slider .ng5-slider-bubble b,
+            .ng5-slider .ng5-slider-bubble{
+                font-size: 12px !important;
+                color: rgba(0, 0, 0, 0.85) !important;
+                font-family: 'Avenir-medium' !important;
+                font-weight: 400;
+                bottom: -35px;
+            }
+            
+        }
+
+        .location--search{
+            h1{
+                margin-bottom: 8px;
+            }
+            .form-control{
+                height: 40px;
+                padding-left: 35px;
+                padding-right: 10px;
+            }
+            .icon--search{
+                background-image: url('../../../../assets/images/icon-search.png');
+                width: 14px;
+                height: 14px;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 12px;
+                top: 13px;
+                z-index: 999;
+            }
+        }
+
+        .dd--footer{
+            border-top: 1px solid #e6eaee;
+            padding-top: 30px;
+            margin-top: 25px;
+            .close--filter--btn{
+                width: 100px;
+                padding: 0 !important;
+                height: 30px !important;
+            }
+            .reset--filter{
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.85);
+                margin-left: 28px;
+                text-decoration: underline;
+            }
+        }
+        
     }
 }

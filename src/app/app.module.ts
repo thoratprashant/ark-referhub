@@ -7,6 +7,7 @@ import { FooterComponent } from './shared/layout/footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { AuthModule } from './auth/auth.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { Ng5SliderModule } from 'ng5-slider';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    DashboardModule
+    DashboardModule,
+    Ng5SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

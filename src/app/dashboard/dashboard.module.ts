@@ -10,6 +10,7 @@ import { DashboardFooterComponent } from '../shared/dashboard-layout/dashboard-f
 import { OfficeTabRightComponent } from './layout/dental-office-profile/office-tab-right/office-tab-right.component';
 import { DentalsPhotosComponent } from './layout/dental-office-profile/dentals-photos/dentals-photos.component';
 import { SearchResultsComponent } from './layout/search-results/search-results.component';
+import { Ng5SliderModule } from 'ng5-slider';
 
 
 
@@ -17,7 +18,8 @@ import { SearchResultsComponent } from './layout/search-results/search-results.c
   declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    Ng5SliderModule
   ]
 })
 export class DashboardModule { }

@@ -2,7 +2,7 @@
     <div class="row">
         <header class="search--header col-12 d-flex align-items-center justify-content-between">
             <div class="actions d-flex align-items-center flex-wrap">
-                <button type="button" class="btn btn-sm btn-primary">Filters</button>
+                <button type="button" class="btn btn-sm btn-primary" (click)="togglefilterBtn()" >Filters</button>
                 <div class="selected--tags d-flex align-items-center">
                     <p class="m-0">Speciality Type: <strong> Dentist</strong></p>
                     <i class="icon--close--tag"></i>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div class="dropdown--open">
+    <div class="dropdown--open"  [ngClass]="status ? 'close' : 'open'">
         <form class="row">
             <div class="col-12 col-lg-2">
                 <h1><strong>Sort by:</strong></h1>
@@ -217,8 +217,23 @@
                 </h1>
                 <div class="row">
                     <div class="col-12">
-                        
+                        <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 location--search">
+                        <h1><strong>Location</strong></h1>
+                        <div class="input-group relative">
+                            <input type="text" class="form-control" placeholder="Search" value="New York">
+                            <i class="icon--search"></i>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="dd--footer d-flex align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-primary close--filter--btn" (click)="togglefilterBtn()" >Close filters</button>
+                    <a class="reset--filter">Reset Filters</a>
                 </div>
             </div>
         </form>
