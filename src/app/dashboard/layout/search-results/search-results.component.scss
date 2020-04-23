@@ -1,4 +1,6 @@
 .search--wrapper{
+
+    // Search header
     .search--header{
         padding:17px 20px;
         box-shadow: 0 1px 0 0 #eef0f9;
@@ -35,6 +37,7 @@
        
     }
 
+    // Dropdown
     .dropdown--open{
         padding: 30px;
         // -webkit-backdrop-filter: blur(50px);
@@ -163,9 +166,134 @@
         
     }
 
-
+    // Map view
     .map--view{
         height: calc(100vh - 207px);
+    }
+
+    // List view
+    .list--wrapper{
+        .list--header{
+            padding: 17px 20px;
+            box-shadow: 0 1px 0 0 #eef0f9;
+            h1{
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.85);
+                margin: 0 0 2px 0;
+            }
+            p{
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.85);
+                opacity: 0.55;
+            }
+            .btn-sm{
+                height: 30px !important;
+                padding: 5px 40px !important;
+            }
+        }
+        .table-responsive{
+            height: calc(100vh - 345px);
+        }
+        .table{            
+            tr{
+                &:hover{
+                    background-image: linear-gradient(to left, #31cdf7, #169feb);
+                    
+                    td, .who--you{
+                        color: #fff !important;
+                        background-color: transparent !important;
+                        .btn{
+                            background-color: transparent !important;
+                            border-color: #fff !important;
+                            color: #fff !important;
+                        }
+                    }                   
+                }
+                &:nth-child(even) {
+                    td{
+                        background: #fbfbfb
+                    }
+                }
+                td{
+                    
+                    font-size: 13px;
+                    .ds--pic{
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+                    .who--you{
+                        color: #1faeef;
+                    }
+
+                    &:nth-child(1){
+                        width: auto;
+                    }
+                    &:nth-child(2){
+                        width: 125px;
+                    }
+                    &:nth-child(3){
+                        width: 115px;
+                    }
+                    &:nth-child(4){
+                        width: 12%;
+                    }
+                    &:nth-child(5){
+                        width: 140px;
+                    }
+                    &:nth-child(6){
+                        width: 12%;
+                    }
+                    &:nth-child(7){
+                        width: 106px;
+                    }
+                    &:nth-child(8){
+                        text-align: right;
+                        width: 23%;
+                        .btn {
+                            width: 120px;
+                            padding: 0 !important;
+                            &:first-child{
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+
+                &.open--jobs{
+                    td{
+                        &:first-child{
+                            border-left: 8px solid #169feb;
+                        }
+                    }
+                }
+                &.your--network{
+                    td{
+                        &:first-child{
+                            border-left: 8px solid #2c3341;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .indicators{
+            margin-right: 30px;
+            .ind--point{
+                width: 14px;
+                height: 14px;
+                background-color: #2c3341;
+                border-radius: 50%;
+                margin-right: 10px;
+                &.open--job{
+                    background-color: #169feb;
+                }
+            }
+        }
     }
 
 }

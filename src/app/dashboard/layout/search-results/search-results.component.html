@@ -1,8 +1,8 @@
-<div class="container-fluid  search--wrapper relative">
+<div class="container-fluid search--wrapper relative">
     <div class="row">
         <header class="search--header col-12 d-flex align-items-center justify-content-between">
             <div class="actions d-flex align-items-center flex-wrap">
-                <button type="button" class="btn btn-sm btn-primary" (click)="togglefilterBtn()" >Filters</button>
+                <button type="button" class="btn btn-sm btn-primary" (click)="togglefilterBtn()">Filters</button>
                 <div class="selected--tags d-flex align-items-center">
                     <p class="m-0">Speciality Type: <strong> Dentist</strong></p>
                     <i class="icon--close--tag"></i>
@@ -32,16 +32,357 @@
     <div class="row">
         <div class="col-12">
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade " id="list" role="tabpanel" aria-labelledby="list-tab">
+                <div class="tab-pane fade list--wrapper show active" id="list" role="tabpanel"
+                    aria-labelledby="list-tab">
                     <div class="row">
-                        a
+                        <header class="list--header col-12 d-flex justify-content-between ">
+                            <div>
+                                <h1><strong>Dentists & Specialists</strong></h1>
+                                <p class="m-0">We found 50 specialists due to your request.</p>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary black--btn btn-sm">Request A
+                                Quote</button>
+                        </header>
                     </div>
+                    <!-- table -->
+                    <div class="row">
+                        <div class="rf--hori--table ">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ds--pic">
+                                                        <img src="../../../../assets/images/profile-1-image-circle.png"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <h2 class="fnt-13 m-0"><strong>Jordan Ntolo</strong></h2>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="who--you">Dentist</a>
+                                            </td>
+                                            <td>
+                                                <div class="rating--star mb-0">
+                                                    <ul class="p-0 m-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong>Linhart Dentistry</strong>
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                2302 29th St
+                                            </td>
+                                            <td>
+                                                1 m
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary black--btn btn-sm">Show
+                                                    profile</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Start
+                                                    Referral</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ds--pic">
+                                                        <img src="../../../../assets/images/profile-2-image-circle.png"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <h2 class="fnt-13 m-0"><strong>Regina Pollastro</strong></h2>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="who--you">Specialist</a>
+                                            </td>
+                                            <td>
+                                                <div class="rating--star mb-0">
+                                                    <ul class="p-0 m-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong>Individual</strong>
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                Mobile
+                                            </td>
+                                            <td>
+                                                Within the city
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary black--btn btn-sm">Show
+                                                    profile</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Start
+                                                    Referral</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="open--jobs">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ds--pic">
+                                                        <img src="../../../../assets/images/profile-3-image-circle.png"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <h2 class="fnt-13 m-0"><strong>Lucas Simões</strong></h2>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="who--you">Dentist Assistant</a>
+                                            </td>
+                                            <td>
+                                                <div class="rating--star mb-0">
+                                                    <ul class="p-0 m-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong>Fine Dental</strong>
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                245 E 63rd St #110
+                                            </td>
+                                            <td>
+                                                1.1 m
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary black--btn btn-sm">Show
+                                                    profile</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Start
+                                                    Referral</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ds--pic">
+                                                        <img src="../../../../assets/images/profile-1-image-circle.png"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <h2 class="fnt-13 m-0"><strong>Jordan Ntolo</strong></h2>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="who--you">Dentist</a>
+                                            </td>
+                                            <td>
+                                                <div class="rating--star mb-0">
+                                                    <ul class="p-0 m-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong>Linhart Dentistry</strong>
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                2302 29th St
+                                            </td>
+                                            <td>
+                                                1 m
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary black--btn btn-sm">Show
+                                                    profile</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Start
+                                                    Referral</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="your--network">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ds--pic">
+                                                        <img src="../../../../assets/images/profile-2-image-circle.png"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <h2 class="fnt-13 m-0"><strong>Regina Pollastro</strong></h2>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="who--you">Specialist</a>
+                                            </td>
+                                            <td>
+                                                <div class="rating--star mb-0">
+                                                    <ul class="p-0 m-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong>Individual</strong>
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                Mobile
+                                            </td>
+                                            <td>
+                                                Within the city
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary black--btn btn-sm">Show
+                                                    profile</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Start
+                                                    Referral</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ds--pic">
+                                                        <img src="../../../../assets/images/profile-3-image-circle.png"
+                                                            alt="" class="img-fluid">
+                                                    </div>
+                                                    <h2 class="fnt-13 m-0"><strong>Lucas Simões</strong></h2>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="who--you">Dentist Assistant</a>
+                                            </td>
+                                            <td>
+                                                <div class="rating--star mb-0">
+                                                    <ul class="p-0 m-0">
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star active" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong>Fine Dental</strong>
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                245 E 63rd St #110
+                                            </td>
+                                            <td>
+                                                1.1 m
+                                            </td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-outline-primary black--btn btn-sm">Show
+                                                    profile</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary">Start
+                                                    Referral</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- table footer -->
+                            <div class="table--footer d-flex align-items-center justify-content-between">
+                                <ul class="d-flex rf--pagination m-0 p-0">
+                                    <li class="hide"><a class="next--prev relative ml-0"><i class="icon--next back"></i></a></li>
+                                    <li><a class="active">1</a></li>
+                                    <li><a>2</a></li>
+                                    <li><a>3</a></li>
+                                    <li><a>4</a></li>
+                                    <li><a>5</a></li>
+                                    <li><a>6</a></li>
+                                    <li><a>7</a></li>
+                                    <li><a class="more">...</a></li>
+                                    <li><a>17</a></li>
+                                    <li><a class="next--prev relative"><i class="icon--next"></i></a></li>
+                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <div class="indicators d-flex align-items-center">
+                                        <div class="ind--point"></div>
+                                        <div class="ind--name fnt-11">In your network</div>
+                                    </div>
+                                    <div class="indicators d-flex align-items-center mr-0">
+                                        <div class="ind--point open--job"></div>
+                                        <div class="ind--name fnt-11">Open jobs</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="tab-pane fade show active" id="mapList" role="tabpanel" aria-labelledby="mapList-tab">2...
+                <div class="tab-pane fade " id="mapList" role="tabpanel" aria-labelledby="mapList-tab">
+                    as
                 </div>
                 <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
                     <div class="row map--view">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.636138154934!2d73.76881631489383!3d18.590435987368426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbb9d175c7fd%3A0x8c91baa3af41fe7a!2sArkenea!5e0!3m2!1sen!2sin!4v1587619844342!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.636138154934!2d73.76881631489383!3d18.590435987368426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbb9d175c7fd%3A0x8c91baa3af41fe7a!2sArkenea!5e0!3m2!1sen!2sin!4v1587619844342!5m2!1sen!2sin"
+                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -49,7 +390,7 @@
     </div>
 
     <!-- Dropdown -->
-    <div class="dropdown--open"  [ngClass]="status ? 'close' : 'open'">
+    <div class="dropdown--open" [ngClass]="status ? 'close' : 'open'">
         <form class="row">
             <div class="col-12 col-lg-2">
                 <h1><strong>Sort by:</strong></h1>
@@ -215,7 +556,7 @@
                             </div>
                         </div>
                     </label>
-                    
+
 
                 </div>
             </div>
@@ -235,13 +576,14 @@
                         <div class="input-group relative">
                             <input type="text" class="form-control" placeholder="Search" value="New York">
                             <i class="icon--search"></i>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-12">
                 <div class="dd--footer d-flex align-items-center">
-                    <button type="button" class="btn btn-sm btn-outline-primary close--filter--btn" (click)="togglefilterBtn()" >Close filters</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary close--filter--btn"
+                        (click)="togglefilterBtn()">Close filters</button>
                     <a class="reset--filter">Reset Filters</a>
                 </div>
             </div>

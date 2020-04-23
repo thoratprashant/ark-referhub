@@ -290,6 +290,10 @@ ul{list-style-type: none;}
 .flex-shrink-0{ flex-shrink: 0;}
 .relative{position: relative;}
 .w-60{width: 60%;}
+.fnt-13{font-size: 13px !important;}
+.fnt-12{font-size: 12px !important;}
+.fnt-11{font-size: 11px !important;}
+.hide{display: none !important;}
 
 // form
 form{
@@ -509,6 +513,114 @@ form{
     }
 }
 
+// Pagination
+.rf--pagination{
+    li{
+        a{
+            font-size: 11px;
+            color: #169feb;
+            width: 27px;
+            height: 27px;
+            background-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 2px;
+            &:hover,
+            &.active{
+                font-family: "Avenir-bold";
+                background-color: #169feb;
+                color: #fff;
+            }
+            &.more{
+                &:hover{
+                    background-color: transparent;
+                    cursor: default;
+                    color: #169feb;
+                }
+            }
+            &.next--prev{
+                border: 1px solid #169feb;
+                .icon--next{
+                    background-image: url('assets/images/drop-arrow.png');
+                    width: 12px;
+                    height: 8px;
+                    background-repeat: no-repeat;
+                    transform: rotate(-91deg);
+                    position: absolute;
+                    top: 8px;
+                    left: 8px;
+                    &.back{
+                        transform: rotate(87deg);
+                        left: 5px;
+                        top: 10px;
+                    }
+                }
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+// Horizontal scroll table
+.rf--hori--table{
+    width: 100%;
+    overflow-x: auto;
+    .table-responsive{
+        .table {
+            tbody{
+                tr{
+                    &:last-child{
+                        td{
+                            border-bottom: 1px solid #ebedf8;
+                        }                        
+                    }
+                    td{
+                        border-top: 1px solid #ebedf8;
+                        padding: 15px 10px;
+                        vertical-align: middle;
+
+                        &:first-child{
+                            padding-left: 20px;
+                        }
+                        &:last-child{
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .table--footer{
+        padding: 17px 20px;
+        border-top:1px solid #eef0f9;
+    }
+}
+
+// rating--star 
+
+.rating--star{
+    ul{
+        list-style-type: none;
+        display: flex;
+        li{
+            line-height: 15px;
+            .fa{
+                &.active{
+                    color: #f6ca51;
+                }
+                color: #d8d8d8;
+                margin-left: 3px;
+                font-size: 11px;
+            }
+
+        }
+    }
+}
 // Additional global things (start here)
 .remove{
     font-size: 12px;
