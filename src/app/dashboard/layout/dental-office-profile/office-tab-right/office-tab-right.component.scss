@@ -37,7 +37,13 @@
         p{
             font-size: 12px;
             color: rgba(0, 0, 0, 0.85);
+            line-height: 1.69;
         }
+    }
+
+    .job--desc{
+        font-size: 13px;
+        line-height: 1.69;
     }
 
     .icon--building--active{
@@ -53,9 +59,24 @@
     .map--box{
         height: 400px;
     }
-    .address--box{
-        padding: 0 20px;
+    .address--box{       
         position: relative;
+        .address--body{
+            padding: 0 20px;
+            max-height: 252px;
+            overflow: auto;
+            .address--divider{
+                border-bottom: solid 1px #ebedf8;
+                &:last-child{
+                    border: none;
+                }
+                .reviewer--star{
+                    margin: 7px 0;
+                    line-height: 0;
+                }
+            }
+        }
+        
         .address--header{
             width: 140px;
             height: 35px;
@@ -113,25 +134,7 @@
         }
     }
 }
-.reviewer--star{
-    margin-bottom: 10px;
-    ul{
-        list-style-type: none;
-        display: flex;
-        li{
-            line-height: 15px;
-            .fa{
-                &.active{
-                    color: #f6ca51;
-                }
-                color: #d8d8d8;
-                margin-left: 3px;
-                font-size: 11px;
-            }
 
-        }
-    }
-}
 
 @media only screen and (min-width: 980px) and (max-width: 1279px){
     .right--box h2 {

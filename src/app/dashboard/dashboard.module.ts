@@ -11,11 +11,12 @@ import { OfficeTabRightComponent } from './layout/dental-office-profile/office-t
 import { DentalsPhotosComponent } from './layout/dental-office-profile/dentals-photos/dentals-photos.component';
 import { SearchResultsComponent } from './layout/search-results/search-results.component';
 import { Ng5SliderModule } from 'ng5-slider';
+import { DentalPersonalProfileComponent } from './layout/dental-personal-profile/dental-personal-profile.component';
 
 
 
 @NgModule({
-  declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent],
+  declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, DentalPersonalProfileComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

@@ -4,6 +4,7 @@ import { DashboardLayoutComponent } from './layout/dashboard-layout.component';
 import { AboutComponent } from './layout/dental-office-profile/about/about.component';
 import { DentalsPhotosComponent } from './layout/dental-office-profile/dentals-photos/dentals-photos.component';
 import { SearchResultsComponent } from './layout/search-results/search-results.component';
+import { DentalPersonalProfileComponent } from './layout/dental-personal-profile/dental-personal-profile.component';
 
 
 const routes: Routes = [{
@@ -21,6 +22,10 @@ const routes: Routes = [{
     {
       path: 'search-results',
       component: SearchResultsComponent
+    },
+    {
+      path: 'dental-profile',
+      component: DentalPersonalProfileComponent
     },
   ]
 },];
