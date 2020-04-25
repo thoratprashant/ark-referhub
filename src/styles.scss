@@ -502,6 +502,35 @@ form{
     }
   
 }
+
+// modal
+.rf--modal{
+    &.modal{
+        &.show{
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+            background-color: rgba(44, 51, 65, 0.9);
+        }
+        .modal-header{                
+            .modal-title{
+                font-size: 18px;
+            }        
+        }
+        .modal-body{
+            padding: 20px;
+        }
+        .modal-footer{
+            justify-content: flex-start;
+            padding: 20px;
+            & > *{
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
 // alerts
 .alert{
     padding: 13px 15px !important;

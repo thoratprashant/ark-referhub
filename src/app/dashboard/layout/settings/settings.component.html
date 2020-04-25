@@ -1,7 +1,8 @@
-<div class="alert alert-danger d-flex align-items-center justify-content-between withdraw--alert" role="alert" *ngIf="withdrawAlert">
+<div class="alert alert-danger d-flex align-items-center justify-content-between withdraw--alert" role="alert"
+    *ngIf="withdrawAlert">
     You have submitted a request to join the Good Dental business. Your request is currently under review.
-    <a>Withdraw Request</a>
-  </div>
+    <a data-toggle="modal" data-target="#SettingsSavedModal">Withdraw Request</a>
+</div>
 <div class="container-fluid pt-3 settings--wrapper">
     <div class="row">
         <div class="col-12 col-lg-8">
@@ -32,7 +33,7 @@
                                     <input type="email" class="form-control" aria-describedby="emailHelp"
                                         placeholder="Your first name" value="8015306628">
                                 </div>
-                                
+
                             </div>
                             <div class="col-12 col-lg-6 ">
                                 <div class="profile--img d-flex justify-content-center align-items-center">
@@ -41,9 +42,9 @@
                                         <img src="../../../../assets/images/profile-square.png" title=""
                                             class="img-fluid">
 
-                                            <div class="remove--img--tag">
-                                                <p class="m-0">Remove</p>
-                                            </div>
+                                        <div class="remove--img--tag">
+                                            <p class="m-0">Remove</p>
+                                        </div>
                                     </div>
                                     <div class="d-flex upload--select align-items-center">
                                         <i class="icon--camera--blue"></i>
@@ -145,16 +146,40 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary btn-md primary--two save--form" (click)="saveChanges()">Save</button>
+                                <button type="button" class="btn btn-primary btn-md primary--two save--form" (click)="saveChanges()">Save</button>                                
                             </div>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>
         </div>
         <div class="col-12 col-lg-4">
             <app-setting-right-side></app-setting-right-side>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade rf--modal" id="SettingsSavedModal" tabindex="-1" role="dialog" aria-labelledby="SettingsSavedModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SettingsSavedModalLabel"> <strong>Settings Saved</strong> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="m-0 modal--p d-flex align-items-center flex-wrap ">
+                    <img src="../../../../assets/images/circle-tick.png" alt="" class="mr-2">
+                    Youre settings have been saved. Changes take effect immediately.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary black--btn btn-md" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>

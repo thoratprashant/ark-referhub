@@ -121,3 +121,28 @@
         padding: 4px 46px !important;
     }
 }
+
+
+.rf--modal{
+    .modal-dialog{
+        margin-top: 18%;
+    }
+    .modal-body{
+        .modal--p{
+            line-height: 1.57;
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 14px;
+           
+        }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .rf--modal .modal-dialog {
+        margin-top: 45%;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .rf--modal .modal-dialog {
+        margin-top: 26%;
+    }
+}
