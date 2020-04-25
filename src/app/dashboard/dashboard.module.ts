@@ -12,11 +12,16 @@ import { DentalsPhotosComponent } from './layout/dental-office-profile/dentals-p
 import { SearchResultsComponent } from './layout/search-results/search-results.component';
 import { Ng5SliderModule } from 'ng5-slider';
 import { DentalPersonalProfileComponent } from './layout/dental-personal-profile/dental-personal-profile.component';
+import { SettingsComponent } from './layout/settings/settings.component';
+import { SettingRightSideComponent } from './layout/settings/setting-right-side/setting-right-side.component';
+
 
 
 
 @NgModule({
-  declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, DentalPersonalProfileComponent],
+  declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, 
+    DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
+    DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

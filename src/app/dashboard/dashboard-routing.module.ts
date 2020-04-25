@@ -5,6 +5,7 @@ import { AboutComponent } from './layout/dental-office-profile/about/about.compo
 import { DentalsPhotosComponent } from './layout/dental-office-profile/dentals-photos/dentals-photos.component';
 import { SearchResultsComponent } from './layout/search-results/search-results.component';
 import { DentalPersonalProfileComponent } from './layout/dental-personal-profile/dental-personal-profile.component';
+import { SettingsComponent } from './layout/settings/settings.component';
 
 
 const routes: Routes = [{
@@ -26,6 +27,10 @@ const routes: Routes = [{
     {
       path: 'dental-profile',
       component: DentalPersonalProfileComponent
+    },
+    {
+      path: 'settings',
+      component: SettingsComponent
     },
   ]
 },];

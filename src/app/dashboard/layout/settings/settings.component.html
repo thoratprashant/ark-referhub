@@ -1,0 +1,160 @@
+<div class="alert alert-danger d-flex align-items-center justify-content-between withdraw--alert" role="alert" *ngIf="withdrawAlert">
+    You have submitted a request to join the Good Dental business. Your request is currently under review.
+    <a>Withdraw Request</a>
+  </div>
+<div class="container-fluid pt-3 settings--wrapper">
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <div class="card rf--card">
+                <div class="card-header d-flex align-items-center">
+                    <h2 class="m-0"><strong>Settings</strong></h2>
+                </div>
+                <div class="card-body">
+                    <h2><strong>Contact</strong></h2>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>First name *</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        placeholder="Your first name" value="Megan">
+                                    <i class="icon--form icon-true"></i>
+                                    <!-- <i class="icon--form icon-false"></i> -->
+                                </div>
+                                <div class="form-group">
+                                    <label>Last name *</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        placeholder="Your last name" value="Rigden">
+                                </div>
+                                <div class="form-group mb-0">
+                                    <label>License number *</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        placeholder="Your first name" value="8015306628">
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-lg-6 ">
+                                <div class="profile--img d-flex justify-content-center align-items-center">
+                                    <h2 class="mb-0"><strong>Profile image</strong></h2>
+                                    <div class="user--pic d-flex justify-content-center align-items-center relative">
+                                        <img src="../../../../assets/images/profile-square.png" title=""
+                                            class="img-fluid">
+
+                                            <div class="remove--img--tag">
+                                                <p class="m-0">Remove</p>
+                                            </div>
+                                    </div>
+                                    <div class="d-flex upload--select align-items-center">
+                                        <i class="icon--camera--blue"></i>
+                                        <a>Upload photo</a>
+                                        <div class="or">or</div>
+                                        <a>Select avatar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>Phone *</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Mobile</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item">Phone</a>
+                                                <a class="dropdown-item">Other</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="012-345-6789"
+                                            aria-label="Text input with dropdown button" value="310-123-4567">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>Office phone number</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Mobile</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item">Phone</a>
+                                                <a class="dropdown-item">Other</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="012-345-6789"
+                                            aria-label="Text input with dropdown button" value="310-123-4567">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>Email address *</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        placeholder="Your email address" value="drmeganrigden@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label>Re-enter email address *</label>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        placeholder="Confirm email address" value="drmeganrigden@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="mt-2"><strong>Password</strong></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group mb-0">
+                                    <label>Password *</label>
+                                    <input type="password" class="form-control pr-100" aria-describedby="emailHelp"
+                                        placeholder="Password" value="**********">
+                                    <div class="pass--indi d-flex">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group mb-0">
+                                    <label>Re-enter password *</label>
+                                    <input type="password" class="form-control" aria-describedby="emailHelp"
+                                        placeholder="Confirm password" value="**********">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <small class="form-text pass--note">
+                                    <p class="mb-0">Your password must be at least 8 characters long, be of mixed
+                                        case and also contain a digit or symbol. </p>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary btn-md primary--two save--form" (click)="saveChanges()">Save</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <app-setting-right-side></app-setting-right-side>
+        </div>
+    </div>
+</div>

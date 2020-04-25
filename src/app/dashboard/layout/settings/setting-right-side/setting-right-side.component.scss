@@ -1,0 +1,18 @@
+.settings--right--wrapper{
+    .email--preferences{
+        padding: 30px 20px;
+        border-bottom: 1px solid #ebedf8;
+        &:last-child{
+            border: none;
+        }
+        h3{
+            font-size: 14px;
+            margin: 0 0 9px 0;
+        }
+        p{
+            font-size: 13px;
+            color: #2c3341;
+            line-height: 1.38;
+        }
+    }
+}
