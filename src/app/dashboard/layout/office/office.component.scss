@@ -1,0 +1,67 @@
+.office--wrapper{
+    .display--count{
+        h3{
+            font-size: 22px;
+            color: rgba(0, 0, 0, 0.85);
+            margin: 0 0 0 0;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.85);
+        }
+    }
+    .count--divider{
+        border-radius: 10px;
+        border-left: solid 1px #ebedf8;
+        margin: 0 85px;
+    }
+
+    .join--office--table{
+        .table-responsive{
+            .table {
+                tr{
+                    td{
+                        border: none;
+                        .decline--btn,
+                        .icon--more{
+                            margin-left: 15px;
+                        }
+                        &:first-child{
+                            width: 80%;
+                        }
+                        .ds--pic{
+                            width: 40px;
+                            height: 40px;
+                            object-fit: contain;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dp--list--table{
+        .table-responsive{
+            .table {
+                tr{
+                    td{
+                        
+                        &:first-child{
+                            width: 80%;
+                        }
+                        .ds--pic{
+                            width: 40px;
+                            height: 40px;
+                            object-fit: contain;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

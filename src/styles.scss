@@ -632,7 +632,6 @@ form{
 }
 
 // rating--star 
-
 .rating--star{
     ul{
         list-style-type: none;
@@ -651,6 +650,7 @@ form{
         }
     }
 }
+
 // Additional global things (start here)
 .remove{
     font-size: 12px;
@@ -715,6 +715,14 @@ form{
         }
     }                            
 }
+.icon--more{
+    background-image: url('./assets/images/more-icon.png');
+    width: 4px;
+    height: 18px;
+    object-fit: contain;
+    display: inline-block; 
+    cursor: pointer;
+}
 .dentals--imgs{
     .img--box{
         width: 60px;
@@ -745,6 +753,7 @@ form{
         cursor: pointer;
     }
 }
+
 
 
 // Card layout

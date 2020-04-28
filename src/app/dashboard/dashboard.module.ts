@@ -14,6 +14,7 @@ import { Ng5SliderModule } from 'ng5-slider';
 import { DentalPersonalProfileComponent } from './layout/dental-personal-profile/dental-personal-profile.component';
 import { SettingsComponent } from './layout/settings/settings.component';
 import { SettingRightSideComponent } from './layout/settings/setting-right-side/setting-right-side.component';
+import { OfficeComponent } from './layout/office/office.component';
 
 
 
@@ -21,7 +22,7 @@ import { SettingRightSideComponent } from './layout/settings/setting-right-side/
 @NgModule({
   declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, 
     DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
-    DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent],
+    DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
