@@ -1,0 +1,85 @@
+.office--right--wrapper{
+    .show--all{
+        font-size: 12px;
+        color: #169feb;
+        .icon--next {
+            background-image: url('../../../../../assets/images/menu-info.png');
+            width: 15px;
+            height: 15px;
+            background-repeat: no-repeat;
+            margin: 0 0 0 10px;
+        }
+        .icon--next {
+            background-image: url('../../../../../assets/images/drop-arrow.png  ');
+            width: 12px;
+            height: 8px;
+            background-repeat: no-repeat;
+            transform: rotate(268deg);
+            margin: 0 0 0 5px;
+        }
+    }
+
+    .latest--review--sec{
+        .review--body--header{
+            .photo--wrapper{
+                width: 34px;
+                height: 34px;
+            }
+        }
+        .reviews{
+            margin: 15px 0;
+        }
+        .date--time{
+            font-size: 11px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .main--photo{
+            border-bottom: 1px solid #ebedf8;
+            .photo--wrap{
+                height: 254px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 7px;
+            }
+            .change--photo--footer{
+                padding: 6px 15px;
+                background-color: rgba(255, 255, 255, 0.8);
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                .change--photo--btn{
+                    border-radius: 30px !important;
+                    padding: 7px 15px !important;
+                    background: #fff;
+                    border-color: #fff !important;
+                    color: #2c3341 !important;
+                    font-size: 11px !important;
+                }
+            }
+        }
+        .photo--list{
+            .photo--box{
+                width: 108px;
+                height: 108px;
+                border-radius: 7px;
+                margin: 13px 0 0 13px;
+                background-repeat: no-repeat;
+                position: relative;
+                    background-size: cover;
+            }
+            .icon--close{
+                background-image: url('../../../../../assets/images/close-button.png');
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                position: absolute;
+                right: 8px;
+                top: 5px;
+                z-index: 999;
+                cursor: pointer;
+            }
+        }
+    }
+}

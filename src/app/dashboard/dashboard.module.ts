@@ -15,6 +15,7 @@ import { DentalPersonalProfileComponent } from './layout/dental-personal-profile
 import { SettingsComponent } from './layout/settings/settings.component';
 import { SettingRightSideComponent } from './layout/settings/setting-right-side/setting-right-side.component';
 import { OfficeComponent } from './layout/office/office.component';
+import { OfficeRightSideComponent } from './layout/office/office-right-side/office-right-side.component';
 
 
 
@@ -22,7 +23,7 @@ import { OfficeComponent } from './layout/office/office.component';
 @NgModule({
   declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, 
     DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
-    DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent],
+    DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent, OfficeRightSideComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
