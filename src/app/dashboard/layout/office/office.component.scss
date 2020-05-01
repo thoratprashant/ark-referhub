@@ -154,6 +154,8 @@
                     margin-left: -11px;
                 }
             }
+
+            
         }
         .office--footer{
             padding: 20px;
@@ -162,6 +164,134 @@
                 padding: 9px 35px !important;
             }
         }
+
+        .insuranceAccepted--data{
+            .search--insu{
+                padding-left: 40px !important;    
+                border-radius: 6px;                
+            }
+            .icon--search{
+                background-image: url(/assets/images/icon-search.png);
+                width: 14px;
+                height: 14px;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 15px;
+                top: 15px;
+            }
+        }
+
+        .certifications--data{
+            header{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #ebedf8;
+                .btn {
+                    padding: 7px 28px !important;
+                }
+            }
+            .certificates{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                height: calc(100vh - 268px);
+                overflow: auto;
+                .box{
+                    width: 156px;
+                    height: 156px;
+                    border-radius: 7px;
+                    border: solid 1px #ebedf8;
+                    background-color: #ffffff;
+                    margin: 0 20px 15px 0;
+                    .icon--dark--close{
+                        background-image: url(/assets/images/close-with-cicle.png);
+                        width: 20px;
+                        height: 20px;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 7px;
+                        right: 7px;
+                    }
+                }
+            }
+        }
+
+
+        .complitedCases--data{
+            .before--after--btn{
+                padding: 3px 28px !important;
+                height: 37px !important;
+            }
+            .before--after--img{
+                height: 80px;
+                width: 100%;
+                border-radius: 7px;
+                position: relative;
+                border: 1px solid #ddd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                .icon--close{
+                    background-image: url('../../../../assets/images/close-button.png');
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    position: absolute;
+                    right: 8px;
+                    top: 5px;
+                    z-index: 999;
+                    cursor: pointer;
+                }
+            }
+
+            header{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #ebedf8;
+            }
+            .added--complited--cases{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 20px;
+                height: calc(100vh - 272px);
+                overflow: auto;
+
+                .cases--box{
+                    padding: 20px 15px 15px 15px;
+                    border-radius: 7px;
+                    border: solid 1px #ebedf8;
+                    background-color: #fff;
+                    margin-bottom: 15px;
+                    h5{
+                        font-size: 13px;
+                    }
+                    ul{
+                        li{
+                            font-size: 13px;
+                        }
+                    }
+    
+                    .case--details{
+                        border-right: solid 1px #ebedf8;
+                    }
+                }
+                .cases--footer{
+                    padding: 15px 20px 0 15px;
+                    border-top: 1px solid #ddd;
+                    margin-top: 25px;
+                    a{
+                        font-size: 13px;
+                        text-decoration: underline;
+                        color: rgba(0, 0, 0, 0.85);
+                    }
+                }
+            }
+            
+        }
+
     }
     
 }

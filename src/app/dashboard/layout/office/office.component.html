@@ -232,24 +232,24 @@
 
             <div class="card rf--card offce--info--tabs">
                 <div class="card-header d-flex align-items-center flex-wrap justify-content-between">
-                    <h2 class="m-0"><strong>Office Information</strong></h2>
-                    <ul class="nav nav-tabs normal--tabs rounded--tabs" id="myTab" role="tablist">
+                    <h2 class="m-0"><strong id="officeHeaderName">Office Information</strong></h2>
+                    <ul class="nav nav-tabs normal--tabs rounded--tabs" id="officeTabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="aboutOffice-tab" data-toggle="tab" href="#aboutOffice" role="tab"
-                                aria-controls="aboutOffice" aria-selected="true">About Office</a>
+                            <a class="nav-link active" id="aboutOffice-tab" data-toggle="tab" href="#aboutOffice"
+                                role="tab" aria-controls="aboutOffice" aria-selected="true" headerNames="Office Information" >About Office</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="insuranceAccepted-tab" data-toggle="tab"
-                                href="#insuranceAccepted" role="tab" aria-controls="insuranceAccepted"
-                                aria-selected="false">Insurance Accepted</a>
+                            <a class="nav-link" id="insuranceAccepted-tab" data-toggle="tab" href="#insuranceAccepted"
+                                role="tab" aria-controls="insuranceAccepted" aria-selected="false" headerNames="Insurance Accepted">Insurance
+                                Accepted</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="certifications-tab" data-toggle="tab" href="#certifications"
-                                role="tab" aria-controls="certifications" aria-selected="false">Certifications</a>
+                                role="tab" aria-controls="certifications" aria-selected="false" headerNames="Certifications">Certifications</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="complitedCases-tab" data-toggle="tab" href="#complitedCases"
-                                role="tab" aria-controls="complitedCases" aria-selected="false">Complited Cases</a>
+                                role="tab" aria-controls="complitedCases" aria-selected="false" headerNames="Complited Cases" >Complited Cases</a>
                         </li>
 
                     </ul>
@@ -257,26 +257,31 @@
                 <div class="card-body p-0">
                     <div class="row">
                         <div class="col-12">
-                            <div class="tab-content" id="myTabContent">
+                            <div class="tab-content" id="officeTabsContent">
+
+                                <!-- about office tab -->
                                 <div class="tab-pane fade show active" id="aboutOffice" role="tabpanel"
                                     aria-labelledby="aboutOffice-tab">
-                                    
+
                                     <section class="office--body">
                                         <form class="col-12">
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <div class="form-group">
                                                         <label>Name of the office *</label>
-                                                        <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                            placeholder="Name of the office" value="Linhart Dentistry" id="officeName">
+                                                        <input type="text" class="form-control"
+                                                            aria-describedby="emailHelp"
+                                                            placeholder="Name of the office" value="Linhart Dentistry"
+                                                            id="officeName">
                                                         <i class="icon--form icon-true"></i>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-lg-6">
                                                     <div class="form-group">
                                                         <label>Address *</label>
-                                                        <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                            placeholder="Address" value="509 Madison Ave #1704">
+                                                        <input type="text" class="form-control"
+                                                            aria-describedby="emailHelp" placeholder="Address"
+                                                            value="509 Madison Ave #1704">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-lg-6">
@@ -289,7 +294,8 @@
                                                                         <button
                                                                             class="btn btn-outline-secondary dropdown-toggle text-left w-100"
                                                                             type="button" data-toggle="dropdown"
-                                                                            aria-haspopup="true" aria-expanded="false">New
+                                                                            aria-haspopup="true"
+                                                                            aria-expanded="false">New
                                                                             York</button>
                                                                         <div class="dropdown-menu">
                                                                             <a class="dropdown-item">India</a>
@@ -297,19 +303,21 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>                                                    
+                                                            </div>
                                                         </div>
                                                         <div class="col-12 col-lg-5">
                                                             <div class="form-group">
                                                                 <label>ZIP *</label>
-                                                                <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                                    placeholder="Zip" value="100001">
+                                                                <input type="text" class="form-control"
+                                                                    aria-describedby="emailHelp" placeholder="Zip"
+                                                                    value="100001">
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
                                                             <div class="form-group">
                                                                 <div class="d-flex add--more align-items-center mt--5">
-                                                                    <i class="icon--add d-flex align-items-center justify-content-center">+</i>
+                                                                    <i
+                                                                        class="icon--add d-flex align-items-center justify-content-center">+</i>
                                                                     <a class="d-flex align-items-center">
                                                                         Add working hours
                                                                     </a>
@@ -328,9 +336,12 @@
                                                                         <button
                                                                             class="btn btn-outline-secondary dropdown-toggle text-left w-100"
                                                                             type="button" data-toggle="dropdown"
-                                                                            aria-haspopup="true" aria-expanded="false">Monday - Friday   09:00 AM – 07:00 PM</button>
+                                                                            aria-haspopup="true"
+                                                                            aria-expanded="false">Monday - Friday 09:00
+                                                                            AM – 07:00 PM</button>
                                                                         <div class="dropdown-menu">
-                                                                            <a class="dropdown-item">Monday - Friday   10:00 AM – 05:00 PM</a>
+                                                                            <a class="dropdown-item">Monday - Friday
+                                                                                10:00 AM – 05:00 PM</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -339,7 +350,8 @@
                                                         <div class="col-12">
                                                             <div class="form-group">
                                                                 <div class="d-flex add--more align-items-center mt--5">
-                                                                    <i class="icon--add d-flex align-items-center justify-content-center">+</i>
+                                                                    <i
+                                                                        class="icon--add d-flex align-items-center justify-content-center">+</i>
                                                                     <a class="d-flex align-items-center">
                                                                         Add more business hours
                                                                     </a>
@@ -347,112 +359,138 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
                                                 <div class="col-12 col-lg-6">
                                                     <div class="form-group">
-                                                        <label>Office Number *</label>
+                                                        <label>Phone number *</label>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                <button
+                                                                    class="btn btn-outline-secondary dropdown-toggle"
+                                                                    type="button" data-toggle="dropdown"
+                                                                    aria-haspopup="true"
                                                                     aria-expanded="false">Mobile</button>
                                                                 <div class="dropdown-menu">
-                                                                    <a class="dropdown-item" >Phone</a>
-                                                                    <a class="dropdown-item" >Other</a>
+                                                                    <a class="dropdown-item">Phone</a>
+                                                                    <a class="dropdown-item">Other</a>
                                                                 </div>
                                                             </div>
-                                                            <input type="text" class="form-control" placeholder="012-345-6789"
+                                                            <input type="text" class="form-control" value="012-345-6789"
                                                                 aria-label="Text input with dropdown button">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <div class="d-flex add--more align-items-center mt--5">
-                                                            <i class="icon--add d-flex align-items-center justify-content-center">+</i>
+                                                            <i
+                                                                class="icon--add d-flex align-items-center justify-content-center">+</i>
                                                             <a class="d-flex align-items-center">
                                                                 Add phone number
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
                                                 <div class="col-12 col-lg-6">
                                                     <div class="form-group">
                                                         <label>Email</label>
-                                                        <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                            placeholder="Office email address" >
+                                                        <input type="text" class="form-control"
+                                                            aria-describedby="emailHelp"
+                                                            placeholder="Office email address"
+                                                            value="info@linhartdentistry.com">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 mt-2">
-                                                    <button type="button" class="btn btn-outline-primary btn-sm d-flex align-item-center">
+                                                    <button type="button"
+                                                        class="btn btn-outline-primary btn-sm d-flex align-item-center">
                                                         <i class="icon--office mr-2"></i>
                                                         Add office</button>
                                                 </div>
-        
+
                                                 <!-- same dental office name (start here) -->
-                                                    <div class="same--name--office" id="sameOfficeExist">
-                                                        <i class="arrow_box"></i>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="alert alert-danger" role="alert">
-                                                                    Good Dental already exist on ReferHub. Do you want to be added to this business?
-                                                                  </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-12 col-lg-4 office--details">
-                                                                <h1>Good Dental</h1>
-                                                                <div class="reviewer--star">
-                                                                    <ul class="p-0 m-0">
-                                                                      <li><i class="fa fa-star ml-0 active" aria-hidden="true"></i></li>
-                                                                      <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                                                      <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                                                      <li><i class="fa fa-star active" aria-hidden="true"></i></li>
-                                                                      <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                                    </ul>
-                                                                  </div>
-                                                                  <address>
-                                                                      <h4 class="m-0"><strong>New York</strong></h4>
-                                                                      <p>245 E 63rd St #110</p>
-                                                                      <p><strong>310-123-4567</strong></p>
-                                                                  </address>
-                                                            </div>
-                                                            <div class="col-12 col-lg-8 pl-0">
-                                                                <div class="dentals--imgs d-flex justify-content-end flex-wrap">
-                                                                    <div class="img--box d-flex align-items-center justify-content-center">
-                                                                        <img src="../../../assets/images/01.png" alt="" class="img-fluid">
-                                                                    </div>
-                                                                    <div class="img--box d-flex align-items-center justify-content-center">
-                                                                        <img src="../../../assets/images/02.png" alt="" class="img-fluid">
-                                                                    </div>
-                                                                    <div class="img--box d-flex align-items-center justify-content-center">
-                                                                        <img src="../../../assets/images/03.png" alt="" class="img-fluid">
-                                                                    </div>
-                                                                    <div class="img--box d-flex align-items-center justify-content-center">
-                                                                        <img src="../../../assets/images/04.png" alt="" class="img-fluid">
-                                                                    </div>
-                                                                    <div class="img--box d-flex align-items-center justify-content-center">
-                                                                        <img src="../../../assets/images/05.png" alt="" class="img-fluid">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="divider"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row footer">
-                                                            <div class="col-12 col-lg-7">
-                                                                <button type="button" class="btn btn-outline-primary btn-md btn-sm off-cancel-btn">Cancel</button>
-                                                                <button type="button" class="btn btn-primary primary--two btn-sm add-me-btn">Add me to this office</button>
-                                                            </div>
-                                                            <div class="col-12 col-lg-5 p--note">
-                                                                <p class="m-0 text-right ">Your profile will be added once
-                                                                    the office admin confirms your request.</p>
+                                                <div class="same--name--office" id="sameOfficeExist">
+                                                    <i class="arrow_box"></i>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="alert alert-danger" role="alert">
+                                                                Good Dental already exist on ReferHub. Do you want to be
+                                                                added to this business?
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-lg-4 office--details">
+                                                            <h1>Good Dental</h1>
+                                                            <div class="reviewer--star">
+                                                                <ul class="p-0 m-0">
+                                                                    <li><i class="fa fa-star ml-0 active"
+                                                                            aria-hidden="true"></i></li>
+                                                                    <li><i class="fa fa-star active"
+                                                                            aria-hidden="true"></i></li>
+                                                                    <li><i class="fa fa-star active"
+                                                                            aria-hidden="true"></i></li>
+                                                                    <li><i class="fa fa-star active"
+                                                                            aria-hidden="true"></i></li>
+                                                                    <li><i class="fa fa-star" aria-hidden="true"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <address>
+                                                                <h4 class="m-0"><strong>New York</strong></h4>
+                                                                <p>245 E 63rd St #110</p>
+                                                                <p><strong>310-123-4567</strong></p>
+                                                            </address>
+                                                        </div>
+                                                        <div class="col-12 col-lg-8 pl-0">
+                                                            <div
+                                                                class="dentals--imgs d-flex justify-content-end flex-wrap">
+                                                                <div
+                                                                    class="img--box d-flex align-items-center justify-content-center">
+                                                                    <img src="../../../assets/images/01.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <div
+                                                                    class="img--box d-flex align-items-center justify-content-center">
+                                                                    <img src="../../../assets/images/02.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <div
+                                                                    class="img--box d-flex align-items-center justify-content-center">
+                                                                    <img src="../../../assets/images/03.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <div
+                                                                    class="img--box d-flex align-items-center justify-content-center">
+                                                                    <img src="../../../assets/images/04.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                                <div
+                                                                    class="img--box d-flex align-items-center justify-content-center">
+                                                                    <img src="../../../assets/images/05.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="divider"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row footer">
+                                                        <div class="col-12 col-lg-7">
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary btn-md btn-sm off-cancel-btn">Cancel</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary primary--two btn-sm add-me-btn">Add
+                                                                me to this office</button>
+                                                        </div>
+                                                        <div class="col-12 col-lg-5 p--note">
+                                                            <p class="m-0 text-right ">Your profile will be added once
+                                                                the office admin confirms your request.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <!-- same dental office name (end here) -->
                                             </div>
                                         </form>
@@ -466,17 +504,319 @@
                                     </footer>
 
                                 </div>
-                                <div class="tab-pane fade" id="insuranceAccepted" role="tabpanel"
-                                    aria-labelledby="insuranceAccepted-tab">
-                                    insuranceAccepted
+
+                                <!-- Insurance accepted tab -->
+                                <div class="tab-pane fade insuranceAccepted--data" id="insuranceAccepted"
+                                    role="tabpanel" aria-labelledby="insuranceAccepted-tab">
+
+                                    <form class="office--body">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control search--insu "
+                                                            placeholder="Search Insurance">
+                                                        <i class="icon--search"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="checkbox">
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Access Dental
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            AmeriPlan Discount
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Assurant/Dental Health Alliance Discount
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            CompBenefits
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            CompDent Advantage
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Connection Dental
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Coventry First Health
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="checkbox">
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Delta Dental Preferred
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Delta Dental Premier
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            DeltaCare
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Dental Benefit Providers
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            CompDent
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Dental Health Alliance
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Dental Network of America
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="">
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Dental Wellness
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="checkbox">
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Dentemax
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" >
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Employers Dental Service
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" >
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Principal
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" checked>
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            UniCare
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" >
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            CompDent
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" >
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            Principal
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" >
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            UniCare
+                                                        </label>
+                                                        <label class="d-flex">
+                                                            <input type="checkbox" value="" id="" >
+                                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                            WellPoint
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <footer class="office--footer d-flex align-items-center justify-content-between ">
+                                        <button type="button" class="btn btn-md btn-outline-primary"> Save
+                                        </button>
+                                        <button type="button"
+                                            class="btn btn-outline-primary black--btn btn-md decline--btn">Cancel
+                                        </button>
+                                    </footer>
                                 </div>
-                                <div class="tab-pane fade" id="certifications" role="tabpanel"
+
+                                <!-- certification -->
+                                <div class="tab-pane fade certifications--data" id="certifications" role="tabpanel"
                                     aria-labelledby="certifications-tab">
-                                    certifications
+                                    <header class="col-12">
+                                        <button type="button" class="btn btn-md btn-outline-primary">Upload Certificate Photo or Scan</button>
+                                    </header>
+                                    <section class="col-12 certificates pr-0 d-flex flex-wrap">
+                                        <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-1.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                        <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-2.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                        <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-3.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                        <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-4.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                        <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-5.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                        <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-6.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                         <div class="box d-flex align-items-center justify-content-center relative">
+                                            <img src="../../../../assets/images/certificate-7.png" alt="" class="img-fluid">
+                                            <i class="icon--dark--close"></i>
+                                        </div>
+                                    </section>
+                                    
                                 </div>
-                                <div class="tab-pane fade" id="complitedCases" role="tabpanel"
+
+                                <!-- complited Cases -->
+                                <div class="tab-pane fade complitedCases--data" id="complitedCases" role="tabpanel"
                                     aria-labelledby="complitedCases-tab">
-                                    complitedCases
+                                    
+                                    <div *ngIf="addComplitedCases">
+                                        <form class="office--body">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label>Case Title *</label>
+                                                            <input type="text" class="form-control" placeholder="Title">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Case Description *</label>
+                                                            <textarea class="form-control"  rows="3" placeholder="Description"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="w-100">Photo Before:</label>
+                                                                    <button (click)="addImages()" *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn"> Attach case photo </button>
+                                                                    <div *ngIf="beforeAfterImage" class="before--after--img" style="background-image: url('/assets/images/image-2-rounded.png');">                                
+                                                                        <i class="icon--close"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="w-100">Photo After:</label>
+                                                                    <button *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn"> Attach case photo </button>
+                                                                    <div *ngIf="beforeAfterImage" class="before--after--img" style="background-image: url('/assets/images/image-2-rounded.png');">                                
+                                                                        <i class="icon--close"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <footer class="office--footer d-flex align-items-center justify-content-between ">
+                                            <button type="button" class="btn btn-md btn-outline-primary" (click)="showComplitedCases()" > Save
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-outline-primary black--btn btn-md decline--btn">Cancel
+                                            </button>
+                                        </footer>
+                                    </div>
+
+                                    <div *ngIf="complitedCases" class="">
+                                        <header class="col-12">
+                                            <button type="button" class="btn btn-md btn-outline-primary">Add new complited cases</button>
+                                        </header>
+                                        <div class="added--complited--cases d-flex">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-6 pr-0">
+                                                        <div class="cases--box">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-12 col-sm-8 col-lg-8 case--details">
+                                                                    <h5><strong>Teeth Whitening</strong></h5>
+                                                                    <ul class="p-0 m-0 border-0">
+                                                                        <li>– 29-year old female</li>
+                                                                        <li>– Periodontal conditions</li>
+                                                                        <li>– Never had a prophylaxis</li>
+                                                                        <li>– Smoker</li>
+                                                                        <li>– Number of treatments - 3</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-12 col-sm-4 col-lg-4 case--pic text-center">
+                                                                    <img src="/assets/images/teeth-whitening.png"
+                                                                        alt="" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="w-100 cases--footer d-flex align-items-center justify-content-between">
+                                                                    <a>Edit</a>
+                                                                    <a>Remove</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-12 col-lg-6 pr-0">
+                                                        <div class="cases--box">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-12 col-sm-8 col-lg-8 case--details">
+                                                                    <h5><strong>Veneers</strong></h5>
+                                                                    <ul class="p-0 m-0 border-0">
+                                                                        <li>– 34-year old female</li>
+                                                                        <li>– Irregular dental care</li>
+                                                                        <li>– Family history with medical concerns</li>
+                                                                        <li>– Multiple medications</li>
+                                                                        <li>– Number of treatments - 3</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-12 col-sm-4 col-lg-4 case--pic text-center">
+                                                                    <img src="/assets/images/veneers.png" alt=""
+                                                                        class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="w-100 cases--footer d-flex align-items-center justify-content-between">
+                                                                    <a>Edit</a>
+                                                                    <a>Remove</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
