@@ -7,6 +7,7 @@ import { SearchResultsComponent } from './layout/search-results/search-results.c
 import { DentalPersonalProfileComponent } from './layout/dental-personal-profile/dental-personal-profile.component';
 import { SettingsComponent } from './layout/settings/settings.component';
 import { OfficeComponent } from './layout/office/office.component';
+import { OfficePermissionComponent } from './layout/office/office-permission/office-permission.component';
 
 
 const routes: Routes = [{
@@ -36,6 +37,10 @@ const routes: Routes = [{
     {
       path: 'office',
       component: OfficeComponent
+    },
+    {
+      path: 'office-permission',
+      component: OfficePermissionComponent
     },
   ]
 },];
