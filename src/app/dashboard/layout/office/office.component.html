@@ -67,7 +67,7 @@
                                             </div>
                                         </td>
                                         <td class="d-flex align-items-center">
-                                            <button type="button" class="btn btn-md btn-outline-primary"> Accept
+                                            <button type="button" class="btn btn-md btn-outline-primary" [routerLink]="['/office-permission']"> Accept
                                             </button>
                                             <button type="button"
                                                 class="btn btn-outline-primary black--btn btn-md decline--btn">Decline
@@ -519,7 +519,7 @@
                                                         <i class="icon--search"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-lg-4">
+                                                <div class="col-12 col-sm-6 col-lg-4">
                                                     <div class="checkbox">
                                                         <label class="d-flex">
                                                             <input type="checkbox" value="" id="" checked>
@@ -559,7 +559,7 @@
 
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-lg-4">
+                                                <div class="col-12 col-sm-6 col-lg-4">
                                                     <div class="checkbox">
                                                         <label class="d-flex">
                                                             <input type="checkbox" value="" id="" checked>
@@ -603,7 +603,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-lg-4">
+                                                <div class="col-12 col-sm-6 col-lg-4">
                                                     <div class="checkbox">
                                                         <label class="d-flex">
                                                             <input type="checkbox" value="" id="" checked>
@@ -666,7 +666,7 @@
                                     <header class="col-12">
                                         <button type="button" class="btn btn-md btn-outline-primary">Upload Certificate Photo or Scan</button>
                                     </header>
-                                    <section class="col-12 certificates pr-0 d-flex flex-wrap">
+                                    <section class="col-12 certificates pr-0">
                                         <div class="box d-flex align-items-center justify-content-center relative">
                                             <img src="../../../../assets/images/certificate-1.png" alt="" class="img-fluid">
                                             <i class="icon--dark--close"></i>
@@ -685,14 +685,6 @@
                                         </div>
                                         <div class="box d-flex align-items-center justify-content-center relative">
                                             <img src="../../../../assets/images/certificate-5.png" alt="" class="img-fluid">
-                                            <i class="icon--dark--close"></i>
-                                        </div>
-                                        <div class="box d-flex align-items-center justify-content-center relative">
-                                            <img src="../../../../assets/images/certificate-6.png" alt="" class="img-fluid">
-                                            <i class="icon--dark--close"></i>
-                                        </div>
-                                         <div class="box d-flex align-items-center justify-content-center relative">
-                                            <img src="../../../../assets/images/certificate-7.png" alt="" class="img-fluid">
                                             <i class="icon--dark--close"></i>
                                         </div>
                                     </section>
@@ -719,7 +711,7 @@
                                                     </div>
                                                     <div class="col-12 col-lg-6">
                                                         <div class="row">
-                                                            <div class="col-12 col-lg-6">
+                                                            <div class="col-12 col-sm-4 col-lg-6">
                                                                 <div class="form-group">
                                                                     <label class="w-100">Photo Before:</label>
                                                                     <button (click)="addImages()" *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn"> Attach case photo </button>
@@ -728,7 +720,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 col-lg-6">
+                                                            <div class="col-12 col-sm-4 col-lg-6">
                                                                 <div class="form-group">
                                                                     <label class="w-100">Photo After:</label>
                                                                     <button *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn"> Attach case photo </button>

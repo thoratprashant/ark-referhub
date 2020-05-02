@@ -61,10 +61,10 @@
         }
         .photo--list{
             .photo--box{
-                width: 108px;
-                height: 108px;
+                width: 128px;
+                height: 128px;
                 border-radius: 7px;
-                margin: 13px 0 0 13px;
+                margin: 13px 13px 0 0;
                 background-repeat: no-repeat;
                 position: relative;
                     background-size: cover;
@@ -81,5 +81,40 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .office--right--wrapper .latest--review--sec .photo--list .photo--box {
+        width: 148px;
+        height: 148px;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .rf--card.card .card-header h2 {
+        font-size: 15px;
+    }
+    .office--right--wrapper .latest--review--sec .photo--list .photo--box {
+        width: 118px;
+        height: 118px;
+    }
+    .office--right--wrapper .latest--review--sec .main--photo .change--photo--footer .change--photo--btn{
+        padding: 7px 7px !important;
+    }
+    
+}
+@media only screen and (min-width: 1280px) and (max-width: 1367px){
+    .office--right--wrapper .latest--review--sec .photo--list .photo--box {
+        width: 113px;
+        height: 113px;
+    }
+}
+@media only screen and (min-width: 1368px) and (max-width: 1440px){
+    .office--right--wrapper .latest--review--sec .photo--list .photo--box {
+        width: 121px;
+        height: 121px;
     }
 }

@@ -95,7 +95,7 @@
             
         }
         .office--body{
-            height: 61vh;
+            height: 49vh;
             overflow: auto;
             padding: 15px 0;
             .same--name--office{
@@ -193,15 +193,16 @@
             .certificates{
                 padding-top: 15px;
                 padding-bottom: 15px;
-                height: calc(100vh - 268px);
+                height: calc(100vh - 355px);
                 overflow: auto;
                 .box{
-                    width: 156px;
-                    height: 156px;
+                    width: 163px;
+                    height: 163px;
                     border-radius: 7px;
                     border: solid 1px #ebedf8;
                     background-color: #ffffff;
                     margin: 0 20px 15px 0;
+                    float: left;
                     .icon--dark--close{
                         background-image: url(/assets/images/close-with-cicle.png);
                         width: 20px;
@@ -256,7 +257,7 @@
                 padding-top: 15px;
                 padding-bottom: 15px;
                 padding-right: 20px;
-                height: calc(100vh - 272px);
+                height: calc(100vh - 355px);
                 overflow: auto;
 
                 .cases--box{
@@ -295,3 +296,82 @@
     }
     
 }
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .office--wrapper .count--divider {
+        margin: 0 45px;
+    }
+    .office--wrapper .offce--info--tabs li a {
+        font-size: 12px;
+    }
+    .office--wrapper .rf--card.card .card-header h2 {
+        font-size: 15px;
+    }
+    .office--wrapper .offce--info--tabs .certifications--data .certificates .box {
+        width: 142px;
+        height: 142px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .office--wrapper .count--divider {
+        margin: 0 35px;
+    }
+    .office--wrapper .offce--info--tabs li a {
+        padding: 6px 5px;
+        font-size: 12px;
+    }
+    .office--wrapper .rf--card.card .card-header h2 {
+        font-size: 15px;
+    }
+    .office--wrapper .offce--info--tabs .certifications--data .certificates .box {
+        width: 127px;
+        height: 127px;
+    }
+    .office--wrapper .offce--info--tabs .complitedCases--data .before--after--btn {
+        padding: 3px 8px !important;
+        font-size: 12px !important;
+    }
+    .office--wrapper .offce--info--tabs .complitedCases--data .added--complited--cases,
+    .office--wrapper .offce--info--tabs .certifications--data .certificates{
+        height: 51vh;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1367px){
+    .office--wrapper .count--divider {
+        margin: 0 70px;
+    }
+    .office--wrapper .offce--info--tabs .office--body {
+        height: 43vh;
+    }
+    .office--wrapper .offce--info--tabs .certifications--data .certificates,
+    .office--wrapper .offce--info--tabs .complitedCases--data .added--complited--cases {
+        height: calc(100vh - 424px);
+    }
+    .office--wrapper .offce--info--tabs .certifications--data .certificates .box {
+        width: 143px;
+        height: 143px;
+    }
+}
+@media only screen and (min-width: 1368px) and (max-width: 1440px){
+    .office--wrapper .count--divider {
+        margin: 0 70px;
+    }
+    .office--wrapper .offce--info--tabs .office--body {
+        height: 38vh;
+    }
+    .office--wrapper .offce--info--tabs .certifications--data .certificates,
+    .office--wrapper .offce--info--tabs .complitedCases--data .added--complited--cases {
+        height: calc(100vh - 544px);
+    }
+    .office--wrapper .offce--info--tabs .certifications--data .certificates .box {
+        width: 153px;
+        height: 153px;
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
