@@ -17,6 +17,7 @@ import { SettingRightSideComponent } from './layout/settings/setting-right-side/
 import { OfficeComponent } from './layout/office/office.component';
 import { OfficeRightSideComponent } from './layout/office/office-right-side/office-right-side.component';
 import { OfficePermissionComponent } from './layout/office/office-permission/office-permission.component';
+import { InvitesComponent } from './layout/refer-a-friend/invites/invites.component';
 
 
 
@@ -25,7 +26,7 @@ import { OfficePermissionComponent } from './layout/office/office-permission/off
   declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, 
     DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
     DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent, 
-    OfficeRightSideComponent, OfficePermissionComponent],
+    OfficeRightSideComponent, OfficePermissionComponent, InvitesComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

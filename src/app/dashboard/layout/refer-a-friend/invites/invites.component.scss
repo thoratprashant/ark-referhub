@@ -1,0 +1,160 @@
+.invite--wrapper{
+    margin-top: 15px;
+    .invites--list{
+        .card-header{
+            h1{
+                margin-left: 20px;
+            }
+            form{
+                margin-left: auto;
+            }
+            .search--invites{
+                height: 40px;
+                padding-left: 35px;
+                padding-right: 10px;
+                border-radius: 4px;
+                width: 260px;
+                margin-right: 30px;
+            }
+            .icon--search{
+                background-image: url('../../../../../assets/images/icon-search.png');
+                width: 14px;
+                height: 14px;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 12px;
+                top: 13px;
+                z-index: 999;
+            }
+        }
+    }
+    .invites--table{ 
+        .table-responsive{
+            height: calc(100vh - 300px);
+            overflow: auto;
+            .table{
+                tbody{
+                    tr{
+                        td{
+                            font-size: 13px;
+                            color: rgba(0, 0, 0, 0.85);
+                            padding: 23px 15px;
+                            &:nth-child(2){
+                                width: 18%;
+                                text-align: right;
+                            }
+                            &:nth-child(3){
+                                width: 135px;
+                                text-align: right;
+                                .btn-sm{
+                                    border-radius: 30px !important;
+                                    width: 100px;
+                                    height: 28px !important;
+                                    padding: 0 !important;
+                                    font-size: 10px !important;
+                                }
+                            }
+                        }
+                        &:nth-child(odd) {
+                            td{
+                                background: #fbfbfb
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Right side
+    .invite--right--sec{
+        h3{
+            font-size: 14px;
+            margin-bottom: 11px;
+        }
+        p{
+            font-size: 13px;
+        }
+        .btn-md{
+            padding: 9px 33px !important;
+        }
+        .card--footer{
+            border-top: solid 1px #ebedf8;
+            .rounded--tabs{
+                border: 1px solid transparent !important;
+                li{
+                    a{
+                        background-color: #e8f3ff;
+                        border-color: #fff;
+                        width: 50px;
+                        height: 20px;
+                        &.active{
+                            background-color: #169feb;
+                        }
+                    }
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .invite--wrapper .invites--list .card-header .search--invites{
+        width: 180px;
+    }
+    .invite--wrapper .invites--table .table-responsive .table tbody tr td:nth-child(2) {
+        width: 28%;
+    }
+    .invite--wrapper .invites--table .table-responsive {
+        height: calc(100vh - 566px);
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .invite--wrapper .invites--list .card-header .search--invites{
+        width: 147px;
+    }
+    .invite--wrapper .invites--table .table-responsive .table tbody tr td:nth-child(2) {
+        width: 27%;
+    }
+    .invite--wrapper .invite--right--sec .card-header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+    .invite--wrapper .invite--right--sec .btn-md{
+        margin-top: 10px;
+    }
+    .invite--wrapper .invite--right--sec .card--footer{
+        flex-direction: column;
+    }
+    .invite--wrapper .invite--right--sec .card--footer .rounded--tabs li a {
+        width: 42px;
+        margin-bottom: 7px;
+    }
+    .invite--wrapper .invites--table .table-responsive {
+        height: calc(100vh - 315px);
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+    .invite--wrapper .rf--card.card .card-header h2{
+        font-size: 16px;
+    }
+    .invite--wrapper .invite--right--sec .card--footer p {
+        font-size: 12px;
+    }
+    .invite--wrapper .invite--right--sec .card--footer .rounded--tabs li a{
+        width: 45px;
+    }
+    .invite--wrapper .invites--table .table-responsive .table tbody tr td:nth-child(2) {
+        width: 20%;
+    }
+    
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}

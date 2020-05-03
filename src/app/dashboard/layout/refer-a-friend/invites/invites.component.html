@@ -1,0 +1,272 @@
+<div class="container-fluid invite--wrapper">
+
+    <div class="row ">
+
+        <div class="col-12 col-lg-8 invites--list">
+            <div class="card rf--card">
+                <div class="card-header d-flex align-items-center ">
+                    <a class="back--to d-flex align-items-center" [routerLink]="['/dashboard/office']">
+                        <i class="icon--prev"></i>
+                        Back
+                    </a>
+                    <h1><strong>Invites</strong></h1>
+                    <form>
+                        <div class="input-group relative">
+                            <input type="text" class="form-control search--invites" placeholder="Search" value="">
+                            <i class="icon--search"></i>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center flex-shrink-0">
+                        <ul class="nav nav-tabs rounded--tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                                    aria-controls="all" aria-selected="true">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="sent-tab" data-toggle="tab" href="#sentList" role="tab"
+                                    aria-controls="sentList" aria-selected="false">Sent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="accepted-tab" data-toggle="tab" href="#accepted" role="tab"
+                                    aria-controls="accepted" aria-selected="false">Accepted</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form class="card-body p-0">
+                    <div class="tab-content" id="officeTabsContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="rf--hori--table invites--table">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>nadya-ostrova@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>alyona-k@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nayaradelafuente@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>arina-belomestnykh@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nayaradelafuente@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nadya-ostrova@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>alyona-k@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nayaradelafuente@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>arina-belomestnykh@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nayaradelafuente@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- table footer -->
+                                <div class="table--footer d-flex align-items-center justify-content-between">
+                                    <ul class="d-flex rf--pagination m-0 p-0">
+                                        <li class="hide"><a class="next--prev relative ml-0"><i
+                                                    class="icon--next back"></i></a></li>
+                                        <li><a class="active">1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+                                        <li><a>4</a></li>
+                                        <li><a>5</a></li>
+                                        <li><a>6</a></li>
+                                        <li><a>7</a></li>
+                                        <li><a class="more">...</a></li>
+                                        <li><a>17</a></li>
+                                        <li><a class="next--prev relative"><i class="icon--next"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="sentList" role="tabpanel"
+                            aria-labelledby="sentList-tab">
+                            <div class="rf--hori--table invites--table">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>nadya-ostrova@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>alyona-k@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nayaradelafuente@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>arina-belomestnykh@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                           
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- table footer -->
+                                <div class="table--footer d-flex align-items-center justify-content-between">
+                                    <ul class="d-flex rf--pagination m-0 p-0">
+                                        <li class="hide"><a class="next--prev relative ml-0"><i
+                                                    class="icon--next back"></i></a></li>
+                                        <li><a class="active">1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+                                        <li><a>4</a></li>
+                                        <li><a>5</a></li>
+                                        <li><a>6</a></li>
+                                        <li><a>7</a></li>
+                                        <li><a class="more">...</a></li>
+                                        <li><a>17</a></li>
+                                        <li><a class="next--prev relative"><i class="icon--next"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="accepted" role="tabpanel"
+                            aria-labelledby="accepted-tab">
+                            <div class="rf--hori--table invites--table">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td>alyona-k@gmail.com</td>
+                                                <td>Accepted 25.03.2020</td>
+                                                <td><button type="button"
+                                                        class="btn btn-sm black--btn">Accepted</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>nayaradelafuente@gmail.com</td>
+                                                <td>Sent 25.03.2020</td>
+                                                <td><button type="button" class="btn btn-sm btn-outline-primary">Send
+                                                        Again </button></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- table footer -->
+                                <div class="table--footer d-flex align-items-center justify-content-between">
+                                    <ul class="d-flex rf--pagination m-0 p-0">
+                                        <li class="hide"><a class="next--prev relative ml-0"><i
+                                                    class="icon--next back"></i></a></li>
+                                        <li><a class="active">1</a></li>
+                                        <li><a>2</a></li>
+                                        <li><a>3</a></li>
+                                        <li><a>4</a></li>
+                                        <li><a>5</a></li>
+                                        <li><a>6</a></li>
+                                        <li><a>7</a></li>
+                                        <li><a class="more">...</a></li>
+                                        <li><a>17</a></li>
+                                        <li><a class="next--prev relative"><i class="icon--next"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4 invite--right--sec">
+            <div class="card rf--card">
+                <div class="card-header d-flex align-items-center justify-content-between ">
+                   <h2 class="m-0"><strong>ReferHub Referral Program</strong></h2>
+                   <button type="button" class="btn btn-primary primary--two btn-md">Refer a friend </button>
+                </div>
+                <div class="card-body">
+                    <h3> <strong> Invite Friend and receive a Free Premium </strong> </h3>
+                    <p class="m-0">When you invite friends to ReferHub, you will earn 1 point when they create
+                        an active account. Invite 5 and receive ReferHub Premium for 1 month.</p>
+                </div>
+                <div class="card-body card--footer d-flex align-items-cente justify-content-between ">
+                    <div class="d-flex align-items-center flex-shrink-0">
+                        <ul class="nav nav-tabs rounded--tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="m-0"><strong> 3 of 5 </strong> friends joined</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+</div>
