@@ -9,6 +9,7 @@ import { SettingsComponent } from './layout/settings/settings.component';
 import { OfficeComponent } from './layout/office/office.component';
 import { OfficePermissionComponent } from './layout/office/office-permission/office-permission.component';
 import { InvitesComponent } from './layout/refer-a-friend/invites/invites.component';
+import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invites/facebook-invites.component';
 
 
 const routes: Routes = [{
@@ -46,6 +47,10 @@ const routes: Routes = [{
     {
       path: 'invites-a-friend',
       component: InvitesComponent
+    },
+    {
+      path: 'facebook-invites',
+      component: FacebookInvitesComponent
     },
   ]
 },];
