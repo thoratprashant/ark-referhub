@@ -1,5 +1,6 @@
 .facebook--invite--wrapper{
-    margin-top: 15px;
+    padding-top: 15px;
+    background-color: #f8fafb;
     .card-header{
         h1{
             margin-left: 20px;
@@ -21,7 +22,7 @@
             span{
                 border-radius: 3px;
                 background-color: #e8f3ff;
-                padding: 3px;
+                padding: 5px 10px;
                 margin: 0 5px;
             }
         }
@@ -65,6 +66,7 @@
             .photo--wrapper{
                 width: 30px;
                 height: 30px;
+                flex-shrink: 0;
             }
             p{
                 font-size: 14px;
@@ -73,6 +75,7 @@
         .invited--btns{
             width: 140px;
             padding: 9px 20px !important;
+            flex-shrink: 0;
         }
     } 
     
@@ -109,6 +112,14 @@
                     font-size: 13px;
                 }
             }
+            .get--discount{
+                .actions--btn{
+                    margin-top: 20px;
+                    .primary--two{
+                        margin-right: 10px;
+                    }
+                }
+            }
         }
 
         .latest--invite{
@@ -135,13 +146,15 @@
                                     font-size: 12px;                                    
                                     &:first-child{
                                         padding-left: 0;
-                                        width: 10%;
+                                        width: 50%;
                                     }                                    
-                                    &:last-child{
-                                        width: 230px;
+                                    &:last-child{                                        
                                         padding-right: 0;
                                         padding-left: 0;
-                                        text-align: right;
+                                        text-align: right;                                        
+                                    }
+                                    .send--acc--td{
+                                        width: 231px;
                                     }
                                     .btn-sm{
                                         border-radius: 30px !important;
@@ -156,8 +169,50 @@
                             }
                         }
                     }
-                }
+                }                
             }
         }
 
+        .fb--btn{
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
 }
+
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .facebook--invite--wrapper .latest--invite .latest--invite--table .table-responsive table tbody tr td .send--acc--td {
+        width: auto;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .facebook--invite--wrapper .invite--right--sec .card--footer.friend--joined{
+        flex-direction: column;
+    }
+    .facebook--invite--wrapper .invite--right--sec .card--footer.friend--joined .rounded--tabs li a{
+        width: 42px;
+        height: 17px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1366px){
+    .facebook--invite--wrapper .latest--invite .latest--invite--table .table-responsive table tbody tr td .send--acc--td {
+        width: 175px;
+    }
+    .facebook--invite--wrapper .invite--right--sec .card--footer .rounded--tabs li a {
+        width: 42px;
+        height: 17px;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px){
+    .facebook--invite--wrapper .latest--invite .latest--invite--table .table-responsive table tbody tr td .send--acc--td {
+        width: 200px;
+    }
+    .facebook--invite--wrapper .invite--right--sec .card--footer .rounded--tabs li a {
+        width: 42px;
+        height: 17px;
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}

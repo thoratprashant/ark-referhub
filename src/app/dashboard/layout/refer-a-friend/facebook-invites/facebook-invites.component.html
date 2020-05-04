@@ -18,12 +18,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <textarea class="form-control" rows="4" placeholder="Description"></textarea>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Enter emails using ',' or 'space' to seprate them "></textarea>
                             </div>
                         </div>
                         <div class="col-12 d-flex align-items-center justify-content-between mt-2">
                             <button type="button" class="btn btn-primary primary--two"> Send Invites </button>
-                            <div class="friends--invite d-flex align-items-center ">
+                            <div class="friends--invite d-flex align-items-center " *ngIf="step2">
                                 Invite <span><strong>8 friends</strong></span> to join ReferHub
                             </div>
                         </div>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="card-body invite--fb--friends">
+                <div class="card-body invite--fb--friends" *ngIf="step2">
                     <div class="row">
                         <form class="col-12 d-flex align-items-center justify-content-between mb-3">
                             <div>
@@ -139,6 +140,18 @@
                     </div>
                 </div>
 
+                <div class="card-body invite--fb--friends" *ngIf="step1">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="invite--email"><strong>Invite Facebook Friends</strong></h3>
+                            <p class="invite--txt m-0">Connect your Facebook account to see Facebook Friend List</p>
+                        </div>
+                        <div class="col-12 fb--btn">
+                            <img src="../../../../../assets/images/continue-with-facebook.png" alt="" class="img-fluid" (click)="openStep2()">
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -150,33 +163,53 @@
                         <div class="card-header d-flex align-items-center justify-content-between ">
                             <h2 class="m-0"><strong>ReferHub Referral Program</strong></h2>
                         </div>
-                        <div class="card-body">
-                            <h3> <strong> Invite Friend and receive a Free Premium </strong> </h3>
-                            <p class="m-0">When you invite friends to ReferHub, you will earn 1 point when they create
-                                an active account. Invite 5 and receive ReferHub Premium for 1 month.</p>
-                        </div>
-                        <div class="card-body card--footer d-flex align-items-cente justify-content-between ">
-                            <div class="d-flex align-items-center flex-shrink-0">
-                                <ul class="nav nav-tabs rounded--tabs">
-                                    <li class="nav-item">
-                                        <a class="nav-link active"></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active"></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active"></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link"></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link"></a>
-                                    </li>
-                                </ul>
+                        <div class="row" *ngIf="step2">
+                            <div class="col-12">
+                                <div class="card-body">
+                                    <h3> <strong> Invite Friend and receive a Free Premium </strong> </h3>
+                                    <p class="m-0">When you invite friends to ReferHub, you will earn 1 point when they create
+                                        an active account. Invite 5 and receive ReferHub Premium for 1 month.</p>
+                                </div>
+                                <div class="card-body card--footer d-flex align-items-cente justify-content-between friend--joined">
+                                    <div class="d-flex align-items-center flex-shrink-0">
+                                        <ul class="nav nav-tabs rounded--tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active"></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active"></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active"></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="m-0"><strong> 3 of 5 </strong> friends joined</p>
+                                </div>
                             </div>
-                            <p class="m-0"><strong> 3 of 5 </strong> friends joined</p>
                         </div>
+                        <div class="row" *ngIf="step1">
+                            <div class="col-12">
+                                <div class="card-body get--discount">
+                                    <h3> <strong> We hope you are enjoying ReferHub Premium! </strong> </h3>
+                                    <p class="m-0">We have more surprises for you. <strong> Get 20% off </strong> your first three months
+                                        if you sign up for a <strong> monthly premium now. </strong></p>
+                                        <div class="row">
+                                            <div class="col-12 actions--btn">
+                                                <button type="button" class="btn btn-primary primary--two btn-md"> Subscribe Now </button>
+                                                <button type="button" class="btn btn-md btn-outline-primary "> See all plans</button>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -196,67 +229,78 @@
                                                     <tr>
                                                         <td>nayaradelafuente@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end ">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Sent 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm btn-outline-primary">Send Again </button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm btn-outline-primary">Send Again
+                                                                </button>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>arina-belomestnykh@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Accepted 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm black--btn">Accepted</button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm black--btn">Accepted</button>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>mkhuselimalinga@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end ">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Sent 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm btn-outline-primary">Send Again </button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm btn-outline-primary">Send Again
+                                                                </button>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>anaruhakopa@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end ">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Sent 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm btn-outline-primary">Send Again </button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm btn-outline-primary">Send Again
+                                                                </button>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>alexarichardson@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end ">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Sent 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm btn-outline-primary">Send Again </button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm btn-outline-primary">Send Again
+                                                                </button>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>esterbednarova@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Accepted 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm black--btn">Accepted</button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm black--btn">Accepted</button>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>jordannakitchener@gmail.com</td>
                                                         <td>
-                                                            <div class="d-flex align-items-center justify-content-end">
+                                                            <div class="d-flex align-items-center justify-content-end send--acc--td">
                                                                 <p class="m-0">Accepted 25.03.2020</p>
-                                                                <button type="button" class="btn btn-sm black--btn">Accepted</button>
+                                                                <button type="button"
+                                                                    class="btn btn-sm black--btn">Accepted</button>
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    
+
                                                 </tbody>
                                             </table>
                                         </div>

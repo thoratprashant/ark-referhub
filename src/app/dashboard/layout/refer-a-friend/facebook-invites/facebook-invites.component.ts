@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FacebookInvitesComponent implements OnInit {
 
+  step2 = false;
+  step1 = true;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  openStep2() {
+    this.step2 = true;
+    this.step1 = false;
+  }
 }
