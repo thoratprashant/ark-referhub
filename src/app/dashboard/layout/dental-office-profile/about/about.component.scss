@@ -172,7 +172,7 @@
                             display: inline-block;
                             cursor: pointer;
                         }
-                        .icon--more{
+                        .icon-three-dots{
                             object-fit: contain;
                             display: inline-block; 
                             cursor: pointer;
@@ -217,7 +217,7 @@
                     text-overflow: ellipsis;
                     padding-right: 10px;
                 }
-                .icon--more{
+                .icon-three-dots{
                     background-image: url('/assets/images/more-icon.png');
                     width: 4px;
                     height: 18px;
@@ -415,18 +415,7 @@
     ul{
         list-style-type: none;
         display: flex;
-        li{
-            line-height: 15px;
-            .fa{
-                &.active{
-                    color: #f6ca51;
-                }
-                color: #d8d8d8;
-                margin-left: 3px;
-                font-size: 11px;
-            }
-
-        }
+       
     }
 }
 

@@ -401,12 +401,14 @@
                 align-items: center;
                 justify-content: flex-end;
                 li{
-                    .fa{
-                        &.active{
-                            color: #ff9933;
-                        }
+                    .icon{
+                        font-size: 10px;
                         color: #d8d8d8;
                         margin-left: 3px;
+                        &.active{
+                            color: #ff9933;
+                        }                      
+                        
                     }
 
                 }

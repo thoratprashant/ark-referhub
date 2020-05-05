@@ -28,6 +28,15 @@
 
     .logo--right{
         margin-left: 0;
+        .find--referal--btn{
+            padding: 9px  38px !important ;
+            .icon-peoples{
+                color: #fff;
+                font-size: 11px;
+                margin-right: 5px;
+            }
+        }
+        
         form{
             .no--border--dd{
                 .btn {
@@ -45,11 +54,18 @@
         .notification--btn{
             line-height: 11px;
             margin-left: 25px;
-            .icon--notification{
-                background-image: url('../../../../assets/images/notification.png');
-                width: 34px;
-                height: 34px;
-                display: inline-block;
+            border: 1px solid #169feb;
+            height: 34px;
+            width: 34px;
+            border-radius: 50% !important;
+            .icon-notification-blue{
+                font-size: 20px;
+            }
+            &:hover{
+                background-color: #169feb;
+                .icon-notification-blue{
+                    color: #fff;
+                }
             }
         }   
        

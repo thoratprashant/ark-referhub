@@ -62,11 +62,8 @@
             }
         }
         .upload--select{
-            .icon--camera--blue{
-                background-image: url('../../../../assets/images/camera-small-blue.png');
-                width: 17px;
-                height: 15px;
-                background-repeat: no-repeat;
+            .icon-camera-small{
+                font-size: 15px;
                 margin-right: 10px;
             }
             a{

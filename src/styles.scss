@@ -78,6 +78,16 @@
     color: #169feb;
   }
 
+  .icon-combined-tick:before {
+    content: "\e91c";
+    color: #18a3ec;
+  }
+  .icon-star-full:before {
+    content: "\e91d";   
+  }
+  .icon-starhalf:before {
+    content: "\e91e";
+  }
   .icon-adertising:before {
     content: "\e900";
   }
@@ -407,6 +417,8 @@ ul{list-style-type: none;}
 .flex-shrink-0{ flex-shrink: 0;}
 .relative{position: relative;}
 .w-60{width: 60%;}
+.fnt-15{font-size: 15px !important;}
+.fnt-14{font-size: 14px !important;}
 .fnt-13{font-size: 13px !important;}
 .fnt-12{font-size: 12px !important;}
 .fnt-11{font-size: 11px !important;}
@@ -591,19 +603,14 @@ form{
     .btn{
         height: 45px;
     }
-    .icon-true{
-        background-image: url('assets/images/circle-tick.png');
-        background-repeat: no-repeat;
-        width: 19px;
-        height: 19px;
+    .icon-combined-tick{
+        font-size: 19px;
         display: inline-block;
     }
-    .icon-false{
-        background-image: url('assets/images/circle-cancel.png');
-        background-repeat: no-repeat;
-        width: 19px;
-        height: 19px;
+    .icon-closed-combined{
+        font-size: 19px;
         display: inline-block;
+        color: rgba(223, 31, 0, 0.7);
     }
     .icon--form{
         position: absolute;
@@ -611,13 +618,16 @@ form{
         top: 45px;
         cursor: pointer;
     }
-    .icon-show--pass{
-        background-image: url('assets/images/password-display.png');
-        background-repeat: no-repeat;
-        width: 20px;
-        height: 11px;
-        display: inline-block;
+    .icon-password-show{
         top: 48px;
+        font-size: 11px;
+        color: #8cd1f6;
+    }
+    .icon-password-hidden{
+        color: #8cd1f6;
+        display: inline-block;
+        top: 45px;
+        font-size: 16px;
     }
   
 }
@@ -803,13 +813,14 @@ form{
         list-style-type: none;
         display: flex;
         li{
-            .fa{
-                &.active{
-                    color: #f6ca51;
-                }
+            .icon{
+                font-size: 10px;
                 color: #d8d8d8;
                 margin-left: 3px;
-                font-size: 11px;
+                &.active{
+                    color: #ff9933;
+                }                      
+                
             }
 
         }
@@ -834,11 +845,8 @@ form{
         }
     }                            
 }
-.icon--more{
-    background-image: url('./assets/images/more-icon.png');
-    width: 4px;
-    height: 18px;
-    object-fit: contain;
+.icon-three-dots{
+    font-size: 18px;
     display: inline-block; 
     cursor: pointer;
 }
