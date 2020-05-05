@@ -118,7 +118,7 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group mb-0">
                                         <label>Password *</label>
-                                        <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        <input type="password" class="form-control" aria-describedby="emailHelp"
                                             placeholder="Password">
                                         <div class="pass--indi d-flex">
                                             <span></span>
@@ -131,7 +131,7 @@
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group mb-0">
                                         <label>Re-enter password *</label>
-                                        <input type="email" class="form-control" aria-describedby="emailHelp"
+                                        <input type="password" class="form-control" aria-describedby="emailHelp"
                                             placeholder="Confirm password">
                                     </div>
                                 </div>
@@ -892,7 +892,7 @@
                 <!-- Last step active footer -->
                 <div class="third w-100" [ngStyle]="{'display':signUpStep!=5?'none':''}">
                     <button type="button" class="btn btn-outline-primary btn-md prev-step contact--us--btn">Contact Us</button>
-                    <button type="button" class="btn btn-primary btn-md pull-right primary--two next-step">Sign In</button>
+                    <button type="button" class="btn btn-primary btn-md pull-right primary--two next-step" [routerLink]="['/auth/signin']">Sign In</button>
                 </div>
 
             </footer>
