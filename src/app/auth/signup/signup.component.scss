@@ -316,20 +316,16 @@
                     .mt--5{
                         margin-top: -5px;
                     }
-                    .icon--office{
-                        background-image: url('../../../assets/images/office.png');
-                        width: 14px;
-                        height: 14px;
+                    .icon-office{
+               
+                        font-size: 14px;
                         display: inline-block;
                     }
                 }
 
                 .step--three{
-                    .icon--camera--sm{
-                        background-image: url('../../../assets/images/camera-small-blue.png');
-                        width: 17px;
-                        height: 15px;
-                        display: inline-block;
+                    .icon-camera-small{
+                        font-size: 15px;
                         margin-right: 7px;
                     }
                     .photos--wrap{

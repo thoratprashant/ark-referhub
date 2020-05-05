@@ -77,102 +77,122 @@
     -moz-osx-font-smoothing: grayscale;
     color: #169feb;
   }
-
-  .icon-combined-tick:before {
-    content: "\e91c";
-    color: #18a3ec;
-  }
-  .icon-star-full:before {
-    content: "\e91d";   
-  }
-  .icon-starhalf:before {
-    content: "\e91e";
-  }
-  .icon-adertising:before {
+  
+  .icon-add-plus:before {
     content: "\e900";
   }
-  .icon-calender:before {
+  .icon-chat-blue:before {
     content: "\e901";
   }
-  .icon-dashboard:before {
+  .icon-chat-icon:before {
     content: "\e902";
   }
-  .icon-job:before {
+  .icon-close-with-circle .path1:before {
     content: "\e903";
+    color: rgb(255, 255, 255);
   }
-  .icon-logout:before {
+  .icon-close-with-circle .path2:before {
     content: "\e904";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
   }
-  .icon-my-network:before {
+  .icon-white-plus:before {
     content: "\e905";
+    color: #fff;
   }
-  .icon-notification:before {
+  .icon-adertising:before {
     content: "\e906";
   }
-  .icon-office:before {
+  .icon-calender:before {
     content: "\e907";
   }
-  .icon-patients:before {
+  .icon-dashboard:before {
     content: "\e908";
   }
-  .icon-settings:before {
+  .icon-job:before {
     content: "\e909";
   }
-  .icon-staff:before {
+  .icon-logout:before {
     content: "\e90a";
   }
-  .icon-task:before {
+  .icon-my-network:before {
     content: "\e90b";
   }
-  .icon-arrow-back:before {
+  .icon-notification:before {
     content: "\e90c";
   }
-  .icon-camera-big:before {
+  .icon-office:before {
     content: "\e90d";
   }
-  .icon-camera-small:before {
+  .icon-patients:before {
     content: "\e90e";
   }
-  .icon-close:before {
+  .icon-settings:before {
     content: "\e90f";
   }
-  .icon-closed-combined:before {
+  .icon-staff:before {
     content: "\e910";
   }
-  .icon-arrow-down-lg:before {
+  .icon-task:before {
     content: "\e911";
   }
-  .icon-peoples:before {
+  .icon-arrow-back:before {
     content: "\e912";
   }
-  .icon-arrow-next:before {
+  .icon-camera-big:before {
     content: "\e913";
   }
-  .icon-notification-blue:before {
+  .icon-camera-small:before {
     content: "\e914";
   }
-  .icon-password-hidden:before {
+  .icon-close:before {
     content: "\e915";
   }
-  .icon-password-show:before {
+  .icon-closed-combined:before {
     content: "\e916";
   }
-  .icon-person:before {
+  .icon-arrow-down-lg:before {
     content: "\e917";
   }
-  .icon-search:before {
+  .icon-peoples:before {
     content: "\e918";
   }
-  .icon-three-dots:before {
+  .icon-arrow-next:before {
     content: "\e919";
   }
-  .icon-arrow-up-lg:before {
+  .icon-notification-blue:before {
     content: "\e91a";
   }
-  .icon-tick-mark:before {
+  .icon-password-hidden:before {
     content: "\e91b";
   }
-
+  .icon-password-show:before {
+    content: "\e91c";
+  }
+  .icon-person:before {
+    content: "\e91d";
+  }
+  .icon-search:before {
+    content: "\e91e";
+  }
+  .icon-three-dots:before {
+    content: "\e91f";
+  }
+  .icon-arrow-up-lg:before {
+    content: "\e920";
+  }
+  .icon-tick-mark:before {
+    content: "\e921";
+  }
+  .icon-combined-tick:before {
+    content: "\e922";
+  }
+  .icon-star-full:before {
+    content: "\e923";
+  }
+  .icon-starhalf:before {
+    content: "\e924";
+  }
 //   Icomoon End
 
 
@@ -789,14 +809,8 @@ form{
     cursor: pointer;
 }
 .add--more{
-    .icon--add{
-        width: 14px;
-        height: 14px;
+    .icon-add-plus{
         margin-right: 5px;
-        background-color: #169feb;
-        border-radius: 50%;
-        color: #fff;
-        font-style: normal;
         font-size: 14px;
     }
     a{
