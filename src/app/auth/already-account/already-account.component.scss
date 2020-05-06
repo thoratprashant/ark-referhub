@@ -66,17 +66,25 @@
                         }
                         .user--details{
                             margin-left: auto;
-                            .icon--up--down{
-                                background-image: url('../../../assets/images/up-arrow-with-circle.png');
+                            .round--collapsed--btn{
                                 width: 35px;
                                 height: 35px;
-                                background-repeat: no-repeat;
                                 margin-left: 20px;
                                 cursor: pointer;
                                 flex-shrink: 0;
-                                transform: rotate(0);
+                                background-color: #d1edfb;
+                                border-radius: 50% !important;
+                                .icon-arrow-top{
+                                    transform: rotate(0);
+                                    font-size: 6px;
+                                }
+                                
                                 &.collapsed{
-                                    transform: rotate(180deg);
+                                    .icon-arrow-top{
+                                        transform: rotate(180deg);
+                                        margin-top: 3px;
+                                    }
+                                    
                                 }
                             }
                         }

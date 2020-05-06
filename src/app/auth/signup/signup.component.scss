@@ -383,11 +383,11 @@
                                         transform: translateY(0);
                                       }
                                 }
-                                .icon--white--cam{
-                                    background-image: url('../../../assets/images/camera-white-big-icon.png');
-                                    width: 34px;
-                                    height: 30px;
+                                .icon-camera-small{
+                                    font-size: 30px;
+                                    color: #fff;
                                     display: inline-block;
+                                    margin: 0;
                                 } 
                                 &.no--photo{
                                     opacity: 0.6;
@@ -455,7 +455,7 @@
                                 font-family: 'Avenir-bold';
                                 margin: 0 10px 10px 0;
                                 padding: 8px 10px;
-                                .icon--close{
+                                .icon-close{
                                     font-size: 9px;
                                     margin-left: 10px;
                                     font-style: normal;

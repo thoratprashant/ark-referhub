@@ -34,10 +34,8 @@
         }
         .details--actions{
             justify-content: flex-end;
-            .icon--chat{
-                background-image: url('/assets/images/chat.png');
-                height: 20px;
-                width: 20px;
+            .icon-chat-icon{
+                font-size: 20px;
                 display: block;
             }
             .btn{

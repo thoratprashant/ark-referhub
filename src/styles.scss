@@ -737,10 +737,8 @@ form{
     background-color: #ffffff;
     border-radius: 3px;
     padding: 12px 15px;
-    .icon--attachment{
-        background-image: url("assets/images/attachment.png");
-        width: 10px;
-        height: 18px;
+    .icon-attachment{
+        font-size: 18px;
         display: inline-block;
         margin-right: 14px;
     }
