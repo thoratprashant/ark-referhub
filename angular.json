@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/icomoon.scss",
               "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
