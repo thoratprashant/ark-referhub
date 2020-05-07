@@ -691,7 +691,9 @@
                                                             <div class="col-12 col-sm-4 col-lg-6">
                                                                 <div class="form-group">
                                                                     <label class="w-100">Photo Before:</label>
-                                                                    <button (click)="addImages()" *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn"> Attach case photo </button>
+                                                                    <button (click)="addImages()" *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn">
+                                                                        <i class="icon-camera-small fnt-13 mr-2"></i>
+                                                                         Attach case photo </button>
                                                                     <div *ngIf="beforeAfterImage" class="before--after--img" style="background-image: url('/assets/images/image-2-rounded.png');">                                
                                                                         <i class="icon--close"></i>
                                                                     </div>
@@ -700,7 +702,9 @@
                                                             <div class="col-12 col-sm-4 col-lg-6">
                                                                 <div class="form-group">
                                                                     <label class="w-100">Photo After:</label>
-                                                                    <button *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn"> Attach case photo </button>
+                                                                    <button *ngIf="beforeAfterBtn" type="button" class="btn btn-md btn-outline-primary before--after--btn">
+                                                                        <i class="icon-camera-small fnt-13 mr-2"></i>
+                                                                         Attach case photo </button>
                                                                     <div *ngIf="beforeAfterImage" class="before--after--img" style="background-image: url('/assets/images/image-2-rounded.png');">                                
                                                                         <i class="icon--close"></i>
                                                                     </div>
@@ -722,7 +726,9 @@
 
                                     <div *ngIf="complitedCases" class="">
                                         <header class="col-12">
-                                            <button type="button" class="btn btn-md btn-outline-primary">Add new complited cases</button>
+                                            <button type="button" class="btn btn-md btn-outline-primary d-flex align-items-center">
+                                                <i class="icon-add-plus fnt-13 mr-2"></i>
+                                                Add new complited cases</button>
                                         </header>
                                         <div class="added--complited--cases d-flex">
                                             <div class="col-12">
