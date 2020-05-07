@@ -4,6 +4,9 @@
     .search--header{
         padding:17px 20px;
         box-shadow: 0 1px 0 0 #eef0f9;
+        .icon-filter-icon {
+            color: #fff;
+        }
         .actions{         
             .btn-sm{
                 box-shadow: none;
@@ -18,14 +21,13 @@
                 p{
                     font-size: 12px;
                 }
-                .icon--close--tag{
-                    background-image: url('../../../../assets/images/close-button-sm.png');
-                    width: 9px;
-                    height: 8px;
+                .icon-close{
+                    font-size: 8px;
                     margin-left: 12px;
                     display: inline-block;
                     z-index: 999;
                     cursor: pointer;
+                    color: #000;
                 }
             }
             
@@ -287,10 +289,18 @@
                 background-color: #2c3341;
                 border-radius: 50%;
                 margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    font-size: 6px;
+                    color: #fff;
+                    margin-right: 1px;
+                }
                 &.open--job{
                     background-color: #169feb;
                 }
-            }
+            } 
         }
     }
 
@@ -320,11 +330,19 @@
                             border: solid 2px #fff;                            
                             background-color: #2c3341;
                             border-radius: 50%;
-                            width: 14px;
-                            height: 14px;
+                            width: 18px;
+                            height: 18px;
                             position: absolute;
-                            left: -4px;
+                            left: -8px;
                             top: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .icon{
+                                font-size: 6px;
+                                color: #fff;
+                                margin-right: 1px;
+                            }
                             &.open--job{
                                 background-color: #169feb;
                             }

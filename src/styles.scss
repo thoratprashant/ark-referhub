@@ -578,23 +578,13 @@ form{
             }
             &.next--prev{
                 border: 1px solid #169feb;
-                .icon--next{
-                    background-image: url('assets/images/drop-arrow.png');
-                    width: 12px;
-                    height: 8px;
-                    background-repeat: no-repeat;
-                    transform: rotate(-91deg);
-                    position: absolute;
-                    top: 8px;
-                    left: 8px;
-                    &.back{
-                        transform: rotate(87deg);
-                        left: 5px;
-                        top: 10px;
-                    }
-                }
+                
                 &:hover{
                     background-color: transparent;
+                }
+
+                .icon{
+                    font-size: 12px;
                 }
             }
         }
@@ -637,25 +627,7 @@ form{
     }
 }
 
-// rating--star 
-.rating--star{
-    ul{
-        list-style-type: none;
-        display: flex;
-        li{
-            line-height: 15px;
-            .fa{
-                &.active{
-                    color: #f6ca51;
-                }
-                color: #d8d8d8;
-                margin-left: 3px;
-                font-size: 11px;
-            }
 
-        }
-    }
-}
 
 // Additional global things (start here)
 .remove{

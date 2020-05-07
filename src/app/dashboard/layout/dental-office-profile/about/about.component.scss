@@ -162,6 +162,15 @@
                     .td-2{
                         margin-left: auto;
                         flex-shrink: 0;
+                        .chat--btn{
+                            width: 34px;
+                            height: 34px;
+                            background-color: #ceebfb;
+                            border-radius: 50% !important;
+                            .icon-chat-blue{
+                                font-size: 15px;
+                            }
+                        }
                         .icon--chat--circle{
                             background-image: url('/assets/images/chat-with-circle.png');
                             width: 34px;

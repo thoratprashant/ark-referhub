@@ -1,5 +1,7 @@
 <div class="back--to--search">
-    <a class="fnt-12"> Back to Search Results</a>
+    <a class="fnt-12 d-flex align-items-center">
+        <i class="icon-arrow-back fnt-12 mr-2"></i>
+        Back to Search Results</a>
 </div>
 <div class="container-fluid pt-3 dental--profile--wrapper">
     <div class="row">
@@ -24,9 +26,9 @@
                                     <div class="active--status"></div>
                                    </div>
                                     <div class="office--details">
-                                        <h1> <strong>Regina Pollastro </strong> <a>Cliam profile</a> </h1>
+                                        <h1 class="d-flex align-items-center "> <strong>Regina Pollastro </strong> <i class="ml-2 icon-combined-tick"></i>  <a>Cliam profile</a> </h1>
                                         <p> <strong class="mr-2">Available</strong> Response time: 2 hrs</p>
-                                        <div class="reviewer--star" *ngIf="">
+                                        <div class="reviewer--star mb-0">
                                             <ul class="p-0 m-0">
                                                 <li><i class="icon icon-star-full active ml-0" aria-hidden="true"></i></li>
                                                 <li><i class="icon icon-star-full active" aria-hidden="true"></i></li>
@@ -70,9 +72,13 @@
                     </div>
 
                     <div class="active--notifi d-flex align-items-center ">
-                        <i class="icon--bag"></i>
+                        <div class="job--indi d-flex align-items-center justify-content-center ">
+                            <i class="icon-suitcase-sm"></i>
+                        </div>
                         <p class="m-0 fnt-13">You have <a><strong>1 active job </strong></a> with Dr. Regina Pollastro  </p>
-                        <a class="show--jobs">Show all jobs</a>
+                        <a class="show--jobs d-flex align-items-center ">Show all jobs
+                            <i class="icon-arrow-next fnt11 ml-2"></i>
+                        </a>
                     </div>
 
                     <div class="rf--tabs ">
@@ -141,9 +147,12 @@
                         <div class="right d-flex align-items-center">
                             <div class="d-flex flex-column">
                                 <h3><strong>You have no common colleagues</strong></h3>
-                                <p class="m-0 fnt-12">Add to network & start your first collaboration</p>
+                                <p class="m-0 fnt-12">
+                                    Add to network & start your first collaboration</p>
                             </div>
-                            <button type="button" class="btn btn-sm btn-primary box-shadow-none add--net--btn">Add to network</button>
+                            <button type="button" class="btn btn-sm btn-primary box-shadow-none add--net--btn d-flex align-items-center ">
+                                <i class="icon icon-person fnt-14 mr-2"></i>
+                                Add to network</button>
                         </div>
                     </div>
                 </div>

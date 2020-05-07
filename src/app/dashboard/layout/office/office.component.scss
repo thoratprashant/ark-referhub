@@ -1,4 +1,25 @@
 .office--wrapper{
+    .add--a--den--btn{
+        padding: 9px 15px !important;
+        .icon-person{
+            color: #fff;
+        }
+    }
+    .reviewer--star {
+        ul{
+            display: flex;
+            line-height: 15px;
+            li{
+                .icon-starhalf, 
+                .icon-star-full{
+                    &.active{
+                        color: #f6ca51;
+                    }
+                }
+                
+            }
+        }
+    }
     .display--count{
         h3{
             font-size: 22px;
@@ -53,6 +74,11 @@
                             justify-content: center;
                             border: 1px solid #b0dff9;
                             margin-right: 15px;
+                            cursor: pointer;
+                            .icon-settings,
+                            .icon-chat-blue{
+                                font-size: 13px;
+                            }
                         }
                     }
                     &:last-child{
@@ -185,7 +211,7 @@
                 padding-bottom: 15px;
                 border-bottom: 1px solid #ebedf8;
                 .btn {
-                    padding: 7px 28px !important;
+                    padding: 7px 15px !important;
                 }
             }
             .certificates{

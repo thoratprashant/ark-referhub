@@ -19,6 +19,9 @@
         }
     }
     .office--details{
+        .icon-combined-tick{
+            font-size: 18px;
+        }
         h1{
             a{
                 color: #169feb;
@@ -28,17 +31,29 @@
                 font-family: 'Avenir-medium';
             }
         }
+        .reviewer--star{
+            li{
+                line-height: 12px;
+                .icon{
+                    color: #f6ca51;
+                }
+            }
+        }
     }
     .active--notifi{
         padding: 20px 20px 20px 20px;
         border-top: 1px solid #ebedf8;
         border-bottom: 1px solid #ebedf8;
-        .icon--bag{
+        .job--indi{
             width: 20px;
             height: 20px;
             margin-right: 10px;
             border-radius: 50%;
             background-color: #169feb;
+            .icon-suitcase-sm{
+                font-size: 9px;
+                color: #fff;
+            }
         }
         .show--jobs{
             color: #169feb;
@@ -74,6 +89,9 @@
                 height: 40px !important;
                 font-size: 13px !important;
                 margin-left: 25px;
+                .icon-person{
+                    color: #fff;
+                }
             }
         }
     }

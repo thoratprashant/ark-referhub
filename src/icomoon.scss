@@ -23,7 +23,19 @@
     -moz-osx-font-smoothing: grayscale;
     color: #169feb;
   }
-  
+
+
+//   Icon start
+
+.icon-filter-icon:before {
+    content: "\e92d";
+  }
+  .icon-linking-sm:before {
+    content: "\e913";
+  }
+  .icon-suitcase-sm:before {
+    content: "\e91a";
+  }
   .icon-plus-white:before {
     content: "\e905";
     color: #fff;
