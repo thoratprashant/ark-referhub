@@ -1,5 +1,7 @@
 .invite--wrapper{
     margin-top: 15px;
+
+    
     .icon-tick-mark{
         color: #fff;
         font-size: 10px;
@@ -78,8 +80,12 @@
         p{
             font-size: 13px;
         }
-        .btn-md{
-            padding: 9px 33px !important;
+       
+        .refer--fr--btn{
+            padding: 9px 20px !important;
+            .icon{
+                color: #fff;
+            }
         }
         .card--footer{
             border-top: solid 1px #ebedf8;
