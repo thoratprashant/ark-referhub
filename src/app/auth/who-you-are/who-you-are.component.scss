@@ -37,6 +37,15 @@
                 justify-content: center;
             }
         }
+        .den--or--spec::before{
+            background-image: url('../../../assets/images/button-shadow.png');
+            width: 100%;
+            height: 105px;
+            content: "";
+            position: absolute;
+            left: 10px;
+            background-repeat: no-repeat;
+        }
        
     }
 }
@@ -87,9 +96,15 @@
     .auth--wrapper.who--you--wrapper .login--box .left--sec .btn-group .btn {
         height: 70px;
     }
+    .auth--wrapper.who--you--wrapper .den--or--spec::before{
+        background-image: none;
+    }
 }
 @media only screen and (min-width: 980px) and (max-width: 1279px){
     .auth--wrapper.who--you--wrapper .login--box {
         width: 97%;
+    }
+    .auth--wrapper.who--you--wrapper .den--or--spec::before{
+        background-image: none;
     }
 }
