@@ -83,6 +83,7 @@
                 margin: 3px 0 0 0;
                 font-size: 13px;
                 color: rgba(0, 0, 0, 0.85);
+                font-family: 'Avenir-medium';
             }
         }
         .about--data{
@@ -215,6 +216,7 @@
                     overflow: hidden;
                     border-radius: 50%;
                     margin-right: 15px;
+                    flex-shrink: 0;
                 }
                 .staff--name{
                     font-size: 13px;    
@@ -226,9 +228,6 @@
                     padding-right: 10px;
                 }
                 .icon-three-dots{
-                    background-image: url('/assets/images/more-icon.png');
-                    width: 4px;
-                    height: 18px;
                     object-fit: contain;
                     display: inline-block; 
                     cursor: pointer;
