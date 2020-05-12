@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators/map'
 
@@ -12,8 +12,17 @@ export interface LoginPayload {
   password: string
 }
 
-export interface ResetPasswordPayload {
+export interface SessionPayload {
+  session: string
+}
+
+export interface ForgotPasswordPayload {
   email: string
+}
+
+export interface ResetPasswordPayload {
+  password: string,
+  confirmPassword: string
 }
 
 @Injectable({
@@ -36,13 +45,19 @@ export class AuthenticateService {
     this.token = token;
   }
 
-  private request(method: 'post'|'get', type: string, params?: any): Observable<any> {
-    let base
-
+  private request(method: 'post'|'get'|'patch', type: string, params?: any): Observable<any> {
+    let base;
+    
     if (method === 'post') {
       base = this.http.post(`http://localhost:3000/${type}`, params)
+    } else if (method === 'patch') {
+      base = this.http.patch(`http://localhost:3000/${type}`, params, { headers: { Authorization: `Bearer ${this.getToken()}` }})
     } else {
-      base = this.http.get(`/api/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }})
+      if (type === 'user/getUserBySession') {
+        base = this.http.get(`http://localhost:3000/${type}`, { params });
+      } else {
+        base = this.http.get(`http://localhost:3000/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }})
+      }
     }
 
     const request = base.pipe(
@@ -61,7 +76,18 @@ export class AuthenticateService {
     return this.request('post', 'auth/signIn', params)
   }
 
-  public resetPassword(params: ResetPasswordPayload): Observable<any> {
-    return this.request('post', 'auth/resetPassword', params)
+  public forgotPassword(params: ForgotPasswordPayload): Observable<any> {
+    return this.request('post', 'auth/forgotPassword', params)
   }
+
+  public getUserBySession(params: SessionPayload): Observable<any> {
+    let parameters = new HttpParams().set('session', params.session);
+    return this.request('get', 'user/getUserBySession', parameters);
+  }
+
+  public resetPassword(params: ResetPasswordPayload): Observable<any> {
+    return this.request('patch', 'user/resetPassword', params);
+  }
+
+
 }
