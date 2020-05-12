@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { AuthenticateService, SessionPayload, ResetPasswordPayload } from '../authenticate.service';
+import { MustMatch } from '../helpers/must-match.validator';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reset-password',
@@ -19,24 +21,35 @@ export class ResetPasswordComponent implements OnInit {
     confirmPassword: ""
   }
   isPasswordSet: Boolean = false;
+  resetPasswordForm: FormGroup;
+  submitted = false;
 
-  constructor(private auth: AuthenticateService, private route: ActivatedRoute) { }
+  constructor(private formBuilder: FormBuilder, private auth: AuthenticateService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.resetPasswordForm = this.formBuilder.group({
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      confirmPassword: ['', Validators.required]
+    }, {
+      validator: MustMatch('password', 'confirmPassword')
+    });
     this.userSession.session = this.route.snapshot.paramMap.get("session");
     this.auth.getUserBySession(this.userSession).subscribe((data) => {
       this.loading = false;
-      console.log("ResetPasswordComponent -> ngOnInit -> data", data);
     }, (err) => {
       this.loading = false;
-      console.log("ResetPasswordComponent -> ngOnInit -> err", err);
       if (err.status === 404) this.error = "Link is not valid";
     });
   }
 
+  get formControls() { return this.resetPasswordForm.controls; }
+
   resetPassword = () => {
+    this.submitted = true;
+    if (this.resetPasswordForm.invalid) {
+        return;
+    }
     this.auth.resetPassword(this.user).subscribe((data) => {
-      console.log("ResetPasswordComponent -> resetPassword -> data", data)
       this.user.password = "";
       this.user.confirmPassword = "";
       if (data) this.isPasswordSet = true;

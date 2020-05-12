@@ -9,14 +9,28 @@
         </header>
       </div>
       <div class="col-12">
-        <form (ngSubmit)="authenticateAdmin()">
+        <form #loginForm="ngForm" (ngSubmit)="loginForm.form.valid && authenticateAdmin()">
           <div class="form-group">  
             <label>Email address *</label>
-            <input type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="credentials.email">
+            <input type="email" name="email" class="form-control"
+              placeholder="Enter email"
+              pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              [(ngModel)]="credentials.email" #email="ngModel" required
+              [ngClass]="{ 'is-invalid': loginForm.submitted && email.invalid }">
+              <div *ngIf="loginForm.submitted && email.errors">
+                <label *ngIf="email.errors.required" class="text-danger">Email is required</label>
+                <label *ngIf="email.errors.pattern" class="text-danger">Must be a valid email address</label>
+              </div>
           </div>
           <div class="form-group mb-4">
             <label>Password *</label>
-            <input type="password" name="password" class="form-control " placeholder="Password" [(ngModel)]="credentials.password">
+            <input type="password" name="password" class="form-control"
+              placeholder="Password" 
+              [(ngModel)]="credentials.password" #password="ngModel" required
+              [ngClass]="{ 'is-invalid': loginForm.submitted && password.invalid }">
+            <div *ngIf="loginForm.submitted && password.invalid">
+              <label *ngIf="password.errors.required" class="text-danger">Password is required</label>
+            </div>
             <small class="form-text text-right"><a routerLink="/admin/forgotPassword" class="forgot--pass">Forgot password?</a> </small>
           </div>
           <div *ngIf="error" class="w-100 alert alert-danger" role="alert">
