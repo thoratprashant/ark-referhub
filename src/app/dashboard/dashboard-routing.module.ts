@@ -10,6 +10,7 @@ import { OfficeComponent } from './layout/office/office.component';
 import { OfficePermissionComponent } from './layout/office/office-permission/office-permission.component';
 import { InvitesComponent } from './layout/refer-a-friend/invites/invites.component';
 import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invites/facebook-invites.component';
+import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
 
 
 const routes: Routes = [{
@@ -52,6 +53,11 @@ const routes: Routes = [{
       path: 'facebook-invites',
       component: FacebookInvitesComponent
     },
+    {
+      path: 'staff',
+      component: StaffListComponent
+    },
+    
   ]
 },];
 

@@ -1,0 +1,68 @@
+.staff--list--wrapper{
+    padding-top: 20px;
+    background-color: #f8fafb;
+    .rf--card{
+        .card-header{
+            h1{
+                border-right: 1px solid #e6eaee;
+                border-left: none;
+                margin: 0 20px 0 0;
+                padding: 0 20px 0 0 !important;
+            }
+        }
+    }
+    .staff--card{
+        margin: 20px 0 0 20px;
+        width: 30%;
+        display: flex;
+        .photo--wrapper{
+            width: 40px;
+            height: 40px;
+        }
+        .left{
+            h3{
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .status--point{
+                width: 8px;
+                height: 8px;
+                background-color: #40e0d0;
+                border-radius: 50%;
+                position: absolute;
+                right: 15px;
+                top: 3px;
+            }
+        }
+
+        .card-body{
+            .form-group{
+                margin-bottom: 10px;
+                label{
+                    font-size: 13px;
+                    margin: 0;
+                    display: flex;
+                    color: rgba(0, 0, 0, 0.85);
+                    &.first{
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .staff--list--wrapper .staff--card {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
