@@ -1,0 +1,21 @@
+.left--side--section{
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    height: 88.8vh;
+    overflow: auto;
+    box-shadow: 1px 0 0 0 #e6eaee;
+    background-color: #fff;
+    z-index: 999;
+}
+.middle--side--section{
+    background-color: #efefef;
+    position: relative;
+    padding: 0 0 0 250px;
+    width: 100%;
+    height: 88.9vh;
+    overflow: auto;
+    border-bottom: 1px solid #e6eaee;
+    margin-top: 8px;
+}

@@ -45,19 +45,28 @@ export class AuthenticateService {
     this.token = token;
   }
 
-  private request(method: 'post'|'get'|'patch', type: string, params?: any): Observable<any> {
+  private request(method: 'post'|'get'|'patch', type: string, params?: any, toBeAuthorized?: boolean): Observable<any> {
     let base;
-    
-    if (method === 'post') {
-      base = this.http.post(`http://localhost:3000/${type}`, params)
-    } else if (method === 'patch') {
-      base = this.http.patch(`http://localhost:3000/${type}`, params, { headers: { Authorization: `Bearer ${this.getToken()}` }})
-    } else {
-      if (type === 'user/getUserBySession') {
-        base = this.http.get(`http://localhost:3000/${type}`, { params });
-      } else {
-        base = this.http.get(`http://localhost:3000/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }})
+    let requestHeader = {};
+    if (toBeAuthorized) {
+      requestHeader = {
+        headers: { 
+          Authorization: `Bearer ${this.getToken()}` 
+        }
       }
+    }
+    if (method === 'post') {
+      base = this.http.post(`http://localhost:3000/${type}`, params, requestHeader);
+    } else if (method === 'patch') {
+      base = this.http.patch(`http://localhost:3000/${type}`, params, requestHeader);
+    } else {
+        let requestParameters:any = {
+          params: params
+        };
+        if (toBeAuthorized) {
+          requestParameters.headers = requestHeader;
+        }
+        base = this.http.get(`http://localhost:3000/${type}`, requestParameters);
     }
 
     const request = base.pipe(
@@ -73,21 +82,24 @@ export class AuthenticateService {
   }
 
   public login(params: LoginPayload): Observable<any> {
-    return this.request('post', 'auth/signIn', params)
+    return this.request('post', 'auth/signIn', params, false);
   }
 
   public forgotPassword(params: ForgotPasswordPayload): Observable<any> {
-    return this.request('post', 'auth/forgotPassword', params)
+    return this.request('post', 'auth/forgotPassword', params, false);
   }
 
   public getUserBySession(params: SessionPayload): Observable<any> {
     let parameters = new HttpParams().set('session', params.session);
-    return this.request('get', 'user/getUserBySession', parameters);
+    return this.request('get', 'user/getUserBySession', parameters, true);
   }
 
   public resetPassword(params: ResetPasswordPayload): Observable<any> {
-    return this.request('patch', 'user/resetPassword', params);
+    return this.request('patch', 'user/resetPassword', params, true);
   }
 
+  public getUsersList(params): Observable<any> {
+    return this.request('post', 'admin/usersList', params, true);
+  }
 
 }

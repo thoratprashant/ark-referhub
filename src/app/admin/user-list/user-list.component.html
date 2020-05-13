@@ -1,0 +1,42 @@
+<div class="left--side--section">
+    <app-sidebar></app-sidebar>
+</div>
+
+<div class="middle--side--section">
+    <div>
+        <div class='table-responsive'>  
+            <table class='table table-striped table-bordered'>  
+                <thead class="thead-light">  
+                    <tr>
+                        <th>First Name</th>  
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Role</th>  
+                        <th>Phone Number</th>
+                        <th>Action</th>
+                    </tr>  
+                </thead>
+                <tbody *ngIf="!isFetchingData && usersArray.length">  
+                    <tr class="user-data" *ngFor="let user of usersArray;">  
+                        <td>{{user.firstName}}</td>  
+                        <td>{{user.lastName}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.type}}</td>  
+                        <td>{{user.phoneNumber}}</td>  
+                        <td>
+                            <button class="btn btn-success">Approve</button>
+                            <button class="ml-1 btn btn-danger">Reject</button>
+                            <button class="ml-1 btn btn-info">Edit</button>
+                        </td>
+                    </tr>  
+                </tbody>  
+            </table>
+            <div *ngIf="!isFetchingData && !usersArray.length">
+                <p class="text-center">No users found</p>
+            </div>
+            <div *ngIf="isFetchingData">
+                <p class="text-center">Fetching Data ...</p>
+            </div>
+        </div>  
+    </div>    
+</div>
