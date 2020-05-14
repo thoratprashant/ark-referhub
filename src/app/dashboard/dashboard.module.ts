@@ -20,6 +20,7 @@ import { OfficePermissionComponent } from './layout/office/office-permission/off
 import { InvitesComponent } from './layout/refer-a-friend/invites/invites.component';
 import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invites/facebook-invites.component';
 import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
+import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.component';
 
 
 
@@ -28,7 +29,8 @@ import { StaffListComponent } from './layout/staff/staff-list/staff-list.compone
   declarations: [DashboardLayoutComponent, AboutComponent, DashboardHeaderComponent, DashboardLeftmenuComponent, 
     DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
     DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent, 
-    OfficeRightSideComponent, OfficePermissionComponent, InvitesComponent, FacebookInvitesComponent, StaffListComponent],
+    OfficeRightSideComponent, OfficePermissionComponent, InvitesComponent, FacebookInvitesComponent, StaffListComponent, 
+    StaffTasksComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

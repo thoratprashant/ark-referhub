@@ -11,6 +11,7 @@ import { OfficePermissionComponent } from './layout/office/office-permission/off
 import { InvitesComponent } from './layout/refer-a-friend/invites/invites.component';
 import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invites/facebook-invites.component';
 import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
+import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.component';
 
 
 const routes: Routes = [{
@@ -56,6 +57,10 @@ const routes: Routes = [{
     {
       path: 'staff',
       component: StaffListComponent
+    },
+    {
+      path: 'staff-task',
+      component: StaffTasksComponent
     },
     
   ]

@@ -1,0 +1,79 @@
+.staff--task--wrapper{
+    padding-top: 20px;
+    background-color: #f8fafb;
+    .rounded--btn{
+        border-color: #ceebfb !important;
+        &.fill{
+            background-color: #ceebfb;
+            border-color: transparent !important;
+            .icon{
+                font-size: 8px;
+                font-weight: bold;
+            }
+        }
+    }
+    .card-header{
+        justify-content: space-between;
+        .left-head{
+            h1{
+                margin-left: 20px;
+            }
+        }
+        .right-head{
+           .rounded--tabs{
+               .nav-item{
+                   a{
+                       width: 120px;
+                   }
+               }
+           }
+        }        
+    }
+    .staff--tasks--table{
+        .table-responsive{
+            height: calc(100vh - 250px);
+            .table{
+                tr{
+                    td{
+                        p,
+                        h5{
+                            color: rgba(0, 0, 0, 0.85);  
+                            margin: 0;
+                        }
+                        &:nth-child(1){
+                            width: 20%;
+                        }
+                        &:nth-child(2){
+                            width: 15%;
+                        }
+                        &:nth-child(3){
+                            width: 15%;
+                        }
+                    }
+                     &:nth-child(odd) {
+                            td{
+                                background: #fbfbfb
+                            }
+                        }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .staff--task--wrapper .card-header .right-head .rounded--tabs .nav-item a {
+        width: 80px;
+    }
+    .staff--task--wrapper .card-header .left-head h1 {
+        width: 55%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
