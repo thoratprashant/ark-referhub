@@ -32,7 +32,7 @@ const routes: Routes = [{
         component: UserListComponent
       },
       {
-        path: 'userProfile',
+        path: 'userProfile/:userId',
         component: UserProfileComponent
       },
     ]

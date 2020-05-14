@@ -25,6 +25,11 @@ export interface ResetPasswordPayload {
   confirmPassword: string
 }
 
+export interface UpdateStatusPayload {
+  _id: string,
+  status: string
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -100,6 +105,10 @@ export class AuthenticateService {
 
   public getUsersList(params): Observable<any> {
     return this.request('post', 'admin/usersList', params, true);
+  }
+
+  public updateUserStatus(params: UpdateStatusPayload): Observable<any> {
+    return this.request('patch', 'admin/updateStatus', params, true);
   }
 
 }

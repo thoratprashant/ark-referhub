@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   authenticateAdmin = () => {
     this.auth.login(this.credentials).subscribe((data) => {
       this.error = "";
-      this.router.navigateByUrl('/admin/forgotPassword');
+      this.router.navigateByUrl('/admin/userList');
     }, (err) => {
       console.log("LoginComponent -> authenticateAdmin -> err", err)
       if (err.status === 401) this.error = err.error;

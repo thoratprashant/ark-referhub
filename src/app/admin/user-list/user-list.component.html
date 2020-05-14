@@ -4,32 +4,88 @@
 
 <div class="middle--side--section">
     <div>
-        <div class='table-responsive'>  
-            <table class='table table-striped table-bordered'>  
-                <thead class="thead-light">  
-                    <tr>
-                        <th>First Name</th>  
+        <div class='table-responsive'>
+            <table class='table table-striped table-bordered'>
+                <thead class="thead-light">
+                    <tr class="user-table-heading">
+                        <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
-                        <th>Role</th>  
-                        <th>Phone Number</th>
+                        <th>Role</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Email Verified</th>
                         <th>Action</th>
-                    </tr>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group mb-0 has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" [(ngModel)]="search.firstName"
+                                    (keyup)="searchUser($event.target.value)">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-0 has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" [(ngModel)]="search.lastName"
+                                    (keyup)="searchUser($event.target.value)">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-0 has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" [(ngModel)]="search.email"
+                                    (keyup)="searchUser($event.target.value)">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-0 has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" [(ngModel)]="search.type"
+                                    (keyup)="searchUser($event.target.value)">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mb-0 has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" [(ngModel)]="search.phoneNumber"
+                                    (keyup)="searchUser($event.target.value)">
+                            </div>
+                        </td>
+                        <td>
+                            <select class="browser-default custom-select" (change)="searchUser($event.target.value)" [(ngModel)]="search.status">
+                                <option class="dropdown-item" *ngFor="let status of userStatus">{{status}}</option>
+                            </select>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <button (click)="clearFilters()" class="btn btn-secondary status-button">Clear</button>
+                        </td>
+                    </tr>
                 </thead>
-                <tbody *ngIf="!isFetchingData && usersArray.length">  
-                    <tr class="user-data" *ngFor="let user of usersArray;">  
-                        <td>{{user.firstName}}</td>  
+                <tbody *ngIf="!isFetchingData && usersArray.length">
+                    <tr class="user-data" *ngFor="let user of usersArray;">
+                        <td>{{user.firstName}}</td>
                         <td>{{user.lastName}}</td>
                         <td>{{user.email}}</td>
-                        <td>{{user.type}}</td>  
-                        <td>{{user.phoneNumber}}</td>  
+                        <td>{{user.type}}</td>
+                        <td>{{user.phoneNumber}}</td>
+                        <td>{{user.status}}</td>
+                        <td>{{user.isEmailVerified}}</td>
                         <td>
-                            <button class="btn btn-success">Approve</button>
-                            <button class="ml-1 btn btn-danger">Reject</button>
-                            <button class="ml-1 btn btn-info">Edit</button>
+                            <button *ngIf="user.status == 'Pending' || user.status == 'Unapproved'"
+                                (click)="updatedStatus(user._id, 'Approved')"
+                                class="btn status-button btn-success">Approve</button>
+                            <button *ngIf="user.status == 'Pending' || user.status == 'Approved'"
+                                (click)="updatedStatus(user._id, 'Unapproved')"
+                                class="ml-1 status-button btn btn-danger">Unapprove</button>
+                            <button (click)="openUserProfile(user._id)"
+                                class="ml-1 status-button btn btn-info">View</button>
                         </td>
-                    </tr>  
-                </tbody>  
+                    </tr>
+                </tbody>
             </table>
             <div *ngIf="!isFetchingData && !usersArray.length">
                 <p class="text-center">No users found</p>
@@ -37,6 +93,6 @@
             <div *ngIf="isFetchingData">
                 <p class="text-center">Fetching Data ...</p>
             </div>
-        </div>  
-    </div>    
+        </div>
+    </div>
 </div>

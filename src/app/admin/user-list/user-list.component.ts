@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticateService } from '../authenticate.service';
+import { AuthenticateService, UpdateStatusPayload } from '../authenticate.service';
+import { Router } from '@angular/router';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-user-list',
@@ -9,31 +11,79 @@ import { AuthenticateService } from '../authenticate.service';
 export class UserListComponent implements OnInit {
 
   queryParameters = {
-    "offset": 0,
-    "limit": 10,
-    "sortBy": {
-      "creatorOn": -1
+    offset: 0,
+    limit: 10,
+    sortBy: {
+      createdAt: -1
     },
-    // "query": {
-    //   "firstName": "dentist",
-    //   "lastName": ""
-    // }
+    query: {}
   }
   usersArray = [];
   isFetchingData = true;
+  search = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    type: '',
+    phoneNumber: '',
+    status: ''
+  }
+  userStatus = ['Pending', 'Approved', 'Unapproved'];
 
-  constructor(private auth: AuthenticateService) { }
+  constructor(private auth: AuthenticateService, private router: Router) { 
+    this.searchUser = _.debounce(this.searchUser, 1000)
+  }
 
   ngOnInit(): void {
+    this.getUsers();
+  }
+
+  getUsers() {
     this.auth.getUsersList(this.queryParameters).subscribe((data) => {
-      console.log("UserListComponent -> ngOnInit -> data", data)
       this.isFetchingData = false;
-      this.usersArray = data.usersList;
+      this.usersArray = data.usersList ? data.usersList : [];
     }, (err) => {
-      console.log("UserListComponent -> ngOnInit -> err", err);
       this.isFetchingData = false;
       if (err.status === 404) this.usersArray = [];
     });
+  }
+
+  updatedStatus(_id: string, status: string) {
+    const params: UpdateStatusPayload = {
+      _id: _id,
+      status: status
+    }
+    this.auth.updateUserStatus(params).subscribe((data) => {
+      this.usersArray.map((user) => {
+        if (user._id === data._id) user.status = data.status;
+      });
+    }, (err) => {
+      console.log("UserListComponent -> updatedStatus -> err", err)
+    });
+  }
+
+  searchUser(value) {
+    if (this.search.status === 'Status') this.search.status = ""
+    this.queryParameters.query = this.search;
+    this.isFetchingData = true;
+    this.getUsers();
+  }
+
+  clearFilters() {
+    this.search = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      type: '',
+      phoneNumber: '',
+      status: ''
+    }
+    this.queryParameters.query = this.search;
+    this.getUsers();
+  }
+
+  openUserProfile(userId: string) {
+    this.router.navigate([`/admin/userProfile/${userId}`]);
   }
 
 }
