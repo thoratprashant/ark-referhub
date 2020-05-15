@@ -21,6 +21,7 @@ import { InvitesComponent } from './layout/refer-a-friend/invites/invites.compon
 import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invites/facebook-invites.component';
 import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
 import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.component';
+import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-settings.component';
 
 
 
@@ -30,7 +31,7 @@ import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.comp
     DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
     DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent, 
     OfficeRightSideComponent, OfficePermissionComponent, InvitesComponent, FacebookInvitesComponent, StaffListComponent, 
-    StaffTasksComponent],
+    StaffTasksComponent, StaffSettingsComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

@@ -12,6 +12,7 @@ import { InvitesComponent } from './layout/refer-a-friend/invites/invites.compon
 import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invites/facebook-invites.component';
 import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
 import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.component';
+import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-settings.component';
 
 
 const routes: Routes = [{
@@ -61,6 +62,10 @@ const routes: Routes = [{
     {
       path: 'staff-task',
       component: StaffTasksComponent
+    },
+    {
+      path: 'staff-setting',
+      component: StaffSettingsComponent
     },
     
   ]
