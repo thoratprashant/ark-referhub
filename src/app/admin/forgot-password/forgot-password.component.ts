@@ -28,6 +28,9 @@ export class ForgotPasswordComponent implements OnInit {
       }
     }, (err) => {
       this.admin.email = "";
+      if (err.error && err.error.length) {
+        if (err.error[0].includes("email must be a valid email")) this.error = "Please enter a valid email address";
+      }
       if (err.status === 404) {
         this.error = "Oops! It looks like this email address is not registered on ReferHub. Please try again with another email";
         this.message = "";

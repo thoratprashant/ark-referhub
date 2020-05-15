@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   credentials: LoginPayload = {
     email: '',
-    password: ''
+    password: '',
+    type: 'admin'
   };
 
   error: string = "";
@@ -18,14 +19,16 @@ export class LoginComponent implements OnInit {
   constructor(private auth: AuthenticateService, private router: Router) { }
 
   ngOnInit(): void {
+    if (localStorage.getItem('adminToken')) {
+      this.router.navigateByUrl('/admin/userList');
+    }
   }
 
   authenticateAdmin = () => {
     this.auth.login(this.credentials).subscribe((data) => {
       this.error = "";
-      this.router.navigateByUrl('/admin/forgotPassword');
+      this.router.navigateByUrl('/admin/userList');
     }, (err) => {
-      console.log("LoginComponent -> authenticateAdmin -> err", err)
       if (err.status === 401) this.error = err.error;
     });
   }

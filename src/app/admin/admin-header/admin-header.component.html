@@ -2,21 +2,17 @@
     <div class="container p-0">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-          <img src="../assets/images/logo.png" alt="logo">
+          <img src="../assets/images/full-logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse navbar-items-container" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <!-- <li class="nav-item ml-0">
-              <a [routerLink]="['/auth/signin']" class="nav-link" routerLink="/auth/signin">Login</a>
+            <li *ngIf="isLoggedIn" class="nav-item ml-0">
+              <button (click)="logout()" type="button" class="btn btn-outline-primary">Logout</button>
             </li>
-            <li class="nav-item m-0">
-              <button [routerLink]="['/auth/you-are']" type="button" class="btn btn-primary sign--up--btn">Sign up</button>
-            </li> -->
-
           </ul>
         </div>
       </nav>
