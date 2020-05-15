@@ -29,6 +29,7 @@ export class UserListComponent implements OnInit {
     status: ''
   }
   userStatus = ['Pending', 'Approved', 'Unapproved'];
+  userTypes = ['Dentist', 'Specialist', 'Staff', 'Advertiser'];
 
   constructor(private auth: AuthenticateService, private router: Router) { 
     this.searchUser = _.debounce(this.searchUser, 1000)

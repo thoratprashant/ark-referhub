@@ -11,8 +11,8 @@
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email</th>
-                        <th>Role</th>
                         <th>Phone</th>
+                        <th>Role</th>
                         <th>Status</th>
                         <th>Email Verified</th>
                         <th>Action</th>
@@ -42,16 +42,14 @@
                         <td>
                             <div class="form-group mb-0 has-search">
                                 <span class="fa fa-search form-control-feedback"></span>
-                                <input type="text" class="form-control" [(ngModel)]="search.type"
-                                    (keyup)="searchUser($event.target.value)">
+                                <input type="text" class="form-control" [(ngModel)]="search.phoneNumber"
+                                (keyup)="searchUser($event.target.value)">
                             </div>
                         </td>
                         <td>
-                            <div class="form-group mb-0 has-search">
-                                <span class="fa fa-search form-control-feedback"></span>
-                                <input type="text" class="form-control" [(ngModel)]="search.phoneNumber"
-                                    (keyup)="searchUser($event.target.value)">
-                            </div>
+                            <select class="browser-default custom-select" (change)="searchUser($event.target.value)" [(ngModel)]="search.type">
+                                <option class="dropdown-item" *ngFor="let type of userTypes">{{type}}</option>
+                            </select>
                         </td>
                         <td>
                             <select class="browser-default custom-select" (change)="searchUser($event.target.value)" [(ngModel)]="search.status">
@@ -70,8 +68,8 @@
                         <td>{{user.firstName}}</td>
                         <td>{{user.lastName}}</td>
                         <td>{{user.email}}</td>
-                        <td>{{user.type}}</td>
                         <td>{{user.phoneNumber}}</td>
+                        <td>{{user.type}}</td>
                         <td>{{user.status}}</td>
                         <td>{{user.isEmailVerified}}</td>
                         <td>
