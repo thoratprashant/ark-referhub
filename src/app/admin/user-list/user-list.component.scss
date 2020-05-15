@@ -37,6 +37,10 @@ table {
     }
     td {
         font-size: 14px;
+        .custom-select {
+            font-size: 14px;
+            font-family: "Avenir-medium";
+        }
     }
 }
 .status-button {
