@@ -38,7 +38,7 @@ export class AuthenticateService {
 
   constructor(private http: HttpClient) { }
 
-  private getToken(): string {
+  public getToken(): string {
     if (!this.token) {
       this.token = localStorage.getItem('adminToken')
     }

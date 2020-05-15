@@ -6,6 +6,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { UserListComponent } from './user-list/user-list.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { LayoutComponent } from './layout/layout.component';
+import { AuthGuardService } from './auth-guard.service';
 
 const routes: Routes = [{
     path: '',
@@ -29,17 +30,22 @@ const routes: Routes = [{
       },
       {
         path: 'userList',
-        component: UserListComponent
+        component: UserListComponent,
+        canActivate: [AuthGuardService]
       },
       {
         path: 'userProfile/:userId',
-        component: UserProfileComponent
+        component: UserProfileComponent,
+        canActivate: [AuthGuardService]
       },
     ]
   },];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    AuthGuardService
+  ],
 })
 export class AdminRoutingModule { }
