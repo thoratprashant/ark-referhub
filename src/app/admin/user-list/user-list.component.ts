@@ -12,13 +12,14 @@ export class UserListComponent implements OnInit {
 
   queryParameters = {
     offset: 0,
-    limit: 10,
+    limit: 5,
     sortBy: {
       createdAt: -1
     },
     query: {}
   }
   usersArray = [];
+  totalUsers = 0;
   isFetchingData = true;
   search = {
     firstName: '',
@@ -42,10 +43,14 @@ export class UserListComponent implements OnInit {
   getUsers() {
     this.auth.getUsersList(this.queryParameters).subscribe((data) => {
       this.isFetchingData = false;
+      this.totalUsers = data.count ? data.count : 0;
       this.usersArray = data.usersList ? data.usersList : [];
     }, (err) => {
       this.isFetchingData = false;
-      if (err.status === 404) this.usersArray = [];
+      if (err.status === 404) {
+        this.totalUsers = 0;
+        this.usersArray = [];
+      }
     });
   }
 
@@ -64,8 +69,8 @@ export class UserListComponent implements OnInit {
   }
 
   searchUser(value) {
-    if (this.search.status === 'Status') this.search.status = ""
     this.queryParameters.query = this.search;
+    this.queryParameters.offset = 0;
     this.isFetchingData = true;
     this.getUsers();
   }
@@ -79,12 +84,19 @@ export class UserListComponent implements OnInit {
       phoneNumber: '',
       status: ''
     }
+    this.queryParameters.offset = 0;
     this.queryParameters.query = this.search;
     this.getUsers();
   }
 
   openUserProfile(userId: string) {
     this.router.navigate([`/admin/userProfile/${userId}`]);
+  }
+
+  pageChanged(pageNumber) {
+    this.queryParameters.offset = this.queryParameters.limit * pageNumber - this.queryParameters.limit;
+    this.isFetchingData = true;
+    this.getUsers();
   }
 
 }

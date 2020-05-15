@@ -47,24 +47,24 @@
                             </div>
                         </td>
                         <td>
-                            <select class="browser-default custom-select" (change)="searchUser($event.target.value)" [(ngModel)]="search.type">
+                            <select class="browser-default custom-select" (change)="page=1;searchUser($event.target.value)" [(ngModel)]="search.type">
                                 <option class="dropdown-item" *ngFor="let type of userTypes">{{type}}</option>
                             </select>
                         </td>
                         <td>
-                            <select class="browser-default custom-select" (change)="searchUser($event.target.value)" [(ngModel)]="search.status">
+                            <select class="browser-default custom-select" (change)="page=1;searchUser($event.target.value)" [(ngModel)]="search.status">
                                 <option class="dropdown-item" *ngFor="let status of userStatus">{{status}}</option>
                             </select>
                         </td>
                         <td>
                         </td>
                         <td>
-                            <button (click)="clearFilters()" class="btn btn-secondary status-button">Clear</button>
+                            <button (click)="clearFilters();page=1" class="btn btn-secondary status-button">Clear</button>
                         </td>
                     </tr>
                 </thead>
                 <tbody *ngIf="!isFetchingData && usersArray.length">
-                    <tr class="user-data" *ngFor="let user of usersArray;">
+                    <tr class="user-data" *ngFor="let user of usersArray | paginate: { itemsPerPage: 5, currentPage: page, totalItems: totalUsers }">
                         <td>{{user.firstName}}</td>
                         <td>{{user.lastName}}</td>
                         <td>{{user.email}}</td>
@@ -90,6 +90,9 @@
             </div>
             <div *ngIf="isFetchingData">
                 <p class="text-center">Fetching Data ...</p>
+            </div>
+            <div *ngIf="totalUsers > 2" class="text-center mt-4">
+                <pagination-controls (pageChange)="page = $event;pageChanged($event)"></pagination-controls>
             </div>
         </div>
     </div>
