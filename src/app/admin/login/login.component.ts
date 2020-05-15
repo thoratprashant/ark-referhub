@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   credentials: LoginPayload = {
     email: '',
-    password: ''
+    password: '',
+    type: 'admin'
   };
 
   error: string = "";

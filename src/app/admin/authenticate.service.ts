@@ -10,6 +10,7 @@ interface LoginResponse {
 export interface LoginPayload {
   email: string
   password: string
+  type: string
 }
 
 export interface SessionPayload {
