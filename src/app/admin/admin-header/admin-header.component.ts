@@ -24,4 +24,11 @@ export class AdminHeaderComponent implements OnInit {
     this.router.navigateByUrl('/admin/login');
   }
 
+  redirectUser() {
+    if (localStorage.getItem('adminToken')) {
+      this.router.navigateByUrl('/admin/userList');  
+    } else {
+      this.router.navigateByUrl('/admin/login');  
+    }
+  }
 }
