@@ -2,7 +2,7 @@
     width: 210px;
     position: absolute;
     left: 0;
-    top: 70px;
+    top: 84px;
     height: 88.8vh;
     overflow: auto;
     box-shadow: 1px 0 0 0 #e6eaee;
@@ -29,7 +29,16 @@
         vertical-align: top;
     }
 }
-
+table {
+    font-family: "Avenir-medium";
+    color: #2c3341;
+    th {
+        font-size: 16px;
+    }
+    td {
+        font-size: 14px;
+    }
+}
 .status-button {
     padding: 5px 10px 5px 10px !important;
 }

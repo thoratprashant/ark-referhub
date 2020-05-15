@@ -91,7 +91,7 @@
             <div *ngIf="isFetchingData">
                 <p class="text-center">Fetching Data ...</p>
             </div>
-            <div *ngIf="totalUsers > 2" class="text-center mt-4">
+            <div *ngIf="totalUsers > queryParameters.limit" class="text-center mt-4">
                 <pagination-controls (pageChange)="page = $event;pageChanged($event)"></pagination-controls>
             </div>
         </div>
