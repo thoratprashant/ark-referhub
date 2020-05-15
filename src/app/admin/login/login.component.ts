@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticateService, LoginPayload } from '../authenticate.service';
+import { AdminActionsService, LoginPayload } from '../admin-actions.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   error: string = "";
 
-  constructor(private auth: AuthenticateService, private router: Router) { }
+  constructor(private action: AdminActionsService, private router: Router) { }
 
   ngOnInit(): void {
     if (localStorage.getItem('adminToken')) {
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   authenticateAdmin = () => {
-    this.auth.login(this.credentials).subscribe((data) => {
+    this.action.login(this.credentials).subscribe((data) => {
       this.error = "";
       this.router.navigateByUrl('/admin/userList');
     }, (err) => {

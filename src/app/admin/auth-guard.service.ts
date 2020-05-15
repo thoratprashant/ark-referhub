@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Router, CanActivate } from '@angular/router';
-import { AuthenticateService } from './authenticate.service';
+import { AdminActionsService } from './admin-actions.service';
 
 @Injectable()
 export class AuthGuardService implements CanActivate {
 
-    constructor(private auth: AuthenticateService, private router: Router) { }
+    constructor(private action: AdminActionsService, private router: Router) { }
 
     canActivate() {
         if (!localStorage.getItem('adminToken')) {

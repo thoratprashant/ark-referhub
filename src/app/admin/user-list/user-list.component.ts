@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticateService, UpdateStatusPayload } from '../authenticate.service';
+import { AdminActionsService, UpdateStatusPayload } from '../admin-actions.service';
 import { Router } from '@angular/router';
 import * as _ from 'underscore';
 
@@ -29,10 +29,11 @@ export class UserListComponent implements OnInit {
     phoneNumber: '',
     status: ''
   }
+  page = 1;
   userStatus = ['Pending', 'Approved', 'Unapproved'];
   userTypes = ['Dentist', 'Specialist', 'Staff', 'Advertiser'];
 
-  constructor(private auth: AuthenticateService, private router: Router) { 
+  constructor(private action: AdminActionsService, private router: Router) { 
     this.searchUser = _.debounce(this.searchUser, 1000)
   }
 
@@ -41,7 +42,7 @@ export class UserListComponent implements OnInit {
   }
 
   getUsers() {
-    this.auth.getUsersList(this.queryParameters).subscribe((data) => {
+    this.action.getUsersList(this.queryParameters).subscribe((data) => {
       this.isFetchingData = false;
       this.totalUsers = data.count ? data.count : 0;
       this.usersArray = data.usersList ? data.usersList : [];
@@ -59,7 +60,7 @@ export class UserListComponent implements OnInit {
       _id: _id,
       status: status
     }
-    this.auth.updateUserStatus(params).subscribe((data) => {
+    this.action.updateUserStatus(params).subscribe((data) => {
       this.usersArray.map((user) => {
         if (user._id === data._id) user.status = data.status;
       });

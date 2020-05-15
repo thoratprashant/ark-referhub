@@ -34,7 +34,7 @@ export interface UpdateStatusPayload {
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticateService {
+export class AdminActionsService {
   private token: string;
 
   constructor(private http: HttpClient) { }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AuthenticateService, SessionPayload, ResetPasswordPayload } from '../authenticate.service';
+import { AdminActionsService, SessionPayload, ResetPasswordPayload } from '../admin-actions.service';
 import { MustMatch } from '../helpers/must-match.validator';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -24,7 +24,7 @@ export class ResetPasswordComponent implements OnInit {
   resetPasswordForm: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder, private auth: AuthenticateService, private route: ActivatedRoute) { }
+  constructor(private formBuilder: FormBuilder, private action: AdminActionsService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.resetPasswordForm = this.formBuilder.group({
@@ -34,7 +34,7 @@ export class ResetPasswordComponent implements OnInit {
       validator: MustMatch('password', 'confirmPassword')
     });
     this.userSession.session = this.route.snapshot.paramMap.get("session");
-    this.auth.getUserBySession(this.userSession).subscribe((data) => {
+    this.action.getUserBySession(this.userSession).subscribe((data) => {
       this.loading = false;
     }, (err) => {
       this.loading = false;
@@ -49,7 +49,7 @@ export class ResetPasswordComponent implements OnInit {
     if (this.resetPasswordForm.invalid) {
         return;
     }
-    this.auth.resetPassword(this.user).subscribe((data) => {
+    this.action.resetPassword(this.user).subscribe((data) => {
       this.user.password = "";
       this.user.confirmPassword = "";
       if (data) this.isPasswordSet = true;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticateService, ForgotPasswordPayload } from '../authenticate.service';
+import { AdminActionsService, ForgotPasswordPayload } from '../admin-actions.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,13 +14,13 @@ export class ForgotPasswordComponent implements OnInit {
   error: string = "";
   message: string = "";
 
-  constructor(private auth: AuthenticateService, private router: Router) { }
+  constructor(private action: AdminActionsService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   forgotPassword = () => {
-    this.auth.forgotPassword(this.admin).subscribe((data) => {
+    this.action.forgotPassword(this.admin).subscribe((data) => {
       this.admin.email = "";
       if (data.data.includes('success')) {
         this.message = "We have sent you instructions over email that how to reset a password";
