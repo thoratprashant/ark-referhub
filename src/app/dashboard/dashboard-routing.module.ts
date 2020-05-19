@@ -13,6 +13,7 @@ import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invit
 import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
 import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.component';
 import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-settings.component';
+import { CalenderComponent } from './layout/calender/calender/calender.component';
 
 
 const routes: Routes = [{
@@ -66,6 +67,10 @@ const routes: Routes = [{
     {
       path: 'staff-setting',
       component: StaffSettingsComponent
+    },
+    {
+      path: 'calender',
+      component: CalenderComponent
     },
     
   ]

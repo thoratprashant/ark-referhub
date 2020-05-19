@@ -22,6 +22,7 @@ import { FacebookInvitesComponent } from './layout/refer-a-friend/facebook-invit
 import { StaffListComponent } from './layout/staff/staff-list/staff-list.component';
 import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.component';
 import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-settings.component';
+import { CalenderComponent } from './layout/calender/calender/calender.component';
 
 
 
@@ -31,7 +32,7 @@ import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-sett
     DashboardFooterComponent, OfficeTabRightComponent, DentalsPhotosComponent, SearchResultsComponent, 
     DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent, 
     OfficeRightSideComponent, OfficePermissionComponent, InvitesComponent, FacebookInvitesComponent, StaffListComponent, 
-    StaffTasksComponent, StaffSettingsComponent],
+    StaffTasksComponent, StaffSettingsComponent, CalenderComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
