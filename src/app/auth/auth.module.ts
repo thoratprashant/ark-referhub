@@ -10,14 +10,31 @@ import { SignupComponent } from './signup/signup.component';
 import { AlreadyAccountComponent } from './already-account/already-account.component';
 import { ClaimYourProfileComponent } from './claim-your-profile/claim-your-profile.component';
 import { ReclaimProfileComponent } from './reclaim-profile/reclaim-profile.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
 @NgModule({
-  declarations: [SigninComponent, AuthHeaderComponent, LayoutComponent, AuthFooterComponent, WhoYouAreComponent, SignupComponent, AlreadyAccountComponent, ClaimYourProfileComponent, ReclaimProfileComponent],
+  declarations: [
+    SigninComponent,
+    AuthHeaderComponent,
+    LayoutComponent,
+    AuthFooterComponent,
+    WhoYouAreComponent,
+    SignupComponent,
+    AlreadyAccountComponent,
+    ClaimYourProfileComponent,
+    ReclaimProfileComponent],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

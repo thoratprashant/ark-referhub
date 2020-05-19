@@ -1,913 +1,1062 @@
 <section class="signup--wrapper d-flex justify-content-center" [ngClass]="'stepper--data'+signUpStep">
-    <div class="signup--box d-flex">
-        <div class="signup--left">
+  <div class="signup--box d-flex">
+    <div class="signup--left">
 
-            <header class="d-flex mb-0" id="headerNames">
-                <div class="steps--names activated">
-                    <h1>Sign up as Dentist</h1>
-                    <p>Sign up now to take full advantage of ReferHub.</p>
-                </div>
-                <div class="steps--names">
-                    <h1>Tell more about your dental business</h1>
-                    <p>Sign up now to take full advantage of ReferHub.</p>
-                </div>
-                <div class="steps--names">
-                    <h1>Add best photos of your office</h1>
-                    <p>Sign up now to take full advantage of ReferHub.</p>
-                </div>
-                <div class="steps--names">
-                    <h1>Your ReferHub account almost ready</h1>
-                    <p>Only a few details left.</p>
-                </div>
-                <div class="steps--names">
-                    <h1>Thank you for your registration!</h1>
-                    <p>You are ready to use ReferHub.</p>
-                </div>
-            
-
-                <div class="stepper--indicator">
-                    <ul class="m-0 p-0">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-
-            </header>
-
-            <section class="stepper--data" [ngClass]="'stepper--data'+signUpStep">
-
-                <div class="tab-content">
-                    <!-- Step 1 -->
-                    <div class="tab-pane active" role="tabpanel" id="step1">
-                        <h2>Contact</h2>
-
-                        <form>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>First name *</label>
-                                        <input type="email" class="form-control" aria-describedby="emailHelp"
-                                            placeholder="Your first name">
-                                        <i class="icon--form icon-combined-tick"></i>
-                                        <!-- <i class="icon--form icon-closed-combined"></i> -->
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Last name *</label>
-                                        <input type="email" class="form-control" aria-describedby="emailHelp"
-                                            placeholder="Your last name">
-                                    </div>
-                                    <div class="form-group mb-0">
-                                        <label>Phone *</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Mobile</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" >Phone</a>
-                                                    <a class="dropdown-item" >Other</a>
-                                                </div>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="012-345-6789"
-                                                aria-label="Text input with dropdown button">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6 ">
-                                    <div class="profile--img d-flex justify-content-center align-items-center">
-                                        <h2 class="mb-0">Profile image</h2>
-                                        <div class="user--pic d-flex justify-content-center align-items-center">
-                                            <i class="icon-camera-small"></i>
-                                        </div>
-                                        <div class="d-flex upload--select align-items-center">
-                                            <i class="icon-camera-small"></i>
-                                            <a>Upload photo</a>
-                                            <div class="or">or</div>
-                                            <a>Select avatar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>Email address *</label>
-                                        <input type="email" class="form-control" aria-describedby="emailHelp"
-                                            placeholder="Your email address">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>Re-enter email address *</label>
-                                        <input type="email" class="form-control" aria-describedby="emailHelp"
-                                            placeholder="Confirm email address">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <h2 class="mt-3">Password</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group mb-0">
-                                        <label>Password *</label>
-                                        <input type="password" class="form-control" aria-describedby="emailHelp"
-                                            placeholder="Password">
-                                        <div class="pass--indi d-flex">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group mb-0">
-                                        <label>Re-enter password *</label>
-                                        <input type="password" class="form-control" aria-describedby="emailHelp"
-                                            placeholder="Confirm password">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <small class="form-text pass--note">
-                                        <p class="mb-0">Your password must be at least 8 characters long, be of mixed
-                                            case and also contain a digit or symbol. </p>
-                                    </small>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="tab-pane step--two" role="tabpanel" id="step2">
-                        <form>
-                            <h2>License number</h2>
-
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>License number *</label>
-                                        <input type="email" class="form-control invalid" aria-describedby="emailHelp"
-                                            placeholder="License number *" value="801530662">
-                                        <i class="icon--form icon-closed-combined"></i>
-                                        <small class="form-text error">License number is not valid. </small>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="checkbox">
-                                        <label class="d-flex mb-0">
-                                            <input type="checkbox" value="" id="checkDentist">
-                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
-                                            Check if you are a mobile dentist
-                                        </label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            <!-- Mobile Dentist  (start here) -->
-                            <div class="row" id="mobileDentist">
-                                <div class="col-12 mt-3">
-                                    <h2>Mobile Dentist</h2>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-7">
-                                            <div class="form-group">
-                                                <label>City *</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend w-100">
-                                                        <button
-                                                            class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                            type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">New York</button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item">India</a>
-                                                            <a class="dropdown-item">London</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-5">
-                                            <div class="form-group">
-                                                <label>Vicinity (miles)</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend w-100">
-                                                        <button
-                                                            class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                            type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">300</button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item">400</a>
-                                                            <a class="dropdown-item">500</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Office Number *</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Mobile</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item">Phone</a>
-                                                    <a class="dropdown-item">Other</a>
-                                                </div>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="012-345-6789"
-                                                aria-label="Text input with dropdown button">
-                                            <i class="icon--form icon-combined-tick"></i>
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="d-flex justify-content-between">
-                                            <label>Additional Office Number</label>
-                                            <a class="remove">Remove</a>
-                                        </div>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Mobile</button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" >Phone</a>
-                                                    <a class="dropdown-item" >Other</a>
-                                                </div>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="012-345-6789"
-                                                aria-label="Text input with dropdown button">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex add--more align-items-center">
-                                        <i class="icon-add-plus"></i>
-                                        <a class="d-flex align-items-center">
-                                            Add phone number
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label>Working hours *</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend w-100">
-                                                <button
-                                                    class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                    type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Monday - Friday 09:00 AM – 07:00 PM</button>
-                                                <div class="dropdown-menu wh--dd">
-                                                    <label>Working days</label>
-
-                                                    <div class="form-group">
-                                                        <ul class="m-0 p-0">
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="">
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Sun.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="" checked>
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Mon.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="" checked>
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Tue.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="" checked>
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Wed.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="" checked>
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Thu.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="" checked>
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Fri.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="checkbox">
-                                                                    <label class="d-flex mb-0">
-                                                                        <input type="checkbox" value="" checked>
-                                                                        <span class="cr mr-0 mb-1"><i
-                                                                                class="cr-icon fa fa-check"></i></span>
-                                                                        Sat.
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label>Working hours</label>
-                                                        <div class="row">
-                                                            <div class="col-12 col-sm-6 col-lg-6">
-                                                                <div class="working--h d-flex">
-                                                                    <input type="text" placeholder="09" value="09"
-                                                                        class="form-control">
-                                                                    <span class="ml-1 mr-1">:</span>
-                                                                    <input type="text" placeholder="00" value="00"
-                                                                        class="form-control">
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend w-100">
-                                                                            <button
-                                                                                class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                                                type="button" data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">AM</button>
-                                                                            <div class="dropdown-menu">
-                                                                                <a class="dropdown-item">PM</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-sm-6 col-lg-6">
-                                                                <div class="working--h d-flex">
-                                                                    <input type="text" placeholder="09" value="09"
-                                                                        class="form-control">
-                                                                    <span class="ml-1 mr-1">:</span>
-                                                                    <input type="text" placeholder="00" value="00"
-                                                                        class="form-control">
-                                                                    <div class="input-group">
-                                                                        <div class="input-group-prepend w-100">
-                                                                            <button
-                                                                                class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                                                type="button" data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">AM</button>
-                                                                            <div class="dropdown-menu">
-                                                                                <a class="dropdown-item">PM</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <div class="checkbox mb-2 mt-4">
-                                                            <label class="d-flex mb-0">
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr"><i
-                                                                        class="cr-icon fa fa-check"></i></span>
-                                                                Availability 24 hours a day
-                                                            </label>
-                                                        </div>
-                                                        <div class="checkbox">
-                                                            <label class="d-flex mb-0">
-                                                                <input type="checkbox" value="" checked>
-                                                                <span class="cr"><i
-                                                                        class="cr-icon fa fa-check"></i></span>
-                                                                I have a break
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-12 col-lg-7 p-0">
-                                                        <div class="form-group mb-0">
-                                                            <label>Break</label>
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend w-100 sm--dropdown">
-                                                                    <button
-                                                                        class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                                        type="button" data-toggle="dropdown"
-                                                                        aria-haspopup="true" aria-expanded="false">01:00
-                                                                        -
-                                                                        02:00 PM</button>
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="dropdown-item">02:00 - 032:00 PM</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex add--more align-items-center">
-                                        <i class="icon-add-plus"></i>
-                                        <a class="d-flex align-items-center">
-                                            Add more business hours
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Office Dentist  (start here) -->
-                            <div class="row" id="officeDentist">
-                                <div class="col-12 mt-3">
-                                    <h2>Office</h2>
-                                </div>
-                                <form class="col-12 office--wrapper d-flex w-100">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label>Name of the office *</label>
-                                                <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                    placeholder="Name of the office" value="Linhart Dentistry" id="officeName">
-                                                <i class="icon--form icon-combined-tick"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label>Address *</label>
-                                                <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                    placeholder="Address" value="509 Madison Ave #1704">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="row">
-                                                <div class="col-12 col-lg-7">
-                                                    <div class="form-group">
-                                                        <label>City *</label>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend w-100">
-                                                                <button
-                                                                    class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                                    type="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">New
-                                                                    York</button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item">India</a>
-                                                                    <a class="dropdown-item">London</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </div>
-                                                <div class="col-12 col-lg-5">
-                                                    <div class="form-group">
-                                                        <label>ZIP *</label>
-                                                        <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                            placeholder="Zip" value="100001">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <div class="d-flex add--more align-items-center mt--5">
-                                                            <i class="icon-add-plus "></i>
-                                                            <a class="d-flex align-items-center">
-                                                                Add working hours
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label>Hours open *</label>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend w-100">
-                                                                <button
-                                                                    class="btn btn-outline-secondary dropdown-toggle text-left w-100"
-                                                                    type="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">Monday - Friday   09:00 AM – 07:00 PM</button>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item">Monday - Friday   10:00 AM – 05:00 PM</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <div class="d-flex add--more align-items-center mt--5">
-                                                            <i class="icon-add-plus"></i>
-                                                            <a class="d-flex align-items-center">
-                                                                Add more business hours
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label>Office Number *</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">Mobile</button>
-                                                        <div class="dropdown-menu">
-                                                            <a class="dropdown-item" >Phone</a>
-                                                            <a class="dropdown-item" >Other</a>
-                                                        </div>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="012-345-6789"
-                                                        aria-label="Text input with dropdown button">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="d-flex add--more align-items-center mt--5">
-                                                    <i class="icon-add-plus "></i>
-                                                    <a class="d-flex align-items-center">
-                                                        Add phone number
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label>Email</label>
-                                                <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                    placeholder="Office email address" >
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mt-2">
-                                            <button type="button" class="btn btn-outline-primary btn-sm d-flex align-items-center">
-                                                <i class="icon-office mr-2"></i>
-                                                Add office</button>
-                                        </div>
-
-                                        <!-- same dental office name (start here) -->
-                                            <div class="same--name--office" id="sameOfficeExist">
-                                                <i class="arrow_box"></i>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="alert alert-danger" role="alert">
-                                                            Good Dental already exist on ReferHub. Do you want to be added to this business?
-                                                          </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-4 office--details">
-                                                        <h1>Good Dental</h1>
-                                                        <div class="reviewer--star">
-                                                            <ul class="p-0 m-0">
-                                                              <li><i class="icon icon-star-full active ml-0" aria-hidden="true"></i></li>
-                                                              <li><i class="icon icon-star-full active" aria-hidden="true"></i></li>
-                                                              <li><i class="icon icon-star-full active" aria-hidden="true"></i></li>
-                                                              <li><i class="icon icon-starhalf active" aria-hidden="true"></i></li>
-                                                              <li><i class="icon icon-star-full" aria-hidden="true"></i></li>
-                                                            </ul>
-                                                          </div>
-                                                          <address>
-                                                              <h4 class="m-0"><strong>New York</strong></h4>
-                                                              <p>245 E 63rd St #110</p>
-                                                              <p><strong>310-123-4567</strong></p>
-                                                          </address>
-                                                    </div>
-                                                    <div class="col-12 col-lg-8 pl-0">
-                                                        <div class="dentals--imgs d-flex justify-content-end flex-wrap">
-                                                            <div class="img--box d-flex align-items-center justify-content-center">
-                                                                <img src="../../../assets/images/01.png" alt="" class="img-fluid">
-                                                            </div>
-                                                            <div class="img--box d-flex align-items-center justify-content-center">
-                                                                <img src="../../../assets/images/02.png" alt="" class="img-fluid">
-                                                            </div>
-                                                            <div class="img--box d-flex align-items-center justify-content-center">
-                                                                <img src="../../../assets/images/03.png" alt="" class="img-fluid">
-                                                            </div>
-                                                            <div class="img--box d-flex align-items-center justify-content-center">
-                                                                <img src="../../../assets/images/04.png" alt="" class="img-fluid">
-                                                            </div>
-                                                            <div class="img--box d-flex align-items-center justify-content-center">
-                                                                <img src="../../../assets/images/05.png" alt="" class="img-fluid">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="divider"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row footer">
-                                                    <div class="col-12 col-lg-7">
-                                                        <button type="button" class="btn btn-outline-primary btn-md btn-sm off-cancel-btn">Cancel</button>
-                                                        <button type="button" class="btn btn-primary primary--two btn-sm add-me-btn">Add me to this office</button>
-                                                    </div>
-                                                    <div class="col-12 col-lg-5 p--note">
-                                                        <p class="m-0 text-right ">Your profile will be added once
-                                                            the office admin confirms your request.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <!-- same dental office name (end here) -->
-                                    </div>
-                                    
-                                </form>
-                            </div>
-
-                            <div class="row" id="alreadyListed">
-                                <div class="col-12 mt-3">
-                                    <h2>Office</h2>
-                                </div>
-                                <div class="already--listed d-flex w-100">
-                                   <div class="td-1 d-flex align-item-center">
-                                       <i class="icon--offi"></i>
-                                       Linhart Dentistry
-                                   </div>
-                                   <div class="td-2 d-flex">
-                                        509 Madison Ave #1704
-                                   </div>
-                                   <div class="td-3 d-flex">
-                                       <a>Edit</a>
-                                       <a>Remove</a>
-                                   </div>
-                                </div>
-                                <div class="already--listed d-flex w-100 ">
-                                    <div class="td-1 d-flex align-item-center">
-                                        <i class="icon--offi"></i>
-                                        Good Dental
-                                    </div>
-                                    <div class="td-2 d-flex">
-                                        245 E 63rd St #110
-                                    </div>
-                                    <div class="td-3 d-flex">
-                                        <a class="td--none">Access Requested</a>
-                                        <a>Cancel</a>
-                                    </div>
-                                 </div>
-                                 <div class="col-12 mt-3">
-                                    <button type="button" class="btn btn-outline-primary btn-sm d-flex align-items-center">
-                                        <i class="icon-office mr-2"></i>
-                                        Add another office</button>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="tab-pane step--three" role="tabpanel" id="step3">
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="sub--header d-flex align-items-center justify-content-between">
-                                    <h2 class="mb-0">Linhart Dentistry Photos</h2>
-                                    <div class="d-flex add--more align-items-center">
-                                        <i class="icon-camera-small"></i>
-                                        <a class="d-flex align-items-center">
-                                            Upload photo
-                                        </a>
-                                    </div>
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col-12 photos--wrap d-flex">
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center ">
-                                                <img src="../../../assets/images/image-1.png" alt="" class="img-fluid">
-                                                <div class="img__description_layer">
-                                                    <a class="img__description mb-0">Main Photo</a>
-                                                  </div>
-                                            </div>
-                                            <i class="icon--close"></i>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center ">
-                                                <img src="../../../assets/images/image-2.png" alt="" class="img-fluid">
-                                                <div class="img__description_layer">
-                                                    <a class="img__description mb-0">Main Photo 01</a>
-                                                  </div>
-                                            </div>
-                                            <i class="icon--close"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="sub--header d-flex align-items-center justify-content-between">
-                                    <h2 class="mb-0">Good Dental Photos</h2>
-                                    <div class="d-flex add--more align-items-center">
-                                        <i class="icon-camera-small"></i>
-                                        <a class="d-flex align-items-center">
-                                            Upload photo
-                                        </a>
-                                    </div>
-                                </div>
-        
-                                <div class="row">
-                                    <div class="col-12 photos--wrap d-flex">
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center ">
-                                                <img src="../../../assets/images/image-1.png" alt="" class="img-fluid">
-                                                <div class="img__description_layer">
-                                                    <a class="img__description mb-0">Main Photo 02</a>
-                                                  </div>
-                                            </div>
-                                            <i class="icon--close"></i>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                        <div class="photo--box">
-                                            <div class="inner--box d-flex align-items-center justify-content-center no--photo">
-                                                <i class="icon-camera-small"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                        
-                    </div>
-
-
-                     <!-- Step 4 -->
-                    <div class="tab-pane step--four" role="tabpanel" id="step4">
-                        <form>
-                            <h2>Tags</h2>
-                            <p>Enter search terms (maximum 7) that users would enter to find you (separate tags with commas)</p>
-                            <div class="row">
-                                <div class="col-12 suggestive--searches">
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-lg-6 search">
-                                            <div class="form-group mb-0">
-                                                <input type="text" class="form-control" placeholder="Enter Search Term">
-                                                <button type="button" class="btn btn-primary">Add</button>
-                                            </div> 
-                                        </div>
-                                        <div class="col-12 col-lg-6 suggested--tag">
-                                            <ul class="m-0 p-0 d-flex flex-wrap">
-                                                <li>Suggested tags</li>
-                                                <li><a>Dentures</a> </li>
-                                                <li><a>Crowns</a> </li>
-                                                <li><a>Bridges</a> </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 choosed--tag d-flex flex-wrap">
-                                            <div class="tag">Implants <i class="icon-close"></i> </div>
-                                            <div class="tag">Oral <i class="icon-close"></i> </div>
-                                            <div class="tag">Dental <i class="icon-close"></i> </div>
-                                            <div class="tag">Orthodontics <i class="icon-close"></i> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <h2>Website</h2>
-                                    <div class="form-group mb-4">
-                                        <label>Your website</label>
-                                        <input type="text" class="form-control" placeholder="Your website" value="www.dr-meganrigden.com">
-                                      </div> 
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <h2>Social networks</h2>
-                                    <div class="form-group">
-                                        <label>Facebook</label>
-                                        <input type="text" class="form-control" placeholder="Facebook profile" value="">
-                                      </div> 
-                                      <div class="form-group">
-                                        <label>Instagram</label>
-                                        <input type="text" class="form-control" placeholder="Instagram profile" value="">
-                                      </div> 
-                                      <div class="form-group">
-                                        <label>LinkedIn</label>
-                                        <input type="text" class="form-control" placeholder="LinkedIn profile" value="">
-                                      </div> 
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                     <!-- Step 5 -->
-                    <div class="tab-pane step--five" role="tabpanel" id="step5">
-                        <h2>Please check your email address</h2>
-                       <div class="col-12 col-lg-9 p-0">
-                        <p class="m-0">We have sent a message to your email address <strong> drmeganrigden@gmail.com.</strong>
-                            Please follow the link in the message to confirm the registration.</p>
-                       </div>
-                    </div>
-                </div>
-            </section>
-
-            <footer class="stepper--footer d-flex justify-content-between">
-                <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()" [ngStyle]="{'display': signUpStep==1?'none':'' }">Back</button> -->
-                <!-- <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()"  [ngStyle]="{'display': signUpStep==5?'none':'' }">Next</button> -->
-                
-                <!-- First step active footer -->
-                <div class="first w-100" [ngStyle]="{'display':signUpStep!=1?'none':''}">
-                    <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step"  [routerLink]="['/auth/you-are']">Back</button>
-                    <button type="button" class="btn btn-primary btn-md pull-right primary--two next-step" (click)="increaseStep()">Next</button>
-                </div>
-
-                 <!-- Seond to fourth step active footer -->
-                <div class="second w-100" [ngStyle]="{'display':signUpStep==1 || signUpStep==5 ?'none':''}">
-                    <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()">Back</button>
-                    <button type="button" class="btn btn-primary btn-md pull-right primary--two next-step" (click)="increaseStep()">Next</button>
-                </div>
-
-                <!-- Last step active footer -->
-                <div class="third w-100" [ngStyle]="{'display':signUpStep!=5?'none':''}">
-                    <button type="button" class="btn btn-outline-primary btn-md prev-step contact--us--btn">Contact Us</button>
-                    <button type="button" class="btn btn-primary btn-md pull-right primary--two next-step" [routerLink]="['/auth/signin']">Sign In</button>
-                </div>
-
-            </footer>
-
+      <header class="d-flex mb-0" id="headerNames">
+        <div class="steps--names activated">
+          <h1>Sign up as Dentist</h1>
+          <p>Sign up now to take full advantage of ReferHub.</p>
         </div>
-        <div class="signup--right text-center" [ngClass]="'signup--right'+signUpStep">
-            <h2>ReferHub helps you to organize
-                your dental business
-            </h2>
-            <p>Put simply, <span>ReferHub</span> connects the Specialist with
-                the Dentist to collaborate on the patient’s treatment plan,
-                by creating a <span>HIPAA compliant</span> communication channel.
-            </p>
-            <img src="../../../assets/images/lady-doctor-with-teeth.png" title="" class="img-fluid lady--doctor">
-            <img src="../../../assets/images/male-doctor.png" title="" class="img-fluid male--doctor">
-            <img src="../../../assets/images/lady-doctor-carona.png" title="" class="img-fluid lady--doctor--carona">
+        <div class="steps--names">
+          <h1>Tell more about your dental business</h1>
+          <p>Sign up now to take full advantage of ReferHub.</p>
         </div>
+        <div class="steps--names">
+          <h1>Add best photos of your office</h1>
+          <p>Sign up now to take full advantage of ReferHub.</p>
+        </div>
+        <div class="steps--names">
+          <h1>Your ReferHub account almost ready</h1>
+          <p>Only a few details left.</p>
+        </div>
+        <div class="steps--names">
+          <h1>Thank you for your registration!</h1>
+          <p>You are ready to use ReferHub.</p>
+        </div>
+
+
+        <div class="stepper--indicator">
+          <ul class="m-0 p-0">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+
+      </header>
+
+      <section class="stepper--data" [ngClass]="'stepper--data'+signUpStep">
+
+        <div class="tab-content">
+          <!-- Step 1 -->
+          <div class="tab-pane active" role="tabpanel" id="step1">
+            <h2>Contact</h2>
+
+            <form #signUpStage1="ngForm" id="signUpStage1" (ngSubmit)="signupProcess(signUpStep)">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>First name *</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Your first name"
+                      [(ngModel)]="stage1.firstName" #firstName="ngModel" name="firstName"
+                      [ngClass]="{ 'invalid': signUpStage1.submitted && firstName.invalid }" required maxlength="35"
+                      pattern="[A-Za-z]{3,35}">
+                    <!-- <i class="icon--form icon-combined-tick"></i> -->
+                    <!-- <i class="icon--form icon-closed-combined" *ngIf="firstName.errors"></i> -->
+                    <div *ngIf="signUpStage1.submitted && firstName.invalid">
+                      <small *ngIf="firstName.errors.required" class="form-text error">Please enter your first
+                        name</small>
+                      <small *ngIf="firstName.errors.pattern" class="form-text error">Please enter a valid first
+                        name</small>
+                    </div>
+
+                    <!-- <i class="icon--form icon-closed-combined"></i> -->
+                    <!-- <input type="email" class="form-control invalid" aria-describedby="emailHelp"
+                      placeholder="License number *" value="801530662" [(ngModel)]="stage2.licenceNumber"
+                      #licenceNumber="ngModel" name="licenceNumber" required>
+                    <i class="icon--form icon-closed-combined"></i>
+                    <small class="form-text error">License number is not valid. </small> -->
+                  </div>
+                  <div class="form-group">
+                    <label>Last name *</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Your last name"
+                      [(ngModel)]="stage1.lastName" #lastName="ngModel" name="lastName"
+                      [ngClass]="{ 'invalid': signUpStage1.submitted && lastName.invalid }" required maxlength="35"
+                      pattern="[A-Za-z]{3,35}">
+                    <div *ngIf="signUpStage1.submitted && lastName.invalid">
+                      <small *ngIf="lastName.errors.required" class="form-text error">Please enter your last
+                        name</small>
+                      <small *ngIf="lastName.errors.pattern" class="form-text error">Please enter a valid last
+                        name</small>
+                    </div>
+                  </div>
+                  <div class="form-group mb-0">
+                    <label>Phone *</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Mobile</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Phone</a>
+                          <a class="dropdown-item">Other</a>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="012-345-6789"
+                        aria-label="Text input with dropdown button" [(ngModel)]="stage1.phoneNumber"
+                        #phoneNumber="ngModel" name="phoneNumber"
+                        [ngClass]="{ 'invalid': signUpStage1.submitted && phoneNumber.invalid }" required maxlength="10"
+                        pattern="^[1-9]{1}[0-9]{6,9}">
+                      <div *ngIf="signUpStage1.submitted && phoneNumber.invalid">
+                        <small *ngIf="phoneNumber.errors.required" class="form-text error">Please enter phone number
+                        </small>
+                        <small *ngIf="phoneNumber.errors.pattern" class="form-text error">Please enter a valid phone
+                          number</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 ">
+                  <div class="profile--img d-flex justify-content-center align-items-center">
+                    <h2 class="mb-0">Profile image</h2>
+                    <div class="user--pic d-flex justify-content-center align-items-center">
+                      <i class="icon-camera-small"></i>
+                    </div>
+                    <div class="d-flex upload--select align-items-center">
+                      <i class="icon-camera-small"></i>
+                      <a>Upload photo</a>
+                      <div class="or">or</div>
+                      <a>Select avatar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>Email address *</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                      placeholder="Your email address" [(ngModel)]="stage1.email" #email="ngModel" name="email"
+                      [ngClass]="{ 'invalid': signUpStage1.submitted && email.invalid }" required maxlength="255"
+                      pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$">
+                    <div *ngIf="signUpStage1.submitted && email.invalid">
+                      <small *ngIf="email.errors.required" class="form-text error">Your email ID must not be left blank.
+                      </small>
+                      <small *ngIf="email.errors.pattern" class="form-text error">Please enter a valid email
+                        address</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>Re-enter email address *</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                      placeholder="Confirm email address" [(ngModel)]="stage1.confirmEmail" #confirmEmail="ngModel"
+                      name="confirmEmail" [ngClass]="{ 'invalid': signUpStage1.submitted && confirmEmail.invalid }"
+                      required maxlength="255" pattern="{{ stage1.email }}">
+                    <div *ngIf="signUpStage1.submitted && confirmEmail.invalid">
+                      <small *ngIf="confirmEmail.errors.required" class="form-text error">Email address not
+                        matching
+                      </small>
+                      <small *ngIf="confirmEmail.errors.pattern" class="form-text error">Email address not
+                        matching
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h2 class="mt-3">Password</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group mb-0">
+                    <label>Password *</label>
+                    <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Password"
+                      [(ngModel)]="stage1.password" #password="ngModel" name="password"
+                      [ngClass]="{ 'invalid': signUpStage1.submitted && password.invalid }" required minlength="8"
+                      maxlength="30" pattern="^.*(?=.{8,30})(?=.*\d)(?=.*[a-zA-Z])(^[a-zA-Z0-9@\$=!:.#*$%]+$)">
+
+                    <div *ngIf="signUpStage1.submitted && password.invalid">
+                      <small *ngIf="password.errors.required" class="form-text error">Password cannot be blank
+                      </small>
+                      <small *ngIf="password.errors.minlength" class="form-text error">
+                        Password must be at least 8 characters long.
+                      </small>
+                      <small *ngIf="password.errors.pattern" class="form-text error">The password must have atleast one
+                        character and one numeric
+                      </small>
+                    </div>
+                    <!-- <div class="pass--indi d-flex">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-group mb-0">
+                    <label>Re-enter password *</label>
+                    <input type="password" class="form-control" aria-describedby="emailHelp"
+                      placeholder="Confirm password" [(ngModel)]="stage1.confirmPassword" #confirmPassword="ngModel"
+                      name="confirmPassword"
+                      [ngClass]="{ 'invalid': signUpStage1.submitted && confirmPassword.invalid }" required
+                      maxlength="30" pattern="{{ stage1.password }}">
+                    <div *ngIf="signUpStage1.submitted && confirmPassword.invalid">
+                      <small *ngIf="confirmPassword.errors.required" class="form-text error">Password not
+                        matching
+                      </small>
+                      <small *ngIf="confirmPassword.errors.pattern" class="form-text error">Password not
+                        matching
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <small class="form-text pass--note">
+                    <p class="mb-0">Your password must be at least 8 characters long, be of mixed
+                      case and also contain a digit or symbol. </p>
+                  </small>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
+          <!-- Step 2 -->
+          <div class="tab-pane step--two" role="tabpanel" id="step2">
+            <form #signUpStage2="ngForm" id="signUpStage2" (ngSubmit)="signupProcess(signUpStep)">
+              <h2>License number</h2>
+
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>License number *</label>
+                    <!-- <input type="email" class="form-control invalid" aria-describedby="emailHelp"
+                      placeholder="License number *" value="801530662" [(ngModel)]="stage2.licenceNumber"
+                      #licenceNumber="ngModel" name="licenceNumber" required>
+                    <i class="icon--form icon-closed-combined"></i>
+                    <small class="form-text error">License number is not valid. </small> -->
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="License number *"
+                      value="801530662" [(ngModel)]="stage2.licenceNumber" #licenceNumber="ngModel" name="licenceNumber"
+                      [ngClass]="{ 'invalid': signUpStage2.submitted && licenceNumber.invalid }" required maxlength="5"
+                      pattern="^[0-9]*$">
+                    <div *ngIf="signUpStage2.submitted && licenceNumber.invalid">
+                      <small *ngIf="licenceNumber.errors.required" class="form-text error">Please enter your license
+                        number
+                      </small>
+                      <small *ngIf="licenceNumber.errors.pattern" class="form-text error">License number is not valid
+                      </small>
+                    </div>
+                    <!-- <i class="icon--form icon-closed-combined"></i> -->
+                    <!-- <small class="form-text error">License number is not valid. </small> -->
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <!-- <div class="checkbox">
+                    <label class="d-flex mb-0">
+                      <input type="checkbox" value="" id="checkDentist">
+                      <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                      Check if you are a mobile dentist
+                    </label>
+                  </div> -->
+                </div>
+
+              </div>
+
+
+              <!-- Mobile Dentist  (start here) -->
+              <div class="row" id="mobileDentist">
+                <div class="col-12 mt-3">
+                  <h2>Mobile Dentist</h2>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="row">
+                    <div class="col-12 col-lg-7">
+                      <div class="form-group">
+                        <label>City *</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend w-100">
+                            <button class="btn btn-outline-secondary dropdown-toggle text-left w-100" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New York</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item">India</a>
+                              <a class="dropdown-item">London</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                      <div class="form-group">
+                        <label>Vicinity (miles)</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend w-100">
+                            <button class="btn btn-outline-secondary dropdown-toggle text-left w-100" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">300</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item">400</a>
+                              <a class="dropdown-item">500</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Office Number *</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Mobile</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Phone</a>
+                          <a class="dropdown-item">Other</a>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="012-345-6789"
+                        aria-label="Text input with dropdown button">
+                      <i class="icon--form icon-combined-tick"></i>
+
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="d-flex justify-content-between">
+                      <label>Additional Office Number</label>
+                      <a class="remove">Remove</a>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Mobile</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item">Phone</a>
+                          <a class="dropdown-item">Other</a>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="012-345-6789"
+                        aria-label="Text input with dropdown button">
+                    </div>
+                  </div>
+                  <div class="d-flex add--more align-items-center">
+                    <i class="icon-add-plus"></i>
+                    <a class="d-flex align-items-center">
+                      Add phone number
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-group">
+                    <label>Working hours *</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend w-100">
+                        <button class="btn btn-outline-secondary dropdown-toggle text-left w-100" type="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monday - Friday 09:00 AM –
+                          07:00 PM</button>
+                        <div class="dropdown-menu wh--dd">
+                          <label>Working days</label>
+
+                          <div class="form-group">
+                            <ul class="m-0 p-0">
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="">
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Sun.
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Mon.
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Tue.
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Wed.
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Thu.
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Fri.
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="checkbox">
+                                  <label class="d-flex mb-0">
+                                    <input type="checkbox" value="" checked>
+                                    <span class="cr mr-0 mb-1"><i class="cr-icon fa fa-check"></i></span>
+                                    Sat.
+                                  </label>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </div>
+
+                          <div class="form-group">
+                            <label>Working hours</label>
+                            <div class="row">
+                              <div class="col-12 col-sm-6 col-lg-6">
+                                <div class="working--h d-flex">
+                                  <input type="text" placeholder="09" value="09" class="form-control">
+                                  <span class="ml-1 mr-1">:</span>
+                                  <input type="text" placeholder="00" value="00" class="form-control">
+                                  <div class="input-group">
+                                    <div class="input-group-prepend w-100">
+                                      <button class="btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                        type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">AM</button>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item">PM</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-lg-6">
+                                <div class="working--h d-flex">
+                                  <input type="text" placeholder="09" value="09" class="form-control">
+                                  <span class="ml-1 mr-1">:</span>
+                                  <input type="text" placeholder="00" value="00" class="form-control">
+                                  <div class="input-group">
+                                    <div class="input-group-prepend w-100">
+                                      <button class="btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                        type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">AM</button>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item">PM</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <div class="checkbox mb-2 mt-4">
+                              <label class="d-flex mb-0">
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                Availability 24 hours a day
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label class="d-flex mb-0">
+                                <input type="checkbox" value="" checked>
+                                <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                I have a break
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-lg-7 p-0">
+                            <div class="form-group mb-0">
+                              <label>Break</label>
+                              <div class="input-group">
+                                <div class="input-group-prepend w-100 sm--dropdown">
+                                  <button class="btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                    type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">01:00
+                                    -
+                                    02:00 PM</button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item">02:00 - 032:00 PM</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex add--more align-items-center">
+                    <i class="icon-add-plus"></i>
+                    <a class="d-flex align-items-center">
+                      Add more business hours
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Office Dentist  (start here) -->
+              <div class="row" id="officeDentist">
+                <div class="col-12 mt-3">
+                  <h2>Office</h2>
+                </div>
+                <form class="col-12 office--wrapper d-flex w-100">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <label>Name of the office *</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                          placeholder="Name of the office" value="Linhart Dentistry" id="officeName"
+                          [(ngModel)]="stage2OfficeData.name" #name="ngModel" name="name"
+                          [ngClass]="{ 'invalid': signUpStage2.submitted && name.invalid }" required maxlength="50"
+                          pattern="^[a-zA-Z_ ]*$">
+                        <i *ngIf="!signUpStage2.submitted && !name.invalid" class="icon--form icon-combined-tick"></i>
+                        <div *ngIf="signUpStage2.submitted && name.invalid">
+                          <small *ngIf="name.errors.required" class="form-text error">Please enter your office name
+                          </small>
+                          <small *ngIf="name.errors.pattern" class="form-text error">Office name is not valid
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <label>Address *</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Address"
+                          value="509 Madison Ave #1704" [(ngModel)]="stage2OfficeData.address" #address="ngModel"
+                          name="address" [ngClass]="{ 'invalid': signUpStage2.submitted && address.invalid }" required
+                          maxlength="250">
+                        <div *ngIf="signUpStage2.submitted && address.invalid">
+                          <small *ngIf="address.errors.required" class="form-text error">Please enter your office
+                            address
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="row">
+                        <div class="col-12 col-lg-7">
+                          <div class="form-group">
+                            <label>City *</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend w-100">
+                                <button class="btn btn-outline-secondary dropdown-toggle text-left w-100" type="button"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New
+                                  York</button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item">India</a>
+                                  <a class="dropdown-item">London</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                          <div class="form-group">
+                            <label>ZIP *</label>
+                            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Zip"
+                              value="10001" [(ngModel)]="stage2OfficeData.zip" #zip="ngModel" name="zip"
+                              [ngClass]="{ 'invalid': signUpStage2.submitted && zip.invalid }" required maxlength="5"
+                              pattern="^[1-9]{1}[0-9]{4}">
+                            <div *ngIf="signUpStage2.submitted && zip.invalid">
+                              <small *ngIf="zip.errors.required" class="form-text error">Please enter your zipcode
+                              </small>
+                              <small *ngIf="zip.errors.pattern" class="form-text error">Please enter a valid zipcode
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <div class="d-flex add--more align-items-center mt--5">
+                              <!-- <i class="icon-add-plus "></i> -->
+                              <!-- <a class="d-flex align-items-center">
+                                Add working hours
+                              </a> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label>Hours open *</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend w-100">
+                                <button class="btn btn-outline-secondary dropdown-toggle text-left w-100" type="button"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monday - Friday
+                                  09:00 AM – 07:00 PM</button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item">Monday - Friday 10:00 AM – 05:00 PM</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <div class="d-flex add--more align-items-center mt--5">
+                              <!-- <i class="icon-add-plus"></i> -->
+                              <!-- <a class="d-flex align-items-center">
+                                Add more business hours
+                              </a> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <label>Office Number *</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mobile</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item">Phone</a>
+                              <a class="dropdown-item">Other</a>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" placeholder="012-345-6789"
+                            aria-label="Text input with dropdown button"
+                            [(ngModel)]="stage2OfficeData.officePhoneNumber" #officePhoneNumber="ngModel"
+                            name="officePhoneNumber"
+                            [ngClass]="{ 'invalid': signUpStage2.submitted && officePhoneNumber.invalid }" required
+                            maxlength="10" pattern="^[1-9]{1}[0-9]{6,9}">
+                          <div *ngIf="signUpStage2.submitted && officePhoneNumber.invalid">
+                            <small *ngIf="officePhoneNumber.errors.required" class="form-text error">Please enter phone
+                              number
+                            </small>
+                            <small *ngIf="officePhoneNumber.errors.pattern" class="form-text error">Please enter a valid
+                              phone
+                              number</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="d-flex add--more align-items-center mt--5">
+                          <!-- <i class="icon-add-plus "></i>
+                          <a class="d-flex align-items-center">
+                            Add phone number
+                          </a> -->
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                          placeholder="Office email address" [(ngModel)]="stage2OfficeData.officeEmail" #officeEmail="ngModel"
+                          name="officeEmail" [ngClass]="{ 'invalid': signUpStage2.submitted && officeEmail.invalid }" required
+                          maxlength="255" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6}$">
+                        <div *ngIf="signUpStage2.submitted && officeEmail.invalid">
+                          <small *ngIf="officeEmail.errors.required" class="form-text error">Your email ID must not be left
+                            blank.
+                          </small>
+                          <small *ngIf="officeEmail.errors.pattern" class="form-text error">Please enter a valid email
+                            address</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <!-- <button type="button" class="btn btn-outline-primary btn-sm d-flex align-items-center">
+                        <i class="icon-office mr-2"></i>
+                        Add office</button> -->
+                    </div>
+
+                    <!-- same dental office name (start here) -->
+                    <!-- <div class="same--name--office" id="sameOfficeExist">
+                      <i class="arrow_box"></i>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="alert alert-danger" role="alert">
+                            Good Dental already exist on ReferHub. Do you want to be added to this business?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-4 office--details">
+                          <h1>Good Dental</h1>
+                          <div class="reviewer--star">
+                            <ul class="p-0 m-0">
+                              <li><i class="icon icon-star-full active ml-0" aria-hidden="true"></i></li>
+                              <li><i class="icon icon-star-full active" aria-hidden="true"></i></li>
+                              <li><i class="icon icon-star-full active" aria-hidden="true"></i></li>
+                              <li><i class="icon icon-starhalf active" aria-hidden="true"></i></li>
+                              <li><i class="icon icon-star-full" aria-hidden="true"></i></li>
+                            </ul>
+                          </div>
+                          <address>
+                            <h4 class="m-0"><strong>New York</strong></h4>
+                            <p>245 E 63rd St #110</p>
+                            <p><strong>310-123-4567</strong></p>
+                          </address>
+                        </div>
+                        <div class="col-12 col-lg-8 pl-0">
+                          <div class="dentals--imgs d-flex justify-content-end flex-wrap">
+                            <div class="img--box d-flex align-items-center justify-content-center">
+                              <img src="../../../assets/images/01.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="img--box d-flex align-items-center justify-content-center">
+                              <img src="../../../assets/images/02.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="img--box d-flex align-items-center justify-content-center">
+                              <img src="../../../assets/images/03.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="img--box d-flex align-items-center justify-content-center">
+                              <img src="../../../assets/images/04.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="img--box d-flex align-items-center justify-content-center">
+                              <img src="../../../assets/images/05.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="divider"></div>
+                        </div>
+                      </div>div
+                      <div class="row footer">
+                        <div class="col-12 col-lg-7">
+                          <button type="button"
+                            class="btn btn-outline-primary btn-md btn-sm off-cancel-btn">Cancel</button>
+                          <button type="button" class="btn btn-primary primary--two btn-sm add-me-btn">Add me to this
+                            office</button>
+                        </div>
+                        <div class="col-12 col-lg-5 p--note">
+                          <p class="m-0 text-right ">Your profile will be added once
+                            the office admin confirms your request.</p>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!-- same dental office name (end here) -->
+                  </div>
+
+                </form>
+              </div>
+
+              <div class="row" id="alreadyListed">
+                <div class="col-12 mt-3">
+                  <h2>Office</h2>
+                </div>
+                <div class="already--listed d-flex w-100">
+                  <div class="td-1 d-flex align-item-center">
+                    <i class="icon--offi"></i>
+                    Linhart Dentistry
+                  </div>
+                  <div class="td-2 d-flex">
+                    509 Madison Ave #1704
+                  </div>
+                  <div class="td-3 d-flex">
+                    <a>Edit</a>
+                    <a>Remove</a>
+                  </div>
+                </div>
+                <div class="already--listed d-flex w-100 ">
+                  <div class="td-1 d-flex align-item-center">
+                    <i class="icon--offi"></i>
+                    Good Dental
+                  </div>
+                  <div class="td-2 d-flex">
+                    245 E 63rd St #110
+                  </div>
+                  <div class="td-3 d-flex">
+                    <a class="td--none">Access Requested</a>
+                    <a>Cancel</a>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="button" class="btn btn-outline-primary btn-sm d-flex align-items-center">
+                    <i class="icon-office mr-2"></i>
+                    Add another office</button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="tab-pane step--three" role="tabpanel" id="step3">
+
+            <div class="row">
+              <div class="col-12">
+                <div class="sub--header d-flex align-items-center justify-content-between">
+                  <h2 class="mb-0">Linhart Dentistry Photos</h2>
+                  <div class="d-flex add--more align-items-center">
+                    <i class="icon-camera-small"></i>
+                    <a class="d-flex align-items-center" (click)="uploadOfficeImages()">
+                      Upload photo
+                    </a>
+                  </div>
+                </div>
+                <input #fileInput type="file" (change)="onFileSelected($event)" multiple style="display: none;" />
+                <div class="row" *ngIf="!uploadSuccess">
+                  <div class="col-12 photos--wrap d-flex">
+                    <div class="photo--box" (click)="fileInput.click()">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box" (click)="fileInput.click()">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box" (click)="fileInput.click()">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box" (click)="fileInput.click()">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box" (click)="fileInput.click()">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <!-- <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center ">
+                        <img src="../../../assets/images/image-1.png" alt="" class="img-fluid">
+                        <div class="img__description_layer">
+                          <a class="img__description mb-0">Main Photo</a>
+                        </div>
+                      </div>
+                      <i class="icon--close"></i>
+                    </div> -->
+                    <!-- <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center ">
+                        <img src="../../../assets/images/image-2.png" alt="" class="img-fluid">
+                        <div class="img__description_layer">
+                          <a class="img__description mb-0">Main Photo 01</a>
+                        </div>
+                      </div>
+                      <i class="icon--close"></i>
+                    </div> -->
+                  </div>
+                </div>
+                <div *ngIf="uploadSuccess">
+                  <p style="font-size: 15px; font-weight: 500;">Uploaded Successfully</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="row">
+              <div class="col-12">
+                <div class="sub--header d-flex align-items-center justify-content-between">
+                  <h2 class="mb-0">Good Dental Photos</h2>
+                  <div class="d-flex add--more align-items-center">
+                    <i class="icon-camera-small"></i>
+                    <a class="d-flex align-items-center">
+                      Upload photo
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 photos--wrap d-flex">
+                    <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center ">
+                        <img src="../../../assets/images/image-1.png" alt="" class="img-fluid">
+                        <div class="img__description_layer">
+                          <a class="img__description mb-0">Main Photo 02</a>
+                        </div>
+                      </div>
+                      <i class="icon--close"></i>
+                    </div>
+                    <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                    <div class="photo--box">
+                      <div class="inner--box d-flex align-items-center justify-content-center no--photo">
+                        <i class="icon-camera-small"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+
+          </div>
+
+
+          <!-- Step 4 -->
+          <div class="tab-pane step--four" role="tabpanel" id="step4">
+            <form #signUpStage4="ngForm" id="signUpStage4" (ngSubmit)="signupProcess(signUpStep)">
+              <!-- <h2>Tags</h2>
+              <p>Enter search terms (maximum 7) that users would enter to find you (separate tags with commas)</p>
+              <div class="row">
+                <div class="col-12 suggestive--searches">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 search">
+                      <div class="form-group mb-0">
+                        <input type="text" class="form-control" placeholder="Enter Search Term"
+                          [(ngModel)]="stage4.socialTags" #socialTags="ngModel" name="socialTags" required>
+                        <button type="button" class="btn btn-primary">Add</button>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 suggested--tag">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li>Suggested tags</li>
+                        <li><a>Dentures</a> </li>
+                        <li><a>Crowns</a> </li>
+                        <li><a>Bridges</a> </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 choosed--tag d-flex flex-wrap">
+                      <div class="tag">Implants <i class="icon-close"></i> </div>
+                      <div class="tag">Oral <i class="icon-close"></i> </div>
+                      <div class="tag">Dental <i class="icon-close"></i> </div>
+                      <div class="tag">Orthodontics <i class="icon-close"></i> </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h2>Website</h2>
+                  <div class="form-group mb-4">
+                    <label>Your website</label>
+                    <input type="text" class="form-control" placeholder="Your website" value="www.dr-meganrigden.com"
+                      [(ngModel)]="stage4.website" #website="ngModel" name="website" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h2>Social networks</h2>
+                  <div class="form-group">
+                    <label>Facebook</label>
+                    <input type="text" class="form-control" placeholder="Facebook profile" value=""
+                      [(ngModel)]="stage4.facebook" #facebook="ngModel" name="facebook" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Instagram</label>
+                    <input type="text" class="form-control" placeholder="Instagram profile" value=""
+                      [(ngModel)]="stage4.instagram" #instagram="ngModel" name="instagram" required>
+                  </div>
+                  <div class="form-group">
+                    <label>LinkedIn</label>
+                    <input type="text" class="form-control" placeholder="LinkedIn profile" value=""
+                      [(ngModel)]="stage4.linkedIn" #linkedIn="ngModel" name="linkedIn" required>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="tab-pane step--five" role="tabpanel" id="step5">
+            <h2>Please check your email address</h2>
+            <div class="col-12 col-lg-9 p-0">
+              <p class="m-0">We have sent a message to your email address <strong>{{stage1.email}}</strong>
+                Please follow the link in the message to confirm the registration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="stepper--footer d-flex justify-content-between">
+        <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step" (click)="decreseStep()" [ngStyle]="{'display': signUpStep==1?'none':'' }">Back</button> -->
+        <!-- <button type="button" class="btn btn-primary btn-md primary--two next-step" (click)="increaseStep()"  [ngStyle]="{'display': signUpStep==5?'none':'' }">Next</button> -->
+
+        <!-- First step active footer -->
+        <div class="first w-100" [ngStyle]="{'display':signUpStep != 1 ? 'none':''}">
+          <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step"
+            [routerLink]="['/auth/you-are']">Back</button>
+          <!-- <button type="submit" form="signUpStage1" class="btn btn-primary btn-md pull-right primary--two next-step"
+            (click)="increaseStep(signUpStep)">Next</button> -->
+          <button type="submit" form="signUpStage1"
+            class="btn btn-primary btn-md pull-right primary--two next-step">Next</button>
+        </div>
+
+        <!-- Second step active footer -->
+        <div class="second w-100" [ngStyle]="{'display':signUpStep !=2 ?'none':''}">
+          <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step"
+            (click)="decreseStep()">Back</button> -->
+          <!-- <button type="submit" form="signUpStage2" class="btn btn-primary btn-md pull-right primary--two next-step"
+            (click)="increaseStep(signUpStep)">Next</button> -->
+          <button type="submit" form="signUpStage2"
+            class="btn btn-primary btn-md pull-right primary--two next-step">Next</button>
+        </div>
+
+        <!-- Third step active footer -->
+        <div class="second w-100" [ngStyle]="{'display':signUpStep !=3 ?'none':''}">
+          <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step"
+            (click)="decreseStep()">Back</button> -->
+          <button *ngIf="uploadSuccess" type="submit" class="btn btn-primary btn-md pull-right primary--two next-step"
+            (click)="increaseStep(signUpStep)">Next</button>
+          <!-- <button type="submit" class="btn btn-primary btn-md pull-right primary--two next-step">Next</button> -->
+        </div>
+
+        <!-- Fourth step active footer -->
+        <div class="second w-100" [ngStyle]="{'display':signUpStep !=4 ?'none':''}">
+          <!-- <button type="button" class="btn btn-outline-primary black--btn btn-md prev-step"
+            (click)="decreseStep()">Back</button> -->
+          <!-- <button type="submit" form="signUpStage4" class="btn btn-primary btn-md pull-right primary--two next-step"
+            (click)="increaseStep(signUpStep)">Next</button> -->
+          <button type="submit" form="signUpStage4"
+            class="btn btn-primary btn-md pull-right primary--two next-step">Next</button>
+        </div>
+
+        <!-- Last step active footer -->
+        <div class="third w-100" [ngStyle]="{'display':signUpStep!=5?'none':''}">
+          <button type="button" class="btn btn-outline-primary btn-md prev-step contact--us--btn">Contact Us</button>
+          <button type="button" class="btn btn-primary btn-md pull-right primary--two next-step"
+            [routerLink]="['/auth/signin']">Sign In</button>
+        </div>
+
+      </footer>
+
     </div>
-</section> 
+    <div class="signup--right text-center" [ngClass]="'signup--right'+signUpStep">
+      <h2>ReferHub helps you to organize
+        your dental business
+      </h2>
+      <p>Put simply, <span>ReferHub</span> connects the Specialist with
+        the Dentist to collaborate on the patient’s treatment plan,
+        by creating a <span>HIPAA compliant</span> communication channel.
+      </p>
+      <img src="../../../assets/images/lady-doctor-with-teeth.png" title="" class="img-fluid lady--doctor">
+      <img src="../../../assets/images/male-doctor.png" title="" class="img-fluid male--doctor">
+      <img src="../../../assets/images/lady-doctor-carona.png" title="" class="img-fluid lady--doctor--carona">
+    </div>
+  </div>
+</section>
