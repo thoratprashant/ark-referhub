@@ -7,6 +7,7 @@ import { FooterComponent } from './shared/layout/footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { AuthModule } from './auth/auth.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { AdminModule } from './admin/admin.module';
 import { Ng5SliderModule } from 'ng5-slider';
 
 
@@ -20,6 +21,7 @@ import { Ng5SliderModule } from 'ng5-slider';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AdminModule,
     AuthModule,
     DashboardModule,
     Ng5SliderModule

@@ -1,0 +1,113 @@
+<div class="admin-left--side--section">
+    <app-sidebar></app-sidebar>
+</div>
+
+<div class="admin-middle--side--section">
+    <div class="container mt-2">
+        <div *ngIf="!isLoading">
+            <div class="d-flex">
+                <h5 class="mt-3">Personal Information</h5>
+                <i *ngIf="!editPersonalInformation" (click)="editProfile()"
+                    class="ml-3 edit-icon fa fa-pencil"></i>
+            </div>
+            <div class="ml-2 card">
+                <div class="d-block">
+                    <div class="mx-3 d-inline-block">
+                        <div>
+                            <img class="profile-image" src="../assets/images/full-logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="ml-3 personal-info-container d-inline-block">
+                        <div *ngIf="!editPersonalInformation">
+                            <span><label>First Name:</label> {{userInfo.firstName}}</span><br>
+                            <span><label>Last Name:</label> {{userInfo.lastName}}</span><br>
+                            <span><label>Email:</label> {{userInfo.email}}<br></span>
+                            <span><label>Phone Number:</label> {{userInfo.phoneNumber}}</span>
+                        </div>
+                        <div *ngIf="editPersonalInformation">
+                            <form #editPersonalInformationForm="ngForm"
+                                (ngSubmit)="editPersonalInformationForm.form.valid && updatePersonalInformation()">
+                                <div class="form-group mt-3 mb-3">
+                                    <div class="d-flex">
+                                        <div>
+                                            <label>First Name *</label>
+                                            <input type="text" name="firstName"
+                                                class="form-control" placeholder="First name"
+                                                [(ngModel)]="personalInfo.firstName" />
+                                        </div>
+                                        <div class="ml-5">
+                                            <label>Last Name *</label>
+                                            <input type="text" name="lastName"
+                                                class="form-control" placeholder="Last name"
+                                                [(ngModel)]="personalInfo.lastName" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-3">
+                                        <div>
+                                            <label>Email *</label>
+                                            <input type="text" name="email"
+                                                class="form-control" placeholder="First name"
+                                                [(ngModel)]="personalInfo.email" />
+                                        </div>
+                                        <div class="ml-5">
+                                            <label>Phone *</label>
+                                            <input type="text" name="phoneNumber"
+                                                class="form-control" placeholder="Last name"
+                                                [(ngModel)]="personalInfo.phoneNumber" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <button type="submit" class="btn btn-primary primary--two">Update</button>
+                                        <button (click)="editPersonalInformation = false" class="btn btn-danger">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="mt-3" *ngIf="userInfo.dentistOfficeInfo.length">Office Address</h5>
+            <div class="row">
+                <div class="card p-3 col-5 ml-4 mr-4" *ngFor="let address of userInfo.dentistOfficeInfo;index as i">
+                    <div class="d-flex">
+                        <h5>Address {{i+1}}</h5>
+                        <i *ngIf="!editOfficeInformation" (click)="editOfficeAddress()"
+                            class="ml-3 edit-icon fa fa-pencil"></i>
+                    </div>
+                    <div *ngIf="!editOfficeInformation">
+                        <span><label>Address:</label> {{address.address}}</span>
+                        <span><label>City:</label> {{address.city}}</span>
+                        <span><label>ZIP:</label> {{address.zip}}</span>
+                        <span><label>Phone Number:</label> {{address.officePhoneNumber}}</span>
+                        <span><label>Email:</label> {{address.email}}</span>
+                        <span><label>Open Hours:</label> {{address.openHours}}</span>
+                    </div>
+                </div>
+                <div *ngIf="editOfficeInformation">
+                    Address
+                </div>
+            </div>
+
+            <h5 class="mt-3">Social Information</h5>
+            <div class="row">
+                <div class="card p-3 col-5 ml-4 mr-4">
+                    <span><label>Facebook:</label> {{userInfo.dentistSocialInfo.facebook}}</span>
+                    <span><label>Instagram:</label> {{userInfo.dentistSocialInfo.instagram}}</span>
+                    <span><label>LinkedIn:</label> {{userInfo.dentistSocialInfo.linkedin}}</span>
+                    <span><label>Social Tags:</label> {{userInfo.dentistSocialInfo.socialTags}}</span>
+                    <span><label>Website:</label> {{userInfo.dentistSocialInfo.website}}</span>
+                </div>
+            </div>
+
+            <h5 class="mt-3" *ngIf="userInfo.dentistOfficeImagesInfo.length">Office Images</h5>
+            <div class="row mb-3">
+                <div class="card d-block p-3 col-5 ml-4 mr-4">
+                    <div class="office-images-container pl-2 pr-2" *ngFor="images of userInfo.dentistOfficeImagesInfo">
+                        <img class="office-images" src="../assets/images/full-logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

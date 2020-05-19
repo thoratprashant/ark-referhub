@@ -1,0 +1,22 @@
+<div class="admin-header">
+  <header class="p-0 rf--header">
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a (click)="redirectUser()" class="navbar-brand">
+          <img src="../assets/images/full-logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-items-container" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li *ngIf="isLoggedIn" class="nav-item ml-0">
+              <button (click)="logout()" type="button" class="btn btn-outline-primary">Logout</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+ </div> 
