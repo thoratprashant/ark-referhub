@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators/map'
+import * as _ from 'underscore';
 
 interface LoginResponse {
   token: string
@@ -29,6 +30,10 @@ export interface ResetPasswordPayload {
 export interface UpdateStatusPayload {
   _id: string,
   status: string
+}
+
+export interface UserInformationPayload {
+  id: string
 }
 
 @Injectable({
@@ -72,6 +77,9 @@ export class AdminActionsService {
         if (toBeAuthorized) {
           requestParameters.headers = requestHeader;
         }
+        if (_.isEmpty(params))  {
+          requestParameters = requestHeader;
+        }
         base = this.http.get(`http://localhost:3000/${type}`, requestParameters);
     }
 
@@ -112,4 +120,11 @@ export class AdminActionsService {
     return this.request('patch', 'admin/updateStatus', params, true);
   }
 
+  public getUserInformation(params: UserInformationPayload): Observable<any> {
+    return this.request('get', `admin/userInformation?id=${params.id}`, {}, true);
+  }
+
+  public updateUserInformation(params): Observable<any> {
+    return this.request('patch', 'admin/updateUserInformation', params, true);
+  }
 }

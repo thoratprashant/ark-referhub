@@ -53,6 +53,7 @@ export class ResetPasswordComponent implements OnInit {
       this.user.password = "";
       this.user.confirmPassword = "";
       if (data) this.isPasswordSet = true;
+      localStorage.removeItem('adminToken');
     }, (err) => {
       console.log("ResetPasswordComponent -> resetPassword -> err", err);
     });
