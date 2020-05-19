@@ -13,7 +13,7 @@ export class ForgotPasswordComponent implements OnInit {
   }
   error: string = "";
   message: string = "";
-
+  isFormSubmitted: Boolean = false;
   constructor(private action: AdminActionsService, private router: Router) { }
 
   ngOnInit(): void {
@@ -25,6 +25,7 @@ export class ForgotPasswordComponent implements OnInit {
       if (data.data.includes('success')) {
         this.message = "We have sent you instructions over email that how to reset a password";
         this.error = "";
+        this.isFormSubmitted = true;
       }
     }, (err) => {
       this.admin.email = "";
