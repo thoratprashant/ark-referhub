@@ -7,6 +7,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AlreadyAccountComponent } from './already-account/already-account.component';
 import { ClaimYourProfileComponent } from './claim-your-profile/claim-your-profile.component';
 import { ReclaimProfileComponent } from './reclaim-profile/reclaim-profile.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 const routes: Routes = [{
@@ -40,6 +41,10 @@ const routes: Routes = [{
       {
         path: 'reclaim-your-profile',
         component: ReclaimProfileComponent
+      },
+      {
+        path: 'forgot-password',
+        component: ForgotPasswordComponent
       }
     ]
   },];

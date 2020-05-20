@@ -302,6 +302,7 @@ ul{list-style-type: none;}
 .box-shadow-none{box-shadow: none !important;}
 .photo--wrapper{object-fit: contain;overflow: hidden;border-radius: 50%; margin-right: 15px;}
 textarea{resize: none !important;}
+.btn.disabled, .btn:disabled{pointer-events: none;opacity: 0.3 !important;}
 .rounded--btn{
     line-height: 11px !important;
     border: 1px solid #169feb !important;
