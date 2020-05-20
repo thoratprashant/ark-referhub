@@ -11,13 +11,14 @@ import { AlreadyAccountComponent } from './already-account/already-account.compo
 import { ClaimYourProfileComponent } from './claim-your-profile/claim-your-profile.component';
 import { ReclaimProfileComponent } from './reclaim-profile/reclaim-profile.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PatientInviteComponent } from './patient-invite/patient-invite.component';
 
 
 
 @NgModule({
   declarations: [SigninComponent, AuthHeaderComponent, LayoutComponent, AuthFooterComponent, 
     WhoYouAreComponent, SignupComponent, AlreadyAccountComponent, ClaimYourProfileComponent, 
-    ReclaimProfileComponent, ForgotPasswordComponent],
+    ReclaimProfileComponent, ForgotPasswordComponent, PatientInviteComponent],
   imports: [
     CommonModule,
     AuthRoutingModule

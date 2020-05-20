@@ -8,6 +8,7 @@ import { AlreadyAccountComponent } from './already-account/already-account.compo
 import { ClaimYourProfileComponent } from './claim-your-profile/claim-your-profile.component';
 import { ReclaimProfileComponent } from './reclaim-profile/reclaim-profile.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PatientInviteComponent } from './patient-invite/patient-invite.component';
 
 
 const routes: Routes = [{
@@ -45,6 +46,10 @@ const routes: Routes = [{
       {
         path: 'forgot-password',
         component: ForgotPasswordComponent
+      },
+      {
+        path: 'patient-invite',
+        component: PatientInviteComponent
       }
     ]
   },];

@@ -1,0 +1,113 @@
+.invite--patient--wrapper{
+    background-color: #eeeeee;
+    padding: 30px 15px;
+    height: 90vh;
+    align-items: center;
+    .ip--box{
+        width: 840px;
+        .ip--left{
+            width: 420px;
+            background-color: #fff;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            header{
+                border-bottom: 1px solid #ebedf8;
+                margin: 30px;
+                padding-bottom: 16px;
+                h1{
+                    font-size: 18px;
+                    font-family: "Avenir-bold";
+                    margin: 0 0 5px 0;
+                }
+            }
+            .ip--data{
+                padding: 20px 30px;
+                overflow: auto;
+                p{
+                    margin-top: 15px;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+                .accept--invite--btn{
+                    margin: 47px 0 28px 0;
+                    height: 45px;
+                }
+                .reject--invite--btn{
+                    margin-bottom: 30px;
+                    height: 45px;
+                }
+                
+            }
+          
+        }
+        .ip--right{
+            background-color: #18a3ec;
+            width: 420px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 30px 25px 0 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 18px;
+                font-family: "Avenir-bold";
+                color: #fff;
+            }
+            p{
+                font-size: 13px;
+                color: #fff;
+                line-height: 1.71;
+                font-family: "Avenir-light";
+            }
+            a{
+                font-size: 13px;
+                color: #fff;
+                text-decoration: underline;
+            }
+            .invite--box{
+                border-radius: 5px;
+                background-color: #fff;
+                padding: 15px 20px;
+                margin: 42px 0;
+                p{
+                    color: rgba(0, 0, 0, 0.85);
+                    font-family: 'Avenir-medium';
+                }
+                .info{
+                    .reviewer--star{
+                        ul{
+                            li{
+                                line-height: 17px;
+                                .icon{
+                                    font-size: 13px;
+                                    color: #f6ca51;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .images{
+                .img--box{
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    margin: 0 0 10px 10px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .invite--patient--wrapper .ip--box {
+        width: 700px;
+    }
+    .invite--patient--wrapper .ip--box .ip--left {
+        width: 360px;
+    }
+}
