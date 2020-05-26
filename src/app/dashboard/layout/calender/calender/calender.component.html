@@ -1,1 +1,248 @@
-<p>calender works!</p>
+<div class="container-fluid pt-3 calender--wrapper">
+    <div class="row">
+        <div class="col-12 col-lg-8 calender--left">
+            <div class="card rf--card">
+                <div class="card-header d-flex align-items-center justify-content-between">
+
+                    <div class="sec--1 d-flex align-items-center">
+                        <h2 class="m-0"><strong>13 January - 20 January</strong></h2>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn--next--back p-0 ml-0">
+                                <i class="icon icon-arrow-back"></i>
+                            </button>
+                            <button class="btn btn--next--back p-0">
+                                <i class="icon icon-arrow-next"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sec--2 d-flex align-items-center">
+                        <ul class="nav nav-tabs rounded--tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="week-tab" data-toggle="tab" href="#week" role="tab"
+                                    aria-controls="week" aria-selected="true">Week</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="day-tab" data-toggle="tab" href="#day" role="tab"
+                                    aria-controls="day" aria-selected="true">Day</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="list-tab" data-toggle="tab" href="#list" role="tab"
+                                    aria-controls="list" aria-selected="true">List</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn  btn-primary btn-sm d-flex align-items-center add--new--event">
+                            <i class="icon-plus-white mr-2"></i> Add new event</button>
+                    </div>
+
+                </div>
+                <div class="card-body calender--data">
+                    <div class="tab-content pl-0 pr-0">
+
+                        <div class="tab-pane fade show active about--data" id="week" role="tabpanel"
+                            aria-labelledby="week-tab">
+
+                            <div class="activity--wrapper d-flex">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">13 Jan </p>
+                                    <p class="m-0 fnt-13"><strong>Mon</strong></p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="activities consultations--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Consultaion </strong> with patient
+                                                <strong>Alex Walker </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 09:00-10:30</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity--wrapper d-flex ">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">16 Jan </p>
+                                    <p class="m-0 fnt-13"><strong>Thu</strong></p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="activities cp--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Crown procedure </strong> with patient
+                                                <strong>Olivia Arribas </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 12:00-13:30</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <button class="btn p-0 rounded--btn">
+                                                <i class="icon icon-task"></i>
+                                            </button>
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity--wrapper d-flex multiple ">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">17 Jan </p>
+                                    <p class="m-0 fnt-13"><strong>Fri</strong></p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="mb-1 activities consultations--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Consultaion </strong> with patient
+                                                <strong>Jozef Kondratovich </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 15:00-16:00</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="activities consultations--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Consultaion </strong> with patient <strong>
+                                                    Maria Anisova </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 16:00-17:00</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity--wrapper d-flex multiple">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">19 Jan </p>
+                                    <p class="m-0 fnt-13"><strong>Sun</strong></p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="activities tw--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong>Teeth Whitening </strong> with patient
+                                                <strong>Julia Filipova </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 15:00-16:00</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <button class="btn p-0 rounded--btn">
+                                                <i class="icon icon-task"></i>
+                                            </button>
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade about--data" id="day" role="tabpanel" aria-labelledby="day-tab">
+                            day-tab
+                        </div>
+                        <div class="tab-pane fade list--data" id="list" role="tabpanel" aria-labelledby="list-tab">
+                            <div class="activity--wrapper d-flex">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">13 Jan </p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="activities consultations--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Consultaion </strong> with patient
+                                                <strong>Alex Walker </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 09:00-10:30</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity--wrapper d-flex ">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">16 Jan </p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="activities cp--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Crown procedure </strong> with patient
+                                                <strong>Olivia Arribas </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 12:00-13:30</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <button class="btn p-0 rounded--btn">
+                                                <i class="icon icon-task"></i>
+                                            </button>
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity--wrapper d-flex multiple ">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">17 Jan </p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="mb-1 activities consultations--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Consultaion </strong> with patient
+                                                <strong>Jozef Kondratovich </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 15:00-16:00</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="activities consultations--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong> Consultaion </strong> with patient <strong>
+                                                    Maria Anisova </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 16:00-17:00</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity--wrapper d-flex multiple">
+                                <div class="duration text-center flex-shrink-0">
+                                    <p class="m-0 fnt-13">19 Jan </p>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div
+                                        class="activities tw--activity d-flex align-items-center justify-content-between w-100">
+                                        <div>
+                                            <p class="m-0 fnt-14"> <strong>Teeth Whitening </strong> with patient
+                                                <strong>Julia Filipova </strong></p>
+                                            <p class="m-0 fnt-14">@Linhart Dentistry / 15:00-16:00</p>
+                                        </div>
+                                        <div class="d-flex align-items-center actions--icons flex-shrink-0">
+                                            <button class="btn p-0 rounded--btn">
+                                                <i class="icon icon-task"></i>
+                                            </button>
+                                            <i class="icon-three-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 ">
+            <app-calender-right-side></app-calender-right-side>
+        </div>
+    </div>
+</div>

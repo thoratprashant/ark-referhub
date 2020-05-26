@@ -1,0 +1,111 @@
+.calender--wrapper{
+
+    .calender--left{
+        .card-header{
+            .sec--1{
+                h2{
+                    margin-right: 20px !important;
+                }
+                .btn--next--back{
+                    line-height: 11px;
+                    margin-left: 5px;
+                    border: 1px solid #169feb;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 3px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon{
+                        font-size: 11px;
+                    }
+                }
+            }
+            .sec--2{
+                .add--new--event{
+                    padding: 7px 19px !important;
+                    height: 38px !important;
+                    margin-left: 22px;
+                    box-shadow: none;
+                }
+            }
+        }
+        .calender--data{
+            padding-top: 30px !important;
+            overflow: auto;
+
+            .activity--wrapper{
+                margin-bottom: 20px;
+                .duration{
+                    margin-right: 24px;
+                }
+                .activities{
+                    border-left: 3px solid #169feb;
+                    padding: 24px 20px;
+                    .actions--icons{
+                        .icon-three-dots{
+                            margin-left: 20px;
+                        }
+                        .btn--task{
+                            font-size: 14px;
+                        }
+                    }
+                    &.consultations--activity{
+                        background-color: rgba(213, 237, 250, 0.5);
+                        border-left-color: #169feb;
+                        .icon-three-dots{
+                            color: #7ec9f2;
+                        }
+                        p{
+                            color: #2b7299;
+                        }
+                    }
+                    &.cp--activity{
+                        background-color: rgba(238, 236, 255, 0.4);
+                        border-left-color: #8576ed;
+                        .icon-three-dots{
+                            color: #a69de9;
+                        }
+                        p{
+                            color: #38418f;
+                        }
+                        .rounded--btn{
+                            background-color: #8576ed !important;
+                            .icon {
+                                color: #fff !important;
+                                font-size: 12px;
+                            }                            
+                        }
+                    }
+                    &.tw--activity{
+                        background-color: rgba(67, 255, 218, 0.15);
+                        border-left-color: #43ffda;
+                        .icon-three-dots{
+                            color: #9adbb3;
+                        }
+                        p{
+                            color: #558e6b;
+                        }
+                        .rounded--btn{
+                            background-color: #43ffda !important;
+                            border-color: #43ffda !important;
+                            .icon {
+                                color: #fff !important;
+                                font-size: 12px;
+                            }                            
+                        }
+                    }
+                }
+
+                &.multiple{
+                    .activities {
+                        padding: 9px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+ 
+
+}

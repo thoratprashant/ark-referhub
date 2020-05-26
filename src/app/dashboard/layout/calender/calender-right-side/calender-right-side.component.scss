@@ -1,0 +1,54 @@
+.calender--right{        
+    .manage--btn{
+        padding: 5px 20px !important;
+        border-radius: 30px !important;
+        font-size: 11px !important;
+    }
+    .category--body{
+        
+        ul{
+            li{
+                padding: 22px 22px;
+                border-bottom: 1px solid #ebedf8;
+                &:last-child{
+                    border: none;
+                }
+                .checkbox {
+                    .cr{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                .color-check{
+                    width: 8px;
+                    height: 8px;
+                    top: 3px;
+                    left: 3px;
+                    border-radius: 1px;
+                    &.show--all{
+                        top: 8px;
+                        left: 1px;
+                    }
+                
+                    &.clr-1{
+                        background-color: #8576ed;
+                    }
+                    &.clr-2{
+                        background-color: #169feb;
+                    }
+                    &.clr-3{
+                        background-color: #50e3c2;
+                    }
+                    &.clr-4{
+                        background-color: #8576ed; 
+                    }
+                }
+                .checkbox label input[type=checkbox]:checked + .cr {
+                    border-color: #eef0f9;
+                }
+            }
+        }
+        
+    }
+    
+}
