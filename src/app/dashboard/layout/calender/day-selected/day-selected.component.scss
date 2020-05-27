@@ -8,6 +8,78 @@
                 border-left: 1px solid #ebedf8;
                 border-right: 1px solid #ebedf8;
             }
+            .btn--next--back{
+                line-height: 11px;
+                margin-left: 5px;
+                border: 1px solid #169feb;
+                height: 25px;
+                width: 25px;
+                border-radius: 3px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    font-size: 11px;
+                }
+            }
+            .timing--sec{
+                color: rgba(0, 0, 0, 0.85);
+                p{
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .card-body{
+            header{
+                h1{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                address{
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.85);
+                }
+                .patient--profile--btn{
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                    .btn{
+                        padding: 9px 18px !important;
+                    }
+                }
+            }
+
+            .divider{
+                border-top: 1px solid #ebedf8;
+                margin: 20px 0;
+            }
+
+            h3{
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+
+            .attached--files{
+                .icon{
+                    margin-right: 10px;
+                }
+                a{
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.85);
+                    text-decoration: underline;
+                }
+                p{
+                    font-size: 10px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            footer{
+                p{
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
