@@ -105,7 +105,103 @@
             }
         }
     }
+}
 
- 
 
+// Add event modal
+.add--new--event--modal{
+    .modal-dialog{
+        max-width: 660px;
+        .files--patients--btns{
+            .btn-outline-primary{
+                padding: 5px 20px !important;
+            }
+        }
+        .categoary--sec{
+            margin-top: 20px;
+            .mc--txt{
+                text-decoration: underline;
+            }
+        }
+
+        .selected--items{
+            opacity: 0.75;
+            border-radius: 3px;
+            background-color: #f8f8f8;
+            padding: 4px 8px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            .points{
+                width: 9px;
+                height: 9px;
+                border-radius: 4.5px;    
+                margin-right: 10px;   
+                display: inline-flex;         
+            }
+            .icon-close{
+                color: #2c3341;
+                opacity: 0.3;
+                font-size: 10px;
+                margin-left: 10px;
+            }
+            &.meeting{
+                .points{
+                    background-color: #f7b500;
+                }
+            }
+            &.consultations{
+                .points{
+                    background-color: #169feb;
+                }
+            }
+        }
+        .dropdown--val{
+            padding: 15px 15px 0 15px;
+            .checkbox {
+                margin-bottom: 10px;
+                .cr{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .color-check{
+                width: 8px;
+                height: 8px;
+                top: 3px;
+                left: 3px;
+                border-radius: 1px;
+                &.show--all{
+                    top: 8px;
+                    left: 1px;
+                }
+            
+                &.clr-1{
+                    background-color: #8576ed;
+                }
+                &.clr-2{
+                    background-color: #169feb;
+                }
+                &.clr-3{
+                    background-color: #50e3c2;
+                }
+                &.clr-4{
+                    background-color: #8576ed; 
+                }
+                &.clr-5{
+                    background-color: #f7b500;
+                }
+            }
+            .checkbox label input[type=checkbox]:checked + .cr {
+                border-color: #eef0f9;
+            }
+        }
+    }
+}
+
+// Categories Modal
+.categories--modal{
+    .modal-dialog{
+        max-width: 660px;
+    }
 }
