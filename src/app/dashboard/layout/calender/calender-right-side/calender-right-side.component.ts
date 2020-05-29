@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalenderRightSideComponent implements OnInit {
 
+  categoryList = true;
+  editCategory = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  editCategoryclick(){
+    this.categoryList = false;
+    this.editCategory = true;
+  }
+  backToCatList(){
+    this.categoryList = true;
+    this.editCategory = false;
   }
 
 }

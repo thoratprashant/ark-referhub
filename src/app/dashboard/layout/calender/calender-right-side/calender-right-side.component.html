@@ -3,7 +3,7 @@
     <div class="card rf--card">
         <div class="card-header d-flex align-items-center justify-content-between">
             <h2 class="m-0"><strong>Categories</strong></h2>
-            <button type="button" class="btn btn-md btn-outline-primary manage--btn">Manage Categories</button>
+            <button type="button" class="btn btn-md btn-outline-primary manage--btn" data-toggle="modal" data-target="#categoryModal">Manage Categories</button>
         </div>
         <div class="card-body p-0 category--body">
             <ul class="m-0 p-0">
@@ -56,4 +56,196 @@
         </div>
     </div>
 
+</div>
+
+<!-- Add Categories Modal -->
+<div class="modal fade rf--modal categories--modal" id="categoryModal" tabindex="-1" role="dialog"
+    aria-labelledby="categoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header d-flex align-items-center" *ngIf="categoryList">
+                <h5 class="modal-title" id="categoryModalabel"> <strong>Categories</strong> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Edit category header -->
+            <div class="modal-header edit--cat--header d-flex align-items-center" *ngIf="editCategory">   
+                <a class="back--to d-flex align-items-center" (click)="backToCatList();">
+                    <i class="icon--prev"></i>
+                    Back
+                </a>
+                <h5 class="modal-title"> <strong>Back to Categories</strong> </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+            <form class="modal-body p-0" *ngIf="categoryList">
+                <div class="main--categories">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="categories d-flex align-items-center justify-content-between ">
+                                <div class="d-flex align-items-center">
+                                    <div class="point cp--point"></div>
+                                    <h3> <strong>Crown Procedures</strong> </h3>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a (click)="editCategoryclick()">Edit</a>
+                                    <i class="icon-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="categories d-flex align-items-center justify-content-between ">
+                                <div class="d-flex align-items-center">
+                                    <div class="point consulation--point"></div>
+                                    <h3> <strong>Consultations</strong> </h3>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a (click)="editCategoryclick()">Edit</a>
+                                    <i class="icon-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="categories d-flex align-items-center justify-content-between ">
+                                <div class="d-flex align-items-center">
+                                    <div class="point tw--point"></div>
+                                    <h3> <strong>Teeth Witening</strong> </h3>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a (click)="editCategoryclick()">Edit</a>
+                                    <i class="icon-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="categories d-flex align-items-center justify-content-between ">
+                                <div class="d-flex align-items-center">
+                                    <div class="point meeting--point"></div>
+                                    <h3> <strong>Meetings</strong> </h3>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a (click)="editCategoryclick()">Edit</a>
+                                    <i class="icon-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="categories d-flex align-items-center justify-content-between ">
+                                <div class="d-flex align-items-center">
+                                    <div class="point other--point"></div>
+                                    <h3> <strong>Others</strong> </h3>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a (click)="editCategoryclick()">Edit</a>
+                                    <i class="icon-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add--new--cat">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3> <strong>Add new category</strong> </h3>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <label>Category Title *</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Category Title *" value="Teeth Witening">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 ">
+                            <div class="form-group">
+                                <label class="d-flex justify-content-between align-items-center ">Category Color
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend w-100">
+                                        <button class="d-flex align-items-center btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                            type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    
+                                            <div class="category d-flex ">
+                                                <div class="selected--cat orange"></div>
+                                                <h2><strong>Orange</strong></h2>
+                                            </div>
+
+                                        </button>
+                                        <div class="dropdown-menu select--clr">
+                                            <a class="dropdown-item d-flex">
+                                                <span class="clr--indicator orange"></span>
+                                                Orange
+                                            </a>
+                                            <a class="dropdown-item d-flex">
+                                                <span class="clr--indicator clr-2"></span>
+                                                Color 2
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-1">
+                            <button type="button" class="btn btn-sm btn-primary d-flex align-items-center">
+                                <i class="icon-plus-white mr-2"></i> Add new category</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Edit Category body -->
+            <form class="modal-body p-0" *ngIf="editCategory">            
+                <div class="add--new--cat mt-3">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group">
+                                <label>Category Title *</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Category Title *" value="Teeth Witening">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 ">
+                            <div class="form-group">
+                                <label class="d-flex justify-content-between align-items-center ">Category Color
+                                </label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend w-100">
+                                        <button class="d-flex align-items-center btn btn-outline-secondary dropdown-toggle text-left w-100"
+                                            type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    
+                                            <div class="category d-flex ">
+                                                <div class="selected--cat orange"></div>
+                                                <h2><strong>Orange</strong></h2>
+                                            </div>
+
+                                        </button>
+                                        <div class="dropdown-menu select--clr">
+                                            <a class="dropdown-item d-flex">
+                                                <span class="clr--indicator orange"></span>
+                                                Orange
+                                            </a>
+                                            <a class="dropdown-item d-flex">
+                                                <span class="clr--indicator clr-2"></span>
+                                                Color 2
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer d-flex align-items-center justify-content-between ">
+                <button type="button" class="btn btn-outline-primary black--btn btn-md"
+                    data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-primary  btn-md" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
 </div>
