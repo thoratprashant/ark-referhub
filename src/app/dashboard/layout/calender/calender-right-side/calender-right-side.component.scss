@@ -3,7 +3,24 @@
         padding: 5px 20px !important;
         border-radius: 30px !important;
         font-size: 11px !important;
+    } 
+    .card-header{
+        .btn--next--back{
+            line-height: 11px;
+            margin-left: 5px;
+            border: 1px solid #169feb;
+            height: 25px;
+            width: 25px;
+            border-radius: 3px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon{
+                font-size: 11px;
+            }
+        }
     }
+    
     .category--body{
         
         ul{
