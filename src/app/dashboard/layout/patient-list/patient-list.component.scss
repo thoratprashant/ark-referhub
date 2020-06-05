@@ -96,6 +96,19 @@
     }
 }
 
+// add--new--patient--modal
+.add--new--patient--modal{
+    .modal-dialog{
+        max-width: 1100px;
+        .modal-body{
+            .main--heading{
+                margin-bottom: 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 599px) {}
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .patient--list--wrapper .card-body .patient--list--table .table-responsive {
@@ -104,6 +117,8 @@
     }
     .patient--list--wrapper .card-header .filter--sec{
         width: 30%;
+        margin-right: 15px;
+        padding-right: 15px;
     }
     .patient--list--wrapper .card-header .search--sec{
         width: 69%;
