@@ -15,6 +15,7 @@ import { StaffTasksComponent } from './layout/staff/staff-tasks/staff-tasks.comp
 import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-settings.component';
 import { CalenderComponent } from './layout/calender/calender/calender.component';
 import { DaySelectedComponent } from './layout/calender/day-selected/day-selected.component';
+import { PatientListComponent } from './layout/patient-list/patient-list.component';
 
 
 const routes: Routes = [{
@@ -76,6 +77,10 @@ const routes: Routes = [{
     {
       path: 'day-selected',
       component: DaySelectedComponent
+    },
+    {
+      path: 'patient-list',
+      component: PatientListComponent
     },
     
   ]

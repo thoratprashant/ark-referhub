@@ -1,0 +1,129 @@
+.patient--list--wrapper{
+    background-color: #f8fafb;
+    .card-header{
+        height: 65px;
+        .filter--sec{
+            border-right: 1px solid #ebedf8;
+            margin-right: 30px;
+            padding-right: 30px;
+            width: 20%;
+            .filter--btn{
+                margin-left: 15px;
+                height: 30px !important;
+                .icon-filter-icon{
+                    color: #fff;
+                }
+            }            
+        }
+        .search--sec{
+            width: 78%;
+            .search--box{
+                position: relative;
+                .form-control{
+                    border: none;
+                    color: rgba(0, 0, 0, 0.5);
+                    font-size: 13px;
+                    padding-left: 25px;
+                }
+                .icon-search{
+                    font-size: 14px;
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                }
+            }
+            .icon-add-plus{
+                color: #fff;
+            }
+        }
+    }
+    
+    .card-body{
+        .patient--list--table{
+            .table-responsive{
+                height: calc(100vh - 227px);
+                .table{
+                    tbody{
+                        tr{
+                            td{
+                                font-size: 13px;
+                                color: rgba(0, 0, 0, 0.85);
+                                .rounded--btn{
+                                    background-color: #ceebfb;
+                                    border: 1px solid #ceebfb !important;
+                                    .icon{
+                                        font-size: 13px;
+                                    }
+                                }
+    
+                                &:nth-child(1){
+                                    width: 20%;
+                                }
+                                &:nth-child(2){
+                                    width: 85px;
+                                }
+                                &:nth-child(3){
+                                    width: 160px;
+                                }
+                                &:nth-child(4){
+                                    width: 100px;
+                                }
+                                &:nth-child(5){
+                                    width: 11%;
+                                }
+                                &:nth-child(6){
+                                    width: 31%;
+                                }
+                                &:nth-child(7){
+                                    width: 125px;
+                                    justify-content: flex-end;
+                                    .icon-three-dots{
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                            &:first-child{
+                                td{
+                                    border-top: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .patient--list--wrapper .card-body .patient--list--table .table-responsive {
+        height: calc(100vh - 258px);
+        width: 1200px;
+    }
+    .patient--list--wrapper .card-header .filter--sec{
+        width: 30%;
+    }
+    .patient--list--wrapper .card-header .search--sec{
+        width: 69%;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .patient--list--wrapper .card-body .patient--list--table .table-responsive {
+        height: calc(100vh - 258px);
+        width: 1200px;
+    }
+    .patient--list--wrapper .card-header .filter--sec{
+        width: 26%;
+    }
+    .patient--list--wrapper .card-header .search--sec{
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+    .patient--list--wrapper .card-body .patient--list--table .table-responsive {
+        height: calc(100vh - 258px);
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}

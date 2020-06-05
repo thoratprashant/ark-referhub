@@ -4,248 +4,264 @@
 
         <div class="col-12">
             <div class="card rf--card">
-                <div class="card-header d-flex align-items-center ">
-                    <h1> <strong>OrthoBright</strong></h1>
-                    <small>6 persons added to the office staff</small>
-                    
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class=" d-flex align-items-center">
+                        <h1> <strong>OrthoBright</strong></h1>
+                        <small>6 persons added to the office staff</small>
+                    </div>
+                    <button [routerLink]="['/dashboard/staff-setting']" type="button" class="btn btn-primary btn-md d-flex align-items-center add--new--staff--btn box-shadow-none">
+                        <i class="icon icon-add-plus mr-2"></i> Add new staff
+                    </button>
                 </div>
-                
+
                 <div class="d-flex flex-wrap align-items-normal pr-20 pb-4">
 
-                 <div class="card-body p-0 staff--card">
-                    <div class="card rf--card mb-0 w-100">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <div class="relative">
-                                    <div class="photo--wrapper flex-shrink-0">
-                                        <img src="assets/images/profile-1-image-circle.png" alt="" class="img-fluid">
+                    <div class="card-body p-0 staff--card">
+                        <div class="card rf--card mb-0 w-100">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="left d-flex align-items-center">
+                                    <div class="relative">
+                                        <div class="photo--wrapper flex-shrink-0">
+                                            <img src="assets/images/profile-1-image-circle.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="status--point"></div>
                                     </div>
-                                    <div class="status--point"></div>
+                                    <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
                                 </div>
-                                <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
+                                <div class="right flex-shrink-0">
+                                    <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i
+                                            class="icon icon-settings"></i></button>
+                                </div>
                             </div>
-                            <div class="right flex-shrink-0">
-                                <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-settings"></i></button>
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first">Phone:</label>
+                                            <label><strong>310-123-4567</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first justify-content-end">Permission:</label>
+                                            <label class="justify-content-end"><strong>AAAA</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="first">Birthday:</label>
+                                            <label><strong>February 13, 1993 </strong> <span class="ml-1">(27
+                                                    yo)</span></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Contract start:</label>
+                                            <label><strong>04.19.2018</strong></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Email:</label>
+                                            <label><strong>valencia.marta@something.com</strong></label>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <label class="first">Home Address:</label>
+                                            <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                         <div class="card-body">
-
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first">Phone:</label>
-                                        <label><strong>310-123-4567</strong></label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first justify-content-end">Permission:</label>
-                                        <label class="justify-content-end"><strong>AAAA</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label class="first">Birthday:</label>
-                                        <label><strong>February 13, 1993 </strong> <span class="ml-1">(27 yo)</span></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Contract start:</label>
-                                        <label><strong>04.19.2018</strong></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Email:</label>
-                                        <label><strong>valencia.marta@something.com</strong></label>
-                                    </div>
-                                     <div class="form-group mb-0">
-                                        <label class="first">Home Address:</label>
-                                        <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                         </div>
                     </div>
-                 </div>
-                 <div class="card-body p-0 staff--card">
-                    <div class="card rf--card mb-0 w-100">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <div class="relative">
-                                    <div class="photo--wrapper flex-shrink-0">
-                                        <img src="assets/images/profile-1-image-circle.png" alt="" class="img-fluid">
+                    <div class="card-body p-0 staff--card">
+                        <div class="card rf--card mb-0 w-100">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="left d-flex align-items-center">
+                                    <div class="relative">
+                                        <div class="photo--wrapper flex-shrink-0">
+                                            <img src="assets/images/profile-1-image-circle.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="status--point"></div>
                                     </div>
-                                    <div class="status--point"></div>
+                                    <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
                                 </div>
-                                <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
+                                <div class="right flex-shrink-0">
+                                    <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i
+                                            class="icon icon-settings"></i></button>
+                                </div>
                             </div>
-                            <div class="right flex-shrink-0">
-                                <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-settings"></i></button>
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first">Phone:</label>
+                                            <label><strong>310-123-4567</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group ">
+                                            <label class="first justify-content-end">Permission:</label>
+                                            <label class="justify-content-end"><strong>AAAA</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="first">Birthday:</label>
+                                            <label><strong>February 13, 1993 </strong> <span class="ml-1">(27
+                                                    yo)</span></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Contract start:</label>
+                                            <label><strong>04.19.2018</strong></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Email:</label>
+                                            <label><strong>valencia.marta@something.com</strong></label>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <label class="first">Home Address:</label>
+                                            <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                         <div class="card-body">
-
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first">Phone:</label>
-                                        <label><strong>310-123-4567</strong></label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group ">
-                                        <label class="first justify-content-end">Permission:</label>
-                                        <label class="justify-content-end"><strong>AAAA</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label class="first">Birthday:</label>
-                                        <label><strong>February 13, 1993 </strong> <span class="ml-1">(27 yo)</span></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Contract start:</label>
-                                        <label><strong>04.19.2018</strong></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Email:</label>
-                                        <label><strong>valencia.marta@something.com</strong></label>
-                                    </div>
-                                     <div class="form-group mb-0">
-                                        <label class="first">Home Address:</label>
-                                        <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                         </div>
                     </div>
-                 </div>
-                 <div class="card-body p-0 staff--card">
-                    <div class="card rf--card mb-0 w-100">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <div class="relative">
-                                    <div class="photo--wrapper flex-shrink-0">
-                                        <img src="assets/images/profile-1-image-circle.png" alt="" class="img-fluid">
+                    <div class="card-body p-0 staff--card">
+                        <div class="card rf--card mb-0 w-100">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="left d-flex align-items-center">
+                                    <div class="relative">
+                                        <div class="photo--wrapper flex-shrink-0">
+                                            <img src="assets/images/profile-1-image-circle.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="status--point"></div>
                                     </div>
-                                    <div class="status--point"></div>
+                                    <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
                                 </div>
-                                <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
+                                <div class="right flex-shrink-0">
+                                    <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i
+                                            class="icon icon-settings"></i></button>
+                                </div>
                             </div>
-                            <div class="right flex-shrink-0">
-                                <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-settings"></i></button>
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first">Phone:</label>
+                                            <label><strong>310-123-4567</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first justify-content-end">Permission:</label>
+                                            <label class="justify-content-end"><strong>AAAA</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="first">Birthday:</label>
+                                            <label><strong>February 13, 1993 </strong> <span class="ml-1">(27
+                                                    yo)</span></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Contract start:</label>
+                                            <label><strong>04.19.2018</strong></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Email:</label>
+                                            <label><strong>valencia.marta@something.com</strong></label>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <label class="first">Home Address:</label>
+                                            <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                         <div class="card-body">
-
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first">Phone:</label>
-                                        <label><strong>310-123-4567</strong></label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first justify-content-end">Permission:</label>
-                                        <label class="justify-content-end"><strong>AAAA</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label class="first">Birthday:</label>
-                                        <label><strong>February 13, 1993 </strong> <span class="ml-1">(27 yo)</span></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Contract start:</label>
-                                        <label><strong>04.19.2018</strong></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Email:</label>
-                                        <label><strong>valencia.marta@something.com</strong></label>
-                                    </div>
-                                     <div class="form-group mb-0">
-                                        <label class="first">Home Address:</label>
-                                        <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                         </div>
                     </div>
-                 </div>
-                 <div class="card-body p-0 staff--card">
-                    <div class="card rf--card mb-0 w-100">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <div class="left d-flex align-items-center">
-                                <div class="relative">
-                                    <div class="photo--wrapper flex-shrink-0">
-                                        <img src="assets/images/profile-1-image-circle.png" alt="" class="img-fluid">
+                    <div class="card-body p-0 staff--card">
+                        <div class="card rf--card mb-0 w-100">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="left d-flex align-items-center">
+                                    <div class="relative">
+                                        <div class="photo--wrapper flex-shrink-0">
+                                            <img src="assets/images/profile-1-image-circle.png" alt=""
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="status--point"></div>
                                     </div>
-                                    <div class="status--point"></div>
+                                    <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
                                 </div>
-                                <h3 class="m-0 fnt-13"> <strong>Ferland Sharvill</strong> </h3>
+                                <div class="right flex-shrink-0">
+                                    <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
+                                    <button class="btn p-0 rounded--btn ml-2"><i
+                                            class="icon icon-settings"></i></button>
+                                </div>
                             </div>
-                            <div class="right flex-shrink-0">
-                                <button class="btn p-0 rounded--btn"><i class="icon icon-chat-blue"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-task"></i></button>
-                                <button class="btn p-0 rounded--btn ml-2"><i class="icon icon-settings"></i></button>
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first">Phone:</label>
+                                            <label><strong>310-123-4567</strong></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="first justify-content-end">Permission:</label>
+                                            <label class="justify-content-end"><strong>AAAA</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="first">Birthday:</label>
+                                            <label><strong>February 13, 1993 </strong> <span class="ml-1">(27
+                                                    yo)</span></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Contract start:</label>
+                                            <label><strong>04.19.2018</strong></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="first">Email:</label>
+                                            <label><strong>valencia.marta@something.com</strong></label>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <label class="first">Home Address:</label>
+                                            <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                         <div class="card-body">
-
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first">Phone:</label>
-                                        <label><strong>310-123-4567</strong></label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="first justify-content-end">Permission:</label>
-                                        <label class="justify-content-end"><strong>AAAA</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label class="first">Birthday:</label>
-                                        <label><strong>February 13, 1993 </strong> <span class="ml-1">(27 yo)</span></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Contract start:</label>
-                                        <label><strong>04.19.2018</strong></label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="first">Email:</label>
-                                        <label><strong>valencia.marta@something.com</strong></label>
-                                    </div>
-                                     <div class="form-group mb-0">
-                                        <label class="first">Home Address:</label>
-                                        <label><strong>230 Park Ave #1164, New York, NY 10169</strong></label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                         </div>
                     </div>
-                 </div>
 
-                 </div>
+                </div>
             </div>
         </div>
     </div>
