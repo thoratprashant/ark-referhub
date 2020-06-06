@@ -123,6 +123,17 @@ ul{list-style-type: none;}
             background-image: linear-gradient(to left, #31cdf7, #169feb) !important;
         }
     }
+
+    &.white--btn{
+        border-color: #fff !important;
+        color: #2c3341 !important;
+        background-image: linear-gradient(to left, #fff, #fff);
+        box-shadow: none;
+        &::after{
+            background-image: linear-gradient(to left, #fff, #fff) !important;
+        }
+    }
+
     &.btn-sm{
         font-size: 12px !important;
         padding: 5px 17px !important;

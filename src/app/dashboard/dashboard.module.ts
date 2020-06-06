@@ -25,7 +25,9 @@ import { StaffSettingsComponent } from './layout/staff/staff-settings/staff-sett
 import { CalenderComponent } from './layout/calender/calender/calender.component';
 import { DaySelectedComponent } from './layout/calender/day-selected/day-selected.component';
 import { CalenderRightSideComponent } from './layout/calender/calender-right-side/calender-right-side.component';
-import { PatientListComponent } from './layout/patient-list/patient-list.component';
+import { PatientListComponent } from './layout/patients/patient-list/patient-list.component';
+import { PatientDetailsComponent } from './layout/patients/patient-details/patient-details.component';
+
 
 
 
@@ -36,7 +38,7 @@ import { PatientListComponent } from './layout/patient-list/patient-list.compone
     DentalPersonalProfileComponent, SettingsComponent, SettingRightSideComponent, OfficeComponent, 
     OfficeRightSideComponent, OfficePermissionComponent, InvitesComponent, FacebookInvitesComponent, StaffListComponent, 
     StaffTasksComponent, StaffSettingsComponent, CalenderComponent, DaySelectedComponent, CalenderRightSideComponent, 
-    PatientListComponent],
+    PatientListComponent, PatientDetailsComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
